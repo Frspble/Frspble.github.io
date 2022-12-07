@@ -1,3 +1,4 @@
-# This is my blog
+# Welcome to my blog
 ---
 ## [Link: frspble.github.io](https://frspble.github.io/)
+
