@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于 | BoGe&#39;s Blog</title>
+<noscript>开启Javascript是必要的</noscript>
+<link rel="icon" type="image/x-icon" href="/img/boge_A.webp">
+<link rel="apple-touch-icon" href="/img/boge_A.webp">
+<meta name="apple-mobile-web-app-title" content="BoGe&#39;s Blog">
+<link rel="bookmark" href="/img/boge_A.webp">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/boge_A.webp">
+<meta name="description" content="关于">
+<meta name="theme-color" content="#1C1C1F">
+<link rel="stylesheet" href="/css/var.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+
+<link rel="stylesheet" href="/lib/snackbar.min.css">
+
+
+<script src="/lib/qrcode.min.js"></script>
+
+
+
+
+
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+
+    <script>LA.init({id:"K2JuUODZ2wlZtOl3",ck:"K2JuUODZ2wlZtOl3"})</script>
+
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2021-12-12 00:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":true,"localsearch":{"preload":false,"path":"/search.xml"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":true,"page":"about","toc":false,"comment":false};</script>
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body id="body">
+        
+            <div id="loading-box" onclick="preloader.endLoading();" class style="zoom: 1;">
+    <div class="loading-bg">
+        <img class="loading-img nolazyload" alt="loading image"
+            src="/img/boge_A.webp">
+        </div>
+</div>
+<script>
+    const preloader = {
+        endLoading: () => {
+            document.getElementById('loading-box').classList.add("loaded")
+        },
+        initLoading: () => {
+            document.getElementById('loading-box').classList.remove("loaded")
+        },
+        removePaceDone: () => {
+            document.getElementById('body').classList = 'pace-done'
+        }
+    }
+    window.addEventListener('load',()=> { preloader.endLoading() })
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+</script>
+<style>
+    #loading-box {
+        -webkit-user-select: none;
+    }
+
+    #loading-box .loading-bg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: var(--heo-background);
+        z-index: 1999;
+        opacity: 1;
+        transition: 0.2s;
+        pointer-events: all;
+        animation: showLoading 0.3s 0s backwards;
+    }
+
+    #loading-box.loaded .loading-bg {
+        pointer-events: none;
+        transition: 0.2s;
+        animation: hideLoading 0.3s 0s forwards;
+    }
+
+    #loading-box .loading-img {
+        width: 100px;
+        margin: auto;
+        animation-duration: 0.2s;
+        animation-name: loadingAction;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes loadingAction {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes hideLoading {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes showLoading {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+        
+        <div id="console" style="zoom: 1;" class="">
+    <div class="close-btn" onclick="acrylic.hideConsole()" href="javascript:void(0);">
+        <i class="fas fa-circle-xmark"></i>
+    </div>
+    <div class="button-group">
+        <div class="console-btn-item"> <a class="darkmode_switchbutton" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow" data-pjax-state=""><i class="fas fa-moon"
+                    style="font-size: 1rem;"></i></a></div>
+        
+        <div class="console-btn-item" id="consoleFPS" onclick="acrylic.FPSToggle()" title="帧率显示开关"><a class="FPS-switch"
+                data-pjax-state=""><i class="fas fa-gauge"></i></a></div>
+    </div>
+    <div class="console-mask" onclick="acrylic.hideConsole()" href="javascript:void(0);" rel="external nofollow"></div>
+</div>
+        <div id="sidebar" style="zoom: 1;">
+    <div id="menu-mask" style="display: none;"></div>
+    <div id="sidebar-menus" class>
+        <span class="sidebar-menu-item-title">功能</span>
+        <div class="sidebar-menu-item">
+            <a class="darkmode_switchbutton menu-child" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow">
+                <i class="fas fa-moon" style="font-size: 1rem;"></i>
+                <span>显示模式</span>
+            </a>
+        </div>
+        
+        <div class="menus_items">
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 文库</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/archives/">
+                                <i class="fas fa-box-archive"></i>
+                                <span> 文章列表</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/categories/">
+                                <i class="fas fa-cube"></i>
+                                <span> 全部分类</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/tags/">
+                                <i class="fas fa-tags"></i>
+                                <span> 全部标签</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" href="/says" rel="external nofollow">
+                    <span> 即刻</span>
+                </a>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" target="_blank" href="https://github.com/frspble" rel="external nofollow noopener">
+                    <span> 仓库</span>
+                </a>
+             
+        </div>
+    
+</div>
+        <span class="sidebar-menu-item-title">标签</span>
+        <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
+            <div class="item-headline">
+                <i class="fas fa-tags"></i>
+                <span>标签</span>
+            </div>
+            <div class="card-tag-cloud">
+                
+            </div>
+        </div>
+    </div>
+</div>    
+        
+            <div class="page" id="body-wrap">
+                <header class="not-top-img" id="page-header">
+    <nav id="nav" class="show">
+    <div id="nav-group">
+        <div id="blog_name">
+            
+            <a id="site-name" href="/" title="返回博客主页">
+                    
+                        <span class="heoicon">博鸽</span>
+                    
+            </a>
+        </div>
+        <div id="page-name-mask">
+            <div id="page-name">
+                <a id="page-name-text" onclick="acrylic.toTop()">关于</a>
+            </div>
+        </div>
+        <div id="menus">
+            <div class="menus_items">
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 文库</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/archives/">
+                                <i class="fas fa-box-archive"></i>
+                                <span> 文章列表</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/categories/">
+                                <i class="fas fa-cube"></i>
+                                <span> 全部分类</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/tags/">
+                                <i class="fas fa-tags"></i>
+                                <span> 全部标签</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" href="/says" rel="external nofollow">
+                    <span> 即刻</span>
+                </a>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" target="_blank" href="https://github.com/frspble" rel="external nofollow noopener">
+                    <span> 仓库</span>
+                </a>
+             
+        </div>
+    
+</div>
+        </div>
+        <!-- <div id="nav-left">
+            <div id="fps-group">
+                <div id="fps">145</div><span class="fpsText">FPS</span>
+            </div>
+        </div> -->
+        <div id="nav-right">
+            
+
+    <div class="nav-button" id="randomPost_button">
+        <a class="site-page" onclick="toRandomPost()"
+            title="随机前往一个文章">
+            <i class="fas fa-shuffle" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+
+    <div class="nav-button" id="search-button">
+        <a class="site-page social-icon search" title="站内搜索"
+            href="javascript:void(0);" rel="external nofollow">
+            <i class="fas fa-magnifying-glass" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+
+    <div class="nav-button" id="nav-console">
+        <a class="console_switchbutton" onclick="acrylic.showConsole()"
+        title="显示中控台" href="javascript:void(0);" rel="external nofollow">
+        <i class="fas fa-bars-progress" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+<div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
+    <a class="totopbtn">
+        <i class="fas fa-arrow-up"></i>
+        <span id="percent">0</span>
+    </a>
+</div>
+<div id="toggle-menu">
+    <a class="site-page">
+        <i class="fas fa-bars fa-fw" style="font-size: 1rem;"></i>
+    </a>
+</div>
+        </div>
+    </div>
+</nav>
+        
+</header>
+                <main class="layout hide-aside" id="content-inner">
+    <div id="page">
+        
+			    
+<div id="about-page">
+    
+
+<div class="author-info">
+  <div class="author-tag-left">
+    
+      <span class="author-tag">🤖️ 数码科技爱好者</span>
+    
+      <span class="author-tag">🔍 分享与热心帮助</span>
+    
+      <span class="author-tag">🏠 智能家居小能手</span>
+    
+      <span class="author-tag">🔨 设计开发一条龙</span>
+    
+  </div>
+  <div class="author-img">
+    <img src="/img/boge_A.webp" >
+  </div>
+  <div class="author-tag-right">
+    
+      <span class="author-tag">专修交互与设计 🤝</span>
+    
+      <span class="author-tag">脚踏实地行动派 🏃</span>
+    
+      <span class="author-tag">团队小组发动机 🧱</span>
+    
+      <span class="author-tag">壮汉人狠话不多 💢</span>
+    
+  </div>
+</div>
+<div class="author-title">关于本站</div>
+
+    
+<div class="author-content">
+	<div class="author-content-item myInfoAndSayHello">
+		<div class="title1">你好，很高兴认识你👋</div>
+		<div class="title2">我叫 <span class="inline-word">博鸽</span></div>
+		<div class="title1">是一名 学生，还在不断学习和进步</div>
+	</div>
+	<div class="aboutsiteTips author-content-item">
+		<div class="author-content-item-tips">追求</div>
+		<h2>源于<br> 热爱而去<span class="inline-word">创造</span>
+			<div class="mask"><span class="first-tips" data-show="">优秀的产品</span><span>出色的设计</span><span>高效的编程</span><span
+					data-up="">人性化的用户体验</span></div>
+		</h2>
+	</div>
+</div>
+<script>
+	var pursuitInterval = null;
+	pursuitInterval = setInterval(function () {
+	  const show = document.querySelector('span[data-show]')
+	  const next = show.nextElementSibling || document.querySelector('.first-tips')
+	  const up = document.querySelector('span[data-up]')
+	  if (up) {
+		up.removeAttribute('data-up')
+	  }
+	  show.removeAttribute('data-show')
+	  show.setAttribute('data-up', '')
+	  next.setAttribute('data-show', '')
+	}, 2000)
+
+	document.addEventListener('pjax:send', function(){
+	  clearInterval(pursuitInterval);
+	});
+  </script>
+
+    <div class="author-content">
+ 
+    <div class="author-content-item skills">
+        <div class="card-content">
+        <div class="author-content-item-tips">技能</div>
+        <span class="author-content-item-title">开启创造力</span>
+        <div class="skills-style-group">
+            <div class="tags-group-all">
+            <div class="tags-group-wrapper">
+                <div class="tags-group-all">
+                    <div class="tags-group-wrapper" >
+                        
+                            
+                                
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#4082c3">
+                                    <img src="/img/icon/ps.png" title="Photoshop">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#f29e39">
+                                    <img src="/img/icon/illustrator.png" title="Illustrator">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#989bf8">
+                                    <img src="/img/icon/ae.png" title="After Effects">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#989bf8">
+                                    <img src="/img/icon/pr.png" title="Premiere Pro">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/DaVinci.png" title="DaVinci Resolve">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#57b6e6">
+                                    <img src="/img/icon/docker.png" title="Docker">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/Python.png" title="Python">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/Java.png" title="Java">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#2c51db">
+                                    <img src="/img/icon/CSS3.png" title="CSS3">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#f7cb4f">
+                                    <img src="/img/icon/JS.png" title="JS">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#e9572b">
+                                    <img src="/img/icon/HTML.png" title="HTML">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#df5b40">
+                                    <img src="/img/icon/git.png" title="Git">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/Fusion360.png" title="Fusion 360">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/CAD.png" title="Auto CAD">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/arduino.png" title="Arduino">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#4285f4">
+                                    <img src="/img/icon/AndroidStudio.png" title="Android Studio">
+                                </div>
+                                
+                                    </div>
+                                
+                            
+                        
+                            
+                                
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#4082c3">
+                                    <img src="/img/icon/ps.png" title="Photoshop">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#f29e39">
+                                    <img src="/img/icon/illustrator.png" title="Illustrator">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#989bf8">
+                                    <img src="/img/icon/ae.png" title="After Effects">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#989bf8">
+                                    <img src="/img/icon/pr.png" title="Premiere Pro">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/DaVinci.png" title="DaVinci Resolve">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#57b6e6">
+                                    <img src="/img/icon/docker.png" title="Docker">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/Python.png" title="Python">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/Java.png" title="Java">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#2c51db">
+                                    <img src="/img/icon/CSS3.png" title="CSS3">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#f7cb4f">
+                                    <img src="/img/icon/JS.png" title="JS">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#e9572b">
+                                    <img src="/img/icon/HTML.png" title="HTML">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#df5b40">
+                                    <img src="/img/icon/git.png" title="Git">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/Fusion360.png" title="Fusion 360">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/CAD.png" title="Auto CAD">
+                                </div>
+                                
+                            
+                                
+                                    
+                                    </div>
+                                    
+                                    <div class="tags-group-icon-pair">
+                                
+                                <div class="tags-group-icon" style="background:#ffffff">
+                                    <img src="/img/icon/arduino.png" title="Arduino">
+                                </div>
+                                
+                            
+                                
+                                <div class="tags-group-icon" style="background:#4285f4">
+                                    <img src="/img/icon/AndroidStudio.png" title="Android Studio">
+                                </div>
+                                
+                                    </div>
+                                
+                            
+                        
+                    </div>      
+                </div>
+            </div>
+            </div>
+            <div class="skills-list">
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#4082c3">
+                <img src="/img/icon/ps.png" title="Photoshop">
+                </div>
+                <div class="skill-name"> <span>Photoshop</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#f29e39">
+                <img src="/img/icon/illustrator.png" title="Illustrator">
+                </div>
+                <div class="skill-name"> <span>Illustrator</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#989bf8">
+                <img src="/img/icon/ae.png" title="After Effects">
+                </div>
+                <div class="skill-name"> <span>After Effects</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#989bf8">
+                <img src="/img/icon/pr.png" title="Premiere Pro">
+                </div>
+                <div class="skill-name"> <span>Premiere Pro</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#ffffff">
+                <img src="/img/icon/DaVinci.png" title="DaVinci Resolve">
+                </div>
+                <div class="skill-name"> <span>DaVinci Resolve</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#57b6e6">
+                <img src="/img/icon/docker.png" title="Docker">
+                </div>
+                <div class="skill-name"> <span>Docker</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#ffffff">
+                <img src="/img/icon/Python.png" title="Python">
+                </div>
+                <div class="skill-name"> <span>Python</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#ffffff">
+                <img src="/img/icon/Java.png" title="Java">
+                </div>
+                <div class="skill-name"> <span>Java</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#2c51db">
+                <img src="/img/icon/CSS3.png" title="CSS3">
+                </div>
+                <div class="skill-name"> <span>CSS3</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#f7cb4f">
+                <img src="/img/icon/JS.png" title="JS">
+                </div>
+                <div class="skill-name"> <span>JS</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#e9572b">
+                <img src="/img/icon/HTML.png" title="HTML">
+                </div>
+                <div class="skill-name"> <span>HTML</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#df5b40">
+                <img src="/img/icon/git.png" title="Git">
+                </div>
+                <div class="skill-name"> <span>Git</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#ffffff">
+                <img src="/img/icon/Fusion360.png" title="Fusion 360">
+                </div>
+                <div class="skill-name"> <span>Fusion 360</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#ffffff">
+                <img src="/img/icon/CAD.png" title="Auto CAD">
+                </div>
+                <div class="skill-name"> <span>Auto CAD</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#ffffff">
+                <img src="/img/icon/arduino.png" title="Arduino">
+                </div>
+                <div class="skill-name"> <span>Arduino</span></div>
+            </div>
+            
+            <div class="skill-info">
+                <div class="skill-icon" style="background:#4285f4">
+                <img src="/img/icon/AndroidStudio.png" title="Android Studio">
+                </div>
+                <div class="skill-name"> <span>Android Studio</span></div>
+            </div>
+            
+            <div class="etc">...</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="author-content-item careers">
+        <div class="card-content">
+        <div class="author-content-item-tips">生涯</div>
+        <span class="author-content-item-title">无限进步</span>
+        <div class="careers-group">
+            
+            <div class="careers-item">
+                <div class="circle" style="background: #357ef5"></div>
+                <div class="name">某211大学, 大学生</div>
+            </div>
+            
+        </div>
+        <img class="author-content-img" src="/img/wxjb.png" alt="生涯">
+        </div>
+    </div>
+</div> 
+    
+<div class="author-content">
+    <div class="author-content-item personalities">
+      <div class="author-content-item-tips">性格</div>
+      <span class="author-content-item-title">提倡者</span>
+      <div class="title2" style="color: #56a178;">INFJ-A</div>
+      <div class="image"><img src="/img/INFJ.png"></div>
+      <div class="post-tips">在 <a href="https://www.16personalities.com/" target="_blank" rel="noopener nofollow">16personalities</a> 了解更多关于 <a target="_blank" rel="noopener external nofollow" href="https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC">提倡者</a></div>
+    </div>
+    <div class="author-content-item myphoto"><img class="author-content-img" src="" alt="自拍"></div>
+  </div>
+
+    <div class="author-content">
+  
+  <div class="author-content-item maxim">
+    <div class="author-content-item-tips">座右铭</div>
+    <span class="maxim-title"><span style="opacity: 0.6;margin-bottom:8px;">仰望星空，</span><span>脚踏实地。</span></span>
+  </div>
+  <div class="author-content-item buff">
+    
+    <div class="card-content">
+      <div class="author-content-item-tips">特长</div>
+      <span class="buff-title"><span style="opacity: 0.6;margin-bottom:8px;">玄学流电脑疑难问题解决<span class="inline-word">专家</span></span><span>软件学习能力<span class="inline-word">MAX</span></span></span>
+    </div>
+  </div>
+</div>
+    <div class="author-content">
+  <div class="author-content-item left-side" >
+    <img src="https://p.zhheo.com/2023788ba3b8739936f844e64f483faacaf1085602.png!cover" alt="">
+    <div class="card-content">
+      <div class="author-content-item-tips">一些爱好</div>
+      <span class="author-content-item-title"></span>
+      <div class="content-bottom">
+        <div class="tips"></div>
+        <div class="tips"></div>
+      </div>
+    </div>
+  </div>
+  <div class="author-content-item right-side">
+    <img src="https://p.zhheo.com/2023ff56a55649cf81989b9e1f4efc836907085102.png!cover" alt="">
+    <div class="card-content">
+      <div class="author-content-item-tips">一些爱好</div>
+      <span class="author-content-item-title"></span>
+      <div class="content-bottom">
+        <div class="tips"></div>
+        <div class="tips"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="author-content">
+  
+    <div class="author-content-item like-technology" style= "background: url(https://p.zhheo.com/2023e6940f5f56f0004af2705c3586d1fdf5190802.png!cover)";>
+      <div class="card-content">
+        <div class="author-content-item-tips">关注偏好</div>
+        <span class="author-content-item-title">数码科技</span>
+        <div class="content-bottom">
+            <div class="tips">手机、电脑软硬件</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="author-content-item like-music" style= "background: url(https://bu.dusays.com/2023/03/12/640dc6bed6d2d.jpg)";>
+      <div class="card-content">
+        <div class="author-content-item-tips">音乐偏好</div>
+        <span class="author-content-item-title">Hiphop、电子音乐、华语流行</span>
+        <div class="content-bottom">
+            <div class="tips"></div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+    <div class="author-content">
+<div class="about-statistic author-content-item" style="background: url(/img/640dc8c72f623.webp);">
+  <div class="card-content">
+    <div class="author-content-item-tips">数据</div>
+    <span class="author-content-item-title">访问统计</span>
+    <div id="statistic"></div>
+    <div class="post-tips">统计信息来自 <a href="https://invite.51.la/1NzKqTeb?target=V6" target="_blank" rel="noopener nofollow">51la网站统计</a></div>
+  </div>
+</div>
+  <script>
+    fetch("https://v6-widget.51.la/v6/K2JuUODZ2wlZtOl3/quote.js")
+      .then(res => res.text())
+      .then(data => {
+        let title = ["最近活跃", "今日人数", "今日访问", "昨日人数", "昨日访问", "本月访问", "总访问量"];
+        let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g);
+        num = num.map(el => {
+          let val = el.replace(/(<\/span><span>)/g, "");
+          let str = val.replace(/(<\/span><\/p>)/g, "");
+          return str;
+        });
+        let s = document.getElementById("statistic");
+        let statistic = [];
+        for (let i = 0; i < num.length; i++) {
+          if (i == 0 || i == num.length - 1) continue;
+          s.innerHTML += "<div><span>" + title[i] + "</span><span id=" + title[i] + ">" + num[i] + "</span></div>";
+        }
+      });
+    </script>
+
+
+<div class="author-content-item-group column mapAndInfo">
+    <div class="author-content-item map single" style="background: url( )">
+      <span class="map-title">我现在住在 <b>中国，内蒙古</b></span></div>
+    <div class="author-content-item selfInfo single">
+      <div><span class="selfInfo-title">生于</span><span class="selfInfo-content" style="color: #43a6c6;">2003</span></div>
+      <div><span class="selfInfo-title">某211大学</span><span class="selfInfo-content" style="color: #c69043;">计算机科学</span></div>
+      <div><span class="selfInfo-title">现在职业</span><span class="selfInfo-content" style="color: #b04fe6;">大学生</span></div>
+    </div>
+  </div>
+</div>
+<div class="author-content">
+    <div class="create-site-post author-content-item single">
+      <div class="author-content-item-tips">心路历程</div><span class="author-content-item-title">为什么建站？</span>
+      <br>创建这个站的时候，想要就是能够有一个自己能够<b>积累知识、积累兴趣</b>的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。 <br> 分享这件事我从很早就开始了，起初做的微信公众号，现在做的网站。因为我比较喜欢研究数码和软件，想要探究在互联网上的事物是如何被创造和发展。网络给我带来了非常多的知识和眼界，我也想力所能及的分享一些我生活的琐碎知识。 <br> 与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，有<b>技能的教程干货</b>、有<b>生活上的吐槽和妙招</b>、有<b>话题上的思考和想法</b>。一般我研究什么、发现了什么都会分享在这里。 <br> 这些就是创造这个小站的本意，<b>也是我分享生活的方式</b>。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。</p>
+    </div>
+</div>
+    <div class="author-content">
+  <div class="author-content-item single reward">
+    <div class="author-content-item-tips">致谢</div>
+    <span class="author-content-item-title">赞赏名单</span>
+    <div class="author-content-item-description">感谢赞赏的人，因为你们，让我感受到写博客这件事情能够给你们创造了价值。这会让我在这条路上走得更远。</div>
+    <div class="reward-list-all">
+      
+        <div class="reward-list-item">
+          <div class="reward-list-item-name">神神叨叨的阿茄</div>
+          <div class="reward-list-bottom-group">
+            <div class="reward-list-item-money" style="background: var(--heo-vip);"  >¥ 40.01</div>
+            <time class="datatime reward-list-item-time" datetime="2023-04-05T08:00:00+08:00"></time>
+          </div>
+        </div>
+      
+        <div class="reward-list-item">
+          <div class="reward-list-item-name">王旭</div>
+          <div class="reward-list-bottom-group">
+            <div class="reward-list-item-money" style="background: var(--heo-vip);"  >¥ 25</div>
+            <time class="datatime reward-list-item-time" datetime="2022-08-17T08:00:00+08:00"></time>
+          </div>
+        </div>
+      
+        <div class="reward-list-item">
+          <div class="reward-list-item-name">景川</div>
+          <div class="reward-list-bottom-group">
+            <div class="reward-list-item-money" style="background: var(--heo-vip);"  >¥ 20</div>
+            <time class="datatime reward-list-item-time" datetime="2022-10-01T08:00:00+08:00"></time>
+          </div>
+        </div>
+      
+        <div class="reward-list-item">
+          <div class="reward-list-item-name">Cx330</div>
+          <div class="reward-list-bottom-group">
+            <div class="reward-list-item-money" style="background: var(--heo-vip);"  >¥ 5</div>
+            <time class="datatime reward-list-item-time" datetime="2023-03-23T08:00:00+08:00"></time>
+          </div>
+        </div>
+      
+        <div class="reward-list-item">
+          <div class="reward-list-item-name">西北阳光</div>
+          <div class="reward-list-bottom-group">
+            <div class="reward-list-item-money" style="background: var(--heo-vip);"  >¥ 5</div>
+            <time class="datatime reward-list-item-time" datetime="2022-10-01T08:00:00+08:00"></time>
+          </div>
+        </div>
+      
+        <div class="reward-list-item">
+          <div class="reward-list-item-name">R.Z.Y.</div>
+          <div class="reward-list-bottom-group">
+            <div class="reward-list-item-money" style="background: var(--heo-vip);"  >¥ 5</div>
+            <time class="datatime reward-list-item-time" datetime="2022-06-12T08:00:00+08:00"></time>
+          </div>
+        </div>
+      
+      <div class="post-reward">
+        <div class="post-reward" onclick="AddRewardMask()"></div>
+        <div class="reward-button" title="赞赏作者"><i class="heofont icon-hand-heart-fill"></i> 打赏作者</div>
+        <div class="reward-main">
+          <ul class="reward-all">
+            <span class="reward-title">感谢你赐予我前进的力量</span>
+            <ul class="reward-group">
+              
+              
+                <li class="reward-item">
+                  <a href="/img/QR_WeChat.png" target="_blank" >
+                    <img class="post-qr-code-img" alt="微信" src="/img/QR_WeChat.png">
+                  </a>
+                  <div class="post-qr-code-desc">
+                    微信
+                  </div>
+                </li>
+              
+                <li class="reward-item">
+                  <a href="/img/QR_AliPay.png" target="_blank" >
+                    <img class="post-qr-code-img" alt="支付宝" src="/img/QR_AliPay.png">
+                  </a>
+                  <div class="post-qr-code-desc">
+                    支付宝
+                  </div>
+                </li>
+              
+            </ul>                                
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+             
+            
+    </div>
+       
+</main>     
+
+                <footer id="footer">
+                    <div id="footer_deal">
+    
+        <a class="deal_link" target="_blank" href="https://github.com/frspble" rel="external nofollow noopener" title="Github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    
+        <a class="deal_link" href="mailto:frspble@foxmail.com" rel="external nofollow" title="Mail">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    
+    <img class="footer_mini_logo" src="/img/boge_A.webp"
+        title="返回顶部" onclick="acrylic.toTop()">
+    
+        <a class="deal_link" target="_blank" href="https://www.youtube.com/@frspbles8618/" rel="external nofollow noopener" title="Youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    
+        <a class="deal_link" target="_blank" href="https://space.bilibili.com/102381065" rel="external nofollow noopener" title="BiliBili">
+            <i class="fa-brands fa-bilibili"></i>
+        </a>
+    
+</div>    
+<div id="heo-footer">
+    
+        <div class="footer-group">
+            <h3 class="footer-title">导航</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" href="/archives/" title="文章归档" rel="noopener external nofollow noreferrer">文章归档</a>
+                
+                    <a class="footer-item" href="/categories/" title="文章分类" rel="noopener external nofollow noreferrer">文章分类</a>
+                
+                    <a class="footer-item" href="/tags/" title="文章标签" rel="noopener external nofollow noreferrer">文章标签</a>
+                
+                    <a class="footer-item" href="/link/" title="友链" rel="noopener external nofollow noreferrer">友链</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">服务</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://51.la/" title="51la统计" rel="noopener external nofollow noreferrer noopener">51la统计</a>
+                
+                    <a class="footer-item" target="_blank" href="https://tongji.baidu.com/" title="百度统计" rel="noopener external nofollow noreferrer noopener">百度统计</a>
+                
+                    <a class="footer-item" target="_blank" href="https://ql.tianli0.top/" title="TianliCDN" rel="noopener external nofollow noreferrer noopener">TianliCDN</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">Acrylic</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://acrylic.zhheo.com/" title="主题官网" rel="noopener external nofollow noreferrer noopener">主题官网</a>
+                
+                    <a class="footer-item" target="_blank" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" title="Github" rel="noopener external nofollow noreferrer noopener">Github</a>
+                
+                    <a class="footer-item" target="_blank" href="https://blog.zhheo.com/" title="Heo" rel="noopener external nofollow noreferrer noopener">Heo</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">推荐友链</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://blog.zhheo.com/" title="Heo" rel="noopener external nofollow noreferrer noopener">Heo</a>
+                
+                    <a class="footer-item" target="_blank" href="https://akilar.top" title="Akilar" rel="noopener external nofollow noreferrer noopener">Akilar</a>
+                    
+            </div>
+        </div>
+    
+    
+</div>
+<div id="footer-banner">
+    <div class="footer-banner-links">
+        <div class="footer-banner-left">
+            <div id="footer-banner-tips">
+                <div class="copyright">©2021 - 2023 By 
+                    <a class="footer-banner-link" href="/" rel="external nofollow">BoGe</a>
+                    <a class="footer-banner-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" rel="external nofollow" target="_blank"> Theme By Acrylic-Next</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-banner-right">
+            <a class="footer-banner-link" href="/rss/">订阅</a>
+            
+            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by/4.0/" title="cc协议">
+                <i class="fa-solid fa-closed-captioning"></i>
+            </a>
+        </div>
+    </div>
+</div>
+                </footer>
+            </div>
+         
+        <div>
+    <script type="text/javascript" src="/js/utils.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+<script src="/lib/pjax.min.js"></script>
+
+
+
+<script src="/lib/snackbar.min.js"></script>
+
+
+    
+<script src="/lib/view-image.min.js"></script>
+
+
+
+<div id="js-pjax">
+    
+     
+</div>
+
+
+    
+<script src="/js/extend/covercolor/web.js"></script>
+
+        
+
+    <script>
+  let pjaxSelectors = [
+    'title',
+    '#body-wrap',
+    '#site-config',
+    'meta[name="description"]',
+    '#js-pjax'
+  ]
+  
+  const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+  })
+
+  document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+</script>
+    
+</div>
+        
+    <div id="local-search">
+    <div class="search-dialog">
+        <nav class="search-nav">
+            <span class="search-dialog-title">搜索</span>
+            <button class="search-close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </nav>
+        <div id="loading-database">
+            <i class="fas fa-spinner fa-pulse"></i>
+            <span>加载中</span>
+        </div>
+        <div class="search-wrap">
+            <div class="search-box">
+                <input class="search-box-input" placeholder="输入关键词快速查找" type="text" id="search-input" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off">
+            </div>
+            <div id="loading-status"></div>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <div id="search-mask"></div>
+</div>
+    
+<link rel="stylesheet" href="/css/search/local-search.css">
+
+    
+<script src="/js/extend/search/local-search.js"></script>
+
+
+     
+        <div class="needEndHide" id="nav-music" onclick="acrylic.musicToggle()">
+    <div id="nav-music-hoverTips">音乐已暂停</div>
+    <meting-js id="1708664797" server="tencent" type="playlist" mutex="true"
+        preload="none" data-lrctype="0" order="random" theme="var(--heo-main)"></meting-js>
+</div>
+    
+    </body>
+</html>
+<script>const posts=["2023/04/04/hello-world/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
