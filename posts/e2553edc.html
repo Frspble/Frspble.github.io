@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>手把手教你搭建开发环境之 C/C++ | BoGe&#39;s Blog</title>
+<title>使用 Python 计算n阶行列式的多种方法 | BoGe&#39;s Blog</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="/img/boge_A.webp">
 <link rel="apple-touch-icon" href="/img/boge_A.webp">
 <meta name="apple-mobile-web-app-title" content="BoGe&#39;s Blog">
 <link rel="bookmark" href="/img/boge_A.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/boge_A.webp">
-<meta name="description" content="手把手教你搭建开发环境之 C&amp;#x2F;C++各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C">
+<meta name="description" content="探讨使用 Python 实现计算 n 阶行列式的多种方法前些日子刚学线性代数，被手算高阶行列式折磨（主要因为当时才只学了定义），于是想用Python来做验算。自然也就想到了Python强大的第三方科学">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -220,39 +220,19 @@
                         <sup>2</sup>
                     </a>
                 
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1em; color: #d3d3d3">笔记
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/Markdown/" style="font-size: 1em; color: #d3d3d3">Markdown
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/C/" style="font-size: 1em; color: #d3d3d3">C++
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 1em; color: #d3d3d3">C语言
-                        <sup>1</sup>
+                    <a href="/tags/Python/" style="font-size: 1em; color: #d3d3d3">Python
+                        <sup>2</sup>
                     </a>
                 
                     <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 1em; color: #d3d3d3">环境搭建
                         <sup>2</sup>
                     </a>
                 
-                    <a href="/tags/Python/" style="font-size: 1em; color: #d3d3d3">Python
-                        <sup>2</sup>
-                    </a>
-                
-                    <a href="/tags/%E5%A4%A7%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">大学
-                        <sup>3</sup>
-                    </a>
-                
-                    <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">数学
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1em; color: #d3d3d3">笔记
                         <sup>1</sup>
                     </a>
                 
-                    <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 1em; color: #d3d3d3">线性代数
+                    <a href="/tags/Markdown/" style="font-size: 1em; color: #d3d3d3">Markdown
                         <sup>1</sup>
                     </a>
                 
@@ -265,6 +245,26 @@
                     </a>
                 
                     <a href="/tags/WSA/" style="font-size: 1em; color: #d3d3d3">WSA
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/C/" style="font-size: 1em; color: #d3d3d3">C++
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 1em; color: #d3d3d3">C语言
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E5%A4%A7%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">大学
+                        <sup>3</sup>
+                    </a>
+                
+                    <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">数学
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 1em; color: #d3d3d3">线性代数
                         <sup>1</sup>
                     </a>
                 
@@ -295,7 +295,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">手把手教你搭建开发环境之 C/C++</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">使用 Python 计算n阶行列式的多种方法</a>
             </div>
         </div>
         <div id="menus">
@@ -398,7 +398,7 @@
 </nav>
     
         <div class="coverdiv" id="coverdiv">
-    <img id="post-cover" class="nolazyload" src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202206444.png" alt="cover">
+    <img id="post-cover" class="nolazyload" src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202206430.png" alt="cover">
 </div>
 <div id="post-info">
     <div id="post-firstinfo">
@@ -408,42 +408,47 @@
             </a>
             <span class="post-meta-categories">
                 
-                    <a class="post-meta-categories" href="/categories/%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">基础教程</a>
+                    <a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/">技术探讨</a>
                 
             </span>
             <div class="tag_share">
                 <div class="post-meta__tag-list">
                     
-                        <a class="post-meta__tags" href="/tags/C/">
+                        <a class="post-meta__tags" href="/tags/Python/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">C++</span>
+                            <span class="tags-name">Python</span>
                         </a>
                     
-                        <a class="post-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80/">
+                        <a class="post-meta__tags" href="/tags/%E5%A4%A7%E5%AD%A6/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">C语言</span>
+                            <span class="tags-name">大学</span>
                         </a>
                     
-                        <a class="post-meta__tags" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <a class="post-meta__tags" href="/tags/%E6%95%B0%E5%AD%A6/">
                             <span class="tags-punctuation">#</span>
-                            <span class="tags-name">环境搭建</span>
+                            <span class="tags-name">数学</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">线性代数</span>
                         </a>
                     
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="post-title">手把手教你搭建开发环境之 C/C++</h1>
+    <h1 class="post-title">使用 Python 计算n阶行列式的多种方法</h1>
     <div id="post-meta">
         <div class="meta-secondline">
             <span class="post-meta-date" title="发布于">
                 <i class="post-meta-icon fa-fw fas fa-calendar"></i>
-                <time datetime="2022-10-01T00:00:00+08:00"></time>
+                <time datetime="2022-11-12T00:00:00+08:00"></time>
             </span>
             
                 <span class="post-meta-date" title="更新于">
                     <i class="post-meta-icon fa-solid fa-clock-rotate-left"></i>
-                    <time datetime="2023-04-20T22:08:50+08:00"></time>
+                    <time datetime="2023-04-20T23:42:45+08:00"></time>
                 </span>
             
             
@@ -453,6 +458,11 @@
                 </span>
             
             
+                
+                    <span class="post-meta-wordcount">
+                        <i class="fas fa-file-word fa-fw post-meta-icon" title="文章字数"></i>
+                        <span class="word-count">1k</span>
+                    </span>
                 
                 
             
@@ -487,58 +497,46 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
-<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
-<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
-<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
-<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
-<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
-<p>下面是详细的安装步骤：</p>
-<p>首先打开 Visual Studio 的官网：<a target="_blank" rel="noopener" href="https://visualstudio.com/">https://visualstudio.com</a></p>
-<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
-<p>下载完成后点击“打开文件”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
-<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
-<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
-<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
-<p>下面是配置步骤：</p>
-<p>首先下载 MinGW，打开链接：<a target="_blank" rel="noopener" href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
-<p>点击下图中的链接下载，等待下载完成后运行。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
-<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
-<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
-<p>当然也可自行修改，需要保证路径中只包含英文。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
-<p>修改路径后点击 “Extract”，等待解压完成。</p>
-<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
-<p>回到桌面，右键“此电脑”，点击属性</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
-<p>然后点击 “高级系统设置”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
-<p>选择 “环境变量”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
-<p>双击 “Path”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
-<p>点击 “新建”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
-<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
-<p>确认无误后连续点击三个“确定”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
-<p>至此，你已经完成了 MinGW 的配置。</p>
-<p><strong>接下来安装 VS code</strong></p>
-<p>使用浏览器打开 VS code 的官网：<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>点击 Download 按钮</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
-<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
-<p>由于安装过程较为简单，此处不再赘述。</p>
-<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
-<p>同样的方法搜索 “C”，安装C语言插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
-<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
+            <h1 id="探讨使用-Python-实现计算-n-阶行列式的多种方法"><a href="#探讨使用-Python-实现计算-n-阶行列式的多种方法" class="headerlink" title="探讨使用 Python 实现计算 n 阶行列式的多种方法"></a>探讨使用 Python 实现计算 n 阶行列式的多种方法</h1><p>前些日子刚学线性代数，被手算高阶行列式折磨（主要因为当时才只学了定义），于是想用Python来做验算。自然也就想到了Python强大的第三方科学计算库 —— Numpy。经过一通操作，便有了以下的动态：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202222120.jpeg" alt="图片"></p>
+<p>以下是输入和输出的结果：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">input:[[ 2  1  4  1],</span><br><span class="line">       [ 3 -1  2  1],</span><br><span class="line">       [ 1  2  3  2],</span><br><span class="line">       [ 5  0  6  2]]</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">output: 6.217248937900884e-15</span><br></pre></td></tr></table></figure>
+
+<p>但是这个行列式的结果应该是0才对啊！！！</p>
+<p>观察 Numpy 计算的结果，猜测可能是浮点数导致的误差。那既然现成的库不靠谱，就只能自己造轮子了。当时我用定义法写了一个简单的小程序。后来随着更深入的学习，我也了解到了更多的计算方法，也翻了一些参考资料，所以今天就来讨论一下计算行列式的多种方法。</p>
+<p>我简单总结了一下计算行列式的几种方法，具体如下：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202158888.png" alt="图片"></p>
+<p>按照以上总结的方法，下面就来一一实现。此处只讨论实现方式，不考虑时间复杂度和优化问题。</p>
+<h2 id="一、逆序数法"><a href="#一、逆序数法" class="headerlink" title="一、逆序数法"></a>一、逆序数法</h2><p>逆序数法总共分为三步：计算逆序数、计算全排列、通过定义计算结果。</p>
+<p>我们将这三步分为三个函数来一步步实现。</p>
+<p>首先是计算逆序数，最容易想到的就是这个算法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_t</span>(<span class="params">rank</span>):</span><br><span class="line">    t = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i1 <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(rank)):</span><br><span class="line">        <span class="keyword">for</span> i2 <span class="keyword">in</span> <span class="built_in">range</span>(i1 + <span class="number">1</span>, <span class="built_in">len</span>(rank)):</span><br><span class="line">            <span class="keyword">if</span> rank[i1] &gt; rank[i2]:</span><br><span class="line">                t += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> t</span><br></pre></td></tr></table></figure>
+
+<p>简单解释一下就是从一串数组中挨个遍历每一个数，然后查找该数前面大于该数的数量并且计数。</p>
+<p>第二个函数是获得 n 个数的全排列，可以使用递归的方法来解决：确定第1位，对n-1位进行全排列，确定第二位，对n-2位进行全排列……</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    length = <span class="built_in">len</span>(rank)</span><br><span class="line">    permutations = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_permute</span>(<span class="params">index=<span class="number">0</span></span>):</span><br><span class="line">        <span class="keyword">if</span> index == length:</span><br><span class="line">            permutations.append(rank[<span class="number">0</span>:length])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(index, length):</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">            _permute(index + <span class="number">1</span>)</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">    _permute()</span><br><span class="line">    <span class="keyword">return</span> permutations</span><br></pre></td></tr></table></figure>
+
+<p>后来发现还有更简单直接的方法：调用Python的内置库 itertools 来实现：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">list</span>(itertools.permutations(rank))</span><br></pre></td></tr></table></figure>
+
+<p>准备好以上两个函数后就可以根据定义进行计算了：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_1</span>(<span class="params">det</span>):</span><br><span class="line">    <span class="comment"># 行列式为0时直接返回0</span></span><br><span class="line">    <span class="keyword">if</span> det == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="comment"># 行列式为一阶时直接返回结果</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(det) == <span class="number">1</span>:    </span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    p = get_permutations(<span class="built_in">range</span>(<span class="number">1</span>, n + <span class="number">1</span>))</span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 遍历全排列</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> p:    </span><br><span class="line">        t = get_t(r)</span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        part = (-<span class="number">1</span>) ** t</span><br><span class="line">        <span class="comment"># 遍历排列中元素并计算结果</span></span><br><span class="line">        <span class="keyword">for</span> c <span class="keyword">in</span> r:   </span><br><span class="line">            part *= det[i][c - <span class="number">1</span>]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        result += part</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="二、等价转换法"><a href="#二、等价转换法" class="headerlink" title="二、等价转换法"></a>二、等价转换法</h2><p>该方法就是通过不断的变换将行列式转换为上三角形行列式，然后计算对角线的乘积。具体的实现方法如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_2</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="comment"># 遍历列</span></span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        row = col</span><br><span class="line">        result *= det[row][col]</span><br><span class="line">        <span class="comment"># 寻找不是0的行</span></span><br><span class="line">        <span class="keyword">while</span> det[row][col] == <span class="number">0</span> <span class="keyword">and</span> row &lt; n - <span class="number">1</span>:</span><br><span class="line">            row += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 化简行列式</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row + <span class="number">1</span>, n):</span><br><span class="line">            <span class="keyword">if</span> det[i][col] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                k = - det[i][col] / det[row][col]</span><br><span class="line">                <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(col, n):</span><br><span class="line">                    det[i][j] += det[row][j] * k</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="三、代数余子式法"><a href="#三、代数余子式法" class="headerlink" title="三、代数余子式法"></a>三、代数余子式法</h2><p>该方法就是将行列式不断降阶，直到变为容易计算的低阶行列式。</p>
+<p>该方法比较适合用递归来解决，实现代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_3</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    <span class="comment"># 处理基础情况</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]*det[<span class="number">1</span>][<span class="number">1</span>] - det[<span class="number">0</span>][<span class="number">1</span>]*det[<span class="number">1</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="comment"># 求代数余子式并计算结果</span></span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        C = []</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            C.append(det[j][<span class="number">1</span>:])</span><br><span class="line">        C.remove(C[i])</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">            result -= calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            result += calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+
+
+<p>以上就是个人对于使用 Python 计算行列式的三种常用方法的总结，个人能力有限，可能存在错误，欢迎各位指正。</p>
 
         </article>
         <div class="post-tools" id="post-tools">
@@ -603,18 +601,18 @@
         </div>
         <div class="share-main">
             <div class="share-main-all">
-                <div id="qrcode" title="https://frspble.github.io/2022/10/01/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20C&amp;C++/">
+                <div id="qrcode" title="https://frspble.github.io/posts/e2553edc.html">
                 </div>
                 <div class="reward-dec">使用手机访问这篇文章</div>
             </div>
         </div>
         <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "https://frspble.github.io/2022/10/01/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20C&amp;C++/");
+            new QRCode(document.getElementById("qrcode"), "https://frspble.github.io/posts/e2553edc.html");
         </script>
     </div>
 </div>
                 <div class="share-link weibo"><a class="share-button" target="_blank"
-    href="https://service.weibo.com/share/share.php?title=手把手教你搭建开发环境之 C/C++&amp;url=https://frspble.github.io/2022/10/01/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20C&amp;C++/&amp;pic=https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202206444.png"
+    href="https://service.weibo.com/share/share.php?title=使用 Python 计算n阶行列式的多种方法&amp;url=https://frspble.github.io/posts/e2553edc.html&amp;pic=https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202206430.png"
     title="分享到微博" rel="noopener external nofollow noreferrer noopener">
     <i class="fab fa-weibo" style="font-size:22px"></i>
 </a>
@@ -629,22 +627,28 @@
                 <div class="tag_share">
                     <div class="post-meta__tag-list">
                         
-                            <a href="/tags/C/" class="post-meta__tags">
+                            <a href="/tags/Python/" class="post-meta__tags">
                                 <span class="tags-punctuation">#</span>
-                                C++
-                                <span class="tagsPageCount">1</span>
-                            </a>
-                        
-                            <a href="/tags/C%E8%AF%AD%E8%A8%80/" class="post-meta__tags">
-                                <span class="tags-punctuation">#</span>
-                                C语言
-                                <span class="tagsPageCount">1</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="post-meta__tags">
-                                <span class="tags-punctuation">#</span>
-                                环境搭建
+                                Python
                                 <span class="tagsPageCount">2</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%A4%A7%E5%AD%A6/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                大学
+                                <span class="tagsPageCount">3</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%95%B0%E5%AD%A6/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                数学
+                                <span class="tagsPageCount">1</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                线性代数
+                                <span class="tagsPageCount">1</span>
                             </a>
                         
                     </div>
@@ -655,12 +659,12 @@
     <div class="post-copyright__author">
         <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
         <a class="post-copyright-title" href="#">
-            <span>手把手教你搭建开发环境之 C/C++</span>
+            <span>使用 Python 计算n阶行列式的多种方法</span>
         </a>
     </div>
     <div class="post-copyright__type">
         <span class="post-copyright-info" id="post-copyright-url">
-            <a href="/2022/10/01/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20C&amp;C++/">https://frspble.github.io/2022/10/01/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20C&amp;C++/</a>
+            <a href="/posts/e2553edc.html">https://frspble.github.io/posts/e2553edc.html</a>
         </span>
         <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
             <i class="fas fa-paste copy-btn"></i>
@@ -675,18 +679,18 @@
         <nav class="pagination-post" id="pagination">
     
         <div class="prev-post pull-left">
-            <a href="/2022/10/02/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20Python/">
+            <a href="/posts/824e06e6.html">
                 <div class="pagination-info">
                     <div class="label">上一篇</div>
-                    <div class="prev_info">手把手教你搭建开发环境之 Python</div>
+                    <div class="prev_info">语境法记单词资源分享</div>
                 </div>
             </a>
         </div>
         <div class="next-post pull-right">
-            <a href="/2022/06/10/Markdown%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/">
+            <a href="/posts/f99f16f6.html">
                 <div class="pagination-info">
                     <div class="label">下一篇</div>
-                    <div class="next_info">Markdown 快速入门</div>
+                    <div class="next_info">Windows subsystem for Android (WSA) 的配置方法</div>
                 </div>
             </a>
         </div>
@@ -778,7 +782,7 @@
         <span>文章目录</span>
     </div>
     <div class="toc-content" id="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B-C-x2F-C"><span class="toc-text">手把手教你搭建开发环境之 C&#x2F;C++</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Visual-Studio"><span class="toc-text">1.Visual Studio</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-MinGW-VS-code"><span class="toc-text">2.MinGW + VS code</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A2%E8%AE%A8%E4%BD%BF%E7%94%A8-Python-%E5%AE%9E%E7%8E%B0%E8%AE%A1%E7%AE%97-n-%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F%E7%9A%84%E5%A4%9A%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-text">探讨使用 Python 实现计算 n 阶行列式的多种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E9%80%86%E5%BA%8F%E6%95%B0%E6%B3%95"><span class="toc-text">一、逆序数法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E7%AD%89%E4%BB%B7%E8%BD%AC%E6%8D%A2%E6%B3%95"><span class="toc-text">二、等价转换法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%BB%A3%E6%95%B0%E4%BD%99%E5%AD%90%E5%BC%8F%E6%B3%95"><span class="toc-text">三、代数余子式法</span></a></li></ol></li></ol>
     </div>
 </div>
             
@@ -793,18 +797,18 @@
         
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2023/03/24/%E4%BD%BF%E7%94%A8ChatGPT%E8%BE%85%E5%8A%A9%E8%83%8C%E5%8D%95%E8%AF%8D/" title="使用 ChatGPT 辅助背单词">
+                <a class="thumbnail" href="/posts/e1e46786.html" title="使用 ChatGPT 辅助背单词">
                     <img
                         alt="使用 ChatGPT 辅助背单词"
                         src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202206404.png">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2023/03/24/%E4%BD%BF%E7%94%A8ChatGPT%E8%BE%85%E5%8A%A9%E8%83%8C%E5%8D%95%E8%AF%8D/">
+                        <a class="article-recent_post_categories" href="/posts/e1e46786.html">
                             技术探讨
                         </a>
                     
-                    <a class="title" href="/2023/03/24/%E4%BD%BF%E7%94%A8ChatGPT%E8%BE%85%E5%8A%A9%E8%83%8C%E5%8D%95%E8%AF%8D/" title="使用 ChatGPT 辅助背单词">
+                    <a class="title" href="/posts/e1e46786.html" title="使用 ChatGPT 辅助背单词">
                         使用 ChatGPT 辅助背单词
                     </a>
                 </div>
@@ -812,18 +816,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2023/03/22/%E8%AF%AD%E5%A2%83%E6%B3%95%E8%AE%B0%E5%8D%95%E8%AF%8D%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" title="语境法记单词资源分享">
+                <a class="thumbnail" href="/posts/824e06e6.html" title="语境法记单词资源分享">
                     <img
                         alt="语境法记单词资源分享"
                         src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202207812.png">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2023/03/22/%E8%AF%AD%E5%A2%83%E6%B3%95%E8%AE%B0%E5%8D%95%E8%AF%8D%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/">
+                        <a class="article-recent_post_categories" href="/posts/824e06e6.html">
                             资源分享
                         </a>
                     
-                    <a class="title" href="/2023/03/22/%E8%AF%AD%E5%A2%83%E6%B3%95%E8%AE%B0%E5%8D%95%E8%AF%8D%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" title="语境法记单词资源分享">
+                    <a class="title" href="/posts/824e06e6.html" title="语境法记单词资源分享">
                         语境法记单词资源分享
                     </a>
                 </div>
@@ -831,18 +835,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2022/11/12/%E4%BD%BF%E7%94%A8%20Python%20%E8%AE%A1%E7%AE%97%20n%20%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F/" title="使用 Python 计算n阶行列式的多种方法">
+                <a class="thumbnail" href="/posts/e2553edc.html" title="使用 Python 计算n阶行列式的多种方法">
                     <img
                         alt="使用 Python 计算n阶行列式的多种方法"
                         src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202206430.png">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2022/11/12/%E4%BD%BF%E7%94%A8%20Python%20%E8%AE%A1%E7%AE%97%20n%20%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F/">
+                        <a class="article-recent_post_categories" href="/posts/e2553edc.html">
                             技术探讨
                         </a>
                     
-                    <a class="title" href="/2022/11/12/%E4%BD%BF%E7%94%A8%20Python%20%E8%AE%A1%E7%AE%97%20n%20%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F/" title="使用 Python 计算n阶行列式的多种方法">
+                    <a class="title" href="/posts/e2553edc.html" title="使用 Python 计算n阶行列式的多种方法">
                         使用 Python 计算n阶行列式的多种方法
                     </a>
                 </div>
@@ -850,18 +854,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2022/11/05/WSA%20%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" title="Windows subsystem for Android (WSA) 的配置方法">
+                <a class="thumbnail" href="/posts/f99f16f6.html" title="Windows subsystem for Android (WSA) 的配置方法">
                     <img
                         alt="Windows subsystem for Android (WSA) 的配置方法"
                         src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202207021.png">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2022/11/05/WSA%20%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/">
+                        <a class="article-recent_post_categories" href="/posts/f99f16f6.html">
                             基础教程
                         </a>
                     
-                    <a class="title" href="/2022/11/05/WSA%20%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/" title="Windows subsystem for Android (WSA) 的配置方法">
+                    <a class="title" href="/posts/f99f16f6.html" title="Windows subsystem for Android (WSA) 的配置方法">
                         Windows subsystem for Android (WSA) 的配置方法
                     </a>
                 </div>
@@ -869,18 +873,18 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/2022/10/02/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20Python/" title="手把手教你搭建开发环境之 Python">
+                <a class="thumbnail" href="/posts/8176306d.html" title="手把手教你搭建开发环境之 Python">
                     <img
                         alt="手把手教你搭建开发环境之 Python"
                         src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202207140.png">
                 </a>
                 <div class="content">
                     
-                        <a class="article-recent_post_categories" href="/2022/10/02/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20Python/">
+                        <a class="article-recent_post_categories" href="/posts/8176306d.html">
                             基础教程
                         </a>
                     
-                    <a class="title" href="/2022/10/02/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20Python/" title="手把手教你搭建开发环境之 Python">
+                    <a class="title" href="/posts/8176306d.html" title="手把手教你搭建开发环境之 Python">
                         手把手教你搭建开发环境之 Python
                     </a>
                 </div>
@@ -1085,4 +1089,4 @@
     
     </body>
 </html>
-<script>const posts=["2023/03/24/使用ChatGPT辅助背单词/","2023/03/22/语境法记单词资源分享/","2022/11/12/使用 Python 计算 n 阶行列式/","2022/11/05/WSA 的配置方法/","2022/10/02/搭建开发环境之 Python/","2022/10/01/搭建开发环境之 C&C++/","2022/06/10/Markdown 快速入门/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
+<script>const posts=["posts/e1e46786.html","posts/824e06e6.html","posts/e2553edc.html","posts/f99f16f6.html","posts/8176306d.html","posts/85ab07ea.html","posts/bc534f5.html"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
