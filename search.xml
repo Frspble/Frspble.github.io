@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>手把手教你搭建开发环境之 Python</title>
-    <url>/posts/8176306d.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
-<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
-<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
-<p><strong>安装教程：</strong></p>
-<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
-<p>点击 Downloads</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
-<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
-<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
-<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
-<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
-<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
-<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
-<p>点击 Download</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
-<p>下载社区版</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
-<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
-<p>选择完成后继续按照提示操作完成安装。</p>
-<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
-<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
-<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
-<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>环境搭建</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown 快速入门</title>
     <url>/posts/bc534f5.html</url>
     <content><![CDATA[<h1 id="Markdown-快速入门"><a href="#Markdown-快速入门" class="headerlink" title="Markdown 快速入门"></a>Markdown 快速入门</h1><h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><h3 id="1-使用-x3D-和-标记"><a href="#1-使用-x3D-和-标记" class="headerlink" title="1. 使用 &#x3D; 和 - 标记"></a>1. 使用 &#x3D; 和 - 标记</h3><p>“&#x3D;” 标记一级标题</p>
@@ -312,52 +271,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows subsystem for Android (WSA) 的配置方法</title>
-    <url>/posts/f99f16f6.html</url>
-    <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
-<p>WSA，顾名思义，就是运行在Windows上的Android子系统。说白了就是可以在Windows上运行安卓软件，这在之前就已经有安卓模拟器可以实现，但是WSA的体验更好。可以像使用Windows原生应用一样使用Android软件。</p>
-<p>下面就详细为大家介绍一下如何安装配置 WSA。</p>
-<h2 id="一、修改地区"><a href="#一、修改地区" class="headerlink" title="一、修改地区"></a>一、修改地区</h2><p>由于目前WSA还处于测试阶段，只上架了美区的微软应用商店，所以需要修改系统地区为美国。</p>
-<p>首先打开设置，找到 “时间和语言”，然后点击 “语言和区域”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159569.png" alt="图片"></p>
-<p>找到 “国家或地区”，修改地区为 “美国”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159607.png" alt="图片"></p>
-<h2 id="二、安装-WSA-和-APK-安装程序"><a href="#二、安装-WSA-和-APK-安装程序" class="headerlink" title="二、安装 WSA 和 APK 安装程序"></a>二、安装 WSA 和 APK 安装程序</h2><p>打开WSA的安装链接：<em><a href="http://www.microsoft.com/store/productId/9P3395VX91NR">www.microsoft.com/store/productId/9P3395VX91NR</a></em></p>
-<p>点击：Get in Store app，之后会跳转到 微软应用商店，点击安装并等待安装成功。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159853.png" alt="图片"></p>
-<p>安装完成后，可以在微软应用商店下载另外一款用于给WSA安装APK的程序。在微软应用商店搜索WSA就可以找到。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159521.png" alt="图片"></p>
-<p>等待两个软件都安装成功，在开始菜单中可以找到 “适用于Android 的 Windows 子系统设置”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159842.png" alt="图片"></p>
-<p>打开设置，启用 “开发人员模式”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159293.png" alt="图片"></p>
-<h2 id="三、下载和配置-ADB（Android-Debug-Bridge）"><a href="#三、下载和配置-ADB（Android-Debug-Bridge）" class="headerlink" title="三、下载和配置 ADB（Android Debug Bridge）"></a>三、下载和配置 ADB（Android Debug Bridge）</h2><p>ADB 是Android官方提供的调试工具，可以理解为连接电脑和Android设备的桥梁。通过这座桥梁可以操作Android设备，也就可以为WSA安装APK。</p>
-<p>ADB 官网：<a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn</a></p>
-<p>点击下载</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159617.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200223.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200726.png" alt="图片"></p>
-<p>将下载好的压缩包解压到任意路径（不要包含中文），如图所示。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200960.png" alt="图片"></p>
-<h2 id="四、安装你需要的-APK"><a href="#四、安装你需要的-APK" class="headerlink" title="四、安装你需要的 APK"></a>四、安装你需要的 APK</h2><p>如果你正确完成了以上的配置，就可以直接双击你想要安装的APK，首次安装需要选择ADB路径，点击选取，选择你之前解压的ADB路径。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200170.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200932.png" alt="图片"></p>
-<p>然后根据提示启动 WSA 并等待安装即可。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200651.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200886.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201539.png" alt="图片"></p>
-<p>安装完成后将会自动运行你安装的App，想要再次启动时可以在开始菜单中找到该App。如果之后想要安装其他App，直接双击APK文件即可开始安装。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>Android</tag>
-        <tag>WSA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>手把手教你搭建开发环境之 C/C++</title>
     <url>/posts/85ab07ea.html</url>
     <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
@@ -417,9 +330,96 @@
         <category>基础教程</category>
       </categories>
       <tags>
-        <tag>环境搭建</tag>
         <tag>C++</tag>
         <tag>C语言</tag>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/posts/8176306d.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows subsystem for Android (WSA) 的配置方法</title>
+    <url>/posts/f99f16f6.html</url>
+    <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
+<p>WSA，顾名思义，就是运行在Windows上的Android子系统。说白了就是可以在Windows上运行安卓软件，这在之前就已经有安卓模拟器可以实现，但是WSA的体验更好。可以像使用Windows原生应用一样使用Android软件。</p>
+<p>下面就详细为大家介绍一下如何安装配置 WSA。</p>
+<h2 id="一、修改地区"><a href="#一、修改地区" class="headerlink" title="一、修改地区"></a>一、修改地区</h2><p>由于目前WSA还处于测试阶段，只上架了美区的微软应用商店，所以需要修改系统地区为美国。</p>
+<p>首先打开设置，找到 “时间和语言”，然后点击 “语言和区域”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159569.png" alt="图片"></p>
+<p>找到 “国家或地区”，修改地区为 “美国”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159607.png" alt="图片"></p>
+<h2 id="二、安装-WSA-和-APK-安装程序"><a href="#二、安装-WSA-和-APK-安装程序" class="headerlink" title="二、安装 WSA 和 APK 安装程序"></a>二、安装 WSA 和 APK 安装程序</h2><p>打开WSA的安装链接：<em><a href="http://www.microsoft.com/store/productId/9P3395VX91NR">www.microsoft.com/store/productId/9P3395VX91NR</a></em></p>
+<p>点击：Get in Store app，之后会跳转到 微软应用商店，点击安装并等待安装成功。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159853.png" alt="图片"></p>
+<p>安装完成后，可以在微软应用商店下载另外一款用于给WSA安装APK的程序。在微软应用商店搜索WSA就可以找到。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159521.png" alt="图片"></p>
+<p>等待两个软件都安装成功，在开始菜单中可以找到 “适用于Android 的 Windows 子系统设置”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159842.png" alt="图片"></p>
+<p>打开设置，启用 “开发人员模式”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159293.png" alt="图片"></p>
+<h2 id="三、下载和配置-ADB（Android-Debug-Bridge）"><a href="#三、下载和配置-ADB（Android-Debug-Bridge）" class="headerlink" title="三、下载和配置 ADB（Android Debug Bridge）"></a>三、下载和配置 ADB（Android Debug Bridge）</h2><p>ADB 是Android官方提供的调试工具，可以理解为连接电脑和Android设备的桥梁。通过这座桥梁可以操作Android设备，也就可以为WSA安装APK。</p>
+<p>ADB 官网：<a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn</a></p>
+<p>点击下载</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159617.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200223.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200726.png" alt="图片"></p>
+<p>将下载好的压缩包解压到任意路径（不要包含中文），如图所示。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200960.png" alt="图片"></p>
+<h2 id="四、安装你需要的-APK"><a href="#四、安装你需要的-APK" class="headerlink" title="四、安装你需要的 APK"></a>四、安装你需要的 APK</h2><p>如果你正确完成了以上的配置，就可以直接双击你想要安装的APK，首次安装需要选择ADB路径，点击选取，选择你之前解压的ADB路径。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200170.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200932.png" alt="图片"></p>
+<p>然后根据提示启动 WSA 并等待安装即可。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200651.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200886.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201539.png" alt="图片"></p>
+<p>安装完成后将会自动运行你安装的App，想要再次启动时可以在开始菜单中找到该App。如果之后想要安装其他App，直接双击APK文件即可开始安装。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Android</tag>
+        <tag>WSA</tag>
       </tags>
   </entry>
   <entry>
