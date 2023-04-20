@@ -1,33 +1,519 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/04/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>Markdown 快速入门</title>
+    <url>/2022/06/10/Markdown%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h1 id="Markdown-快速入门"><a href="#Markdown-快速入门" class="headerlink" title="Markdown 快速入门"></a>Markdown 快速入门</h1><h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><h3 id="1-使用-x3D-和-标记"><a href="#1-使用-x3D-和-标记" class="headerlink" title="1. 使用 &#x3D; 和 - 标记"></a>1. 使用 &#x3D; 和 - 标记</h3><p>“&#x3D;” 标记一级标题</p>
+<p>“-“ 标记二级标题</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">我是一级标题</span></span><br><span class="line"><span class="section">=================</span></span><br><span class="line"><span class="section">我是二级标题</span></span><br><span class="line"><span class="section">-----------------</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="2-使用-号标记"><a href="#2-使用-号标记" class="headerlink" title="2. 使用 # 号标记"></a>2. 使用 # 号标记</h3><p>使用 # 号可以表示1-6级标题，一个标题一个 # 号</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="二、段落格式"><a href="#二、段落格式" class="headerlink" title="二、段落格式"></a>二、段落格式</h2><h3 id="1-段落"><a href="#1-段落" class="headerlink" title="1. 段落"></a>1. 段落</h3><p>段落换行是使用两个以上的空格加回车，或者可以直接使用空行来换行</p>
+<h3 id="2-字体"><a href="#2-字体" class="headerlink" title="2. 字体"></a>2. 字体</h3><p>Markdown 可以使用以下字体格式</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*斜体文本*</span></span><br><span class="line"><span class="emphasis">_斜体文本_</span></span><br><span class="line"><span class="strong">**粗体文本**</span></span><br><span class="line"><span class="strong">__粗体文本__</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*粗斜体文本*</span>**</span></span><br><span class="line"><span class="strong">__<span class="emphasis">_粗斜体文本_</span>__</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="3-分隔线"><a href="#3-分隔线" class="headerlink" title="3. 分隔线"></a>3. 分隔线</h3><p>一行中使用三个以上的星号、减号、底线来建立分隔线，行内不包含其它东西，可以加空格</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">***</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">* * *</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">**</span><span class="strong">***</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">- - -</span></span><br><span class="line"><span class="strong"></span></span><br><span class="line"><span class="strong">----------</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4. 删除线"></a>4. 删除线</h3><p>在文字两端加入两个波浪线</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~这是一段文字~~</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5. 下划线"></a>5. 下划线</h3><p>下划线可以使用HTML语法来实现</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>这是一段带下划线的文本<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6. 脚注"></a>6. 脚注</h3><p>脚注是对文本的补充说明</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[^要注明的文本]</span><br><span class="line">[<span class="symbol">^要注明的文本</span>]: <span class="link">显示的内容</span></span><br></pre></td></tr></table></figure>
+
+<p>例：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是一段文字，我需要加一个脚注 [^脚注1]</span><br><span class="line">[<span class="symbol">^脚注1</span>]: <span class="link">这里是脚注的内容</span></span><br></pre></td></tr></table></figure>
+
+<p>这是一段文字，我需要加一个脚注 [^脚注1]<br>[^脚注1]: 这里是脚注的内容</p>
+<hr>
+<h2 id="三、列表"><a href="#三、列表" class="headerlink" title="三、列表"></a>三、列表</h2><p>Markdown 支持有序列表和无序列表。</p>
+<h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1.无序列表"></a>1.无序列表</h3><p>使用星号、加号或是减号作为列表标记，这些标记后面要添加一个空格，然后再填写内容：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">*</span> 第一项</span><br><span class="line"><span class="bullet">*</span> 第二项</span><br><span class="line"><span class="bullet">*</span> 第三项</span><br><span class="line"></span><br><span class="line"><span class="bullet">+</span> 第一项</span><br><span class="line"><span class="bullet">+</span> 第二项</span><br><span class="line"><span class="bullet">+</span> 第三项</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 第一项</span><br><span class="line"><span class="bullet">-</span> 第二项</span><br><span class="line"><span class="bullet">-</span> 第三项</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2. 有序列表"></a>2. 有序列表</h3><p>使用数字并加上 <strong>.</strong> 号来表示，如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 第一项</span><br><span class="line"><span class="bullet">2.</span> 第二项</span><br><span class="line"><span class="bullet">3.</span> 第三项</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-列表嵌套"><a href="#3-列表嵌套" class="headerlink" title="3.列表嵌套"></a>3.列表嵌套</h3><p>只需在子列表中的选项前面添加两个或四个空格即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 第一项：</span><br><span class="line">    - 第一项嵌套的第一个元素</span><br><span class="line">    - 第一项嵌套的第二个元素</span><br><span class="line">2. 第二项：</span><br><span class="line">    - 第二项嵌套的第一个元素</span><br><span class="line">    - 第二项嵌套的第二个元素</span><br></pre></td></tr></table></figure>
+<p>显示效果：</p>
+<ol>
+<li>第一项：<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="四、区块"><a href="#四、区块" class="headerlink" title="四、区块"></a>四、区块</h2><h3 id="1-区块的语法"><a href="#1-区块的语法" class="headerlink" title="1. 区块的语法"></a>1. 区块的语法</h3><p>Markdown 区块引用是在段落开头使用 <strong>&gt;</strong> 符号 ，然后后面紧跟一个<strong>空格</strong>符号：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; 区块引用</span></span><br><span class="line"><span class="quote">&gt; 这里是一个区块</span></span><br><span class="line"><span class="quote">&gt; 区块可以在引用的时候使用</span></span><br></pre></td></tr></table></figure>
+
+<p>显示效果如下：</p>
+<blockquote>
+<p>区块引用<br>这里是一个区块<br>区块可以在引用的时候使用</p>
+</blockquote>
+<h3 id="2-区块的嵌套"><a href="#2-区块的嵌套" class="headerlink" title="2.区块的嵌套"></a>2.区块的嵌套</h3><p>区块还可以嵌套，使用不同数量的 &gt; 符号即可</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; 最外层</span></span><br><span class="line"><span class="quote">&gt; &gt; 第一层嵌套</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 第二层嵌套</span></span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="3-区块中使用列表"><a href="#3-区块中使用列表" class="headerlink" title="3. 区块中使用列表"></a>3. 区块中使用列表</h3><p>区块中使用列表实例如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; 区块中使用列表</span></span><br><span class="line"><span class="quote">&gt; 1. 第一项</span></span><br><span class="line"><span class="quote">&gt; 2. 第二项</span></span><br><span class="line"><span class="quote">&gt; + 第一项</span></span><br><span class="line"><span class="quote">&gt; + 第二项</span></span><br><span class="line"><span class="quote">&gt; + 第三项</span></span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<blockquote>
+<p>区块中使用列表</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<h3 id="4-列表中使用区块"><a href="#4-列表中使用区块" class="headerlink" title="4.列表中使用区块"></a>4.列表中使用区块</h3><p>如果要在列表项目内放进区块，那么就需要在 <strong>&gt;</strong> 前添加四个空格的缩进。</p>
+<p>列表中使用区块实例如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 第一项</span><br><span class="line">    &gt; 菜鸟教程</span><br><span class="line">    &gt; 学的不仅是技术更是梦想</span><br><span class="line">* 第二项</span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<ul>
+<li>第一项<blockquote>
+<p>菜鸟教程<br>学的不仅是技术更是梦想</p>
+</blockquote>
+</li>
+<li>第二项</li>
+</ul>
+<hr>
+<h2 id="五、代码"><a href="#五、代码" class="headerlink" title="五、代码"></a>五、代码</h2><h3 id="1-代码片段"><a href="#1-代码片段" class="headerlink" title="1. 代码片段"></a>1. 代码片段</h3><p>如果是段落上的一个函数或片段的代码可以用反引号把它包起来（**&#96;**），例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`print()`</span> 函数</span><br></pre></td></tr></table></figure>
+
+<p><code>printf()</code> 函数</p>
+<h3 id="2-代码区块"><a href="#2-代码区块" class="headerlink" title="2. 代码区块"></a>2. 代码区块</h3><p>代码区块使用 <strong>4 个空格</strong> 或者一个 <strong>制表符（Tab 键）</strong></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">while True:</span><br><span class="line"><span class="code">	print(&quot;Hello World!&quot;)</span></span><br></pre></td></tr></table></figure>
+
+<p>或者也可以使用 <strong>&#96;&#96;&#96;</strong> 包裹一段代码，并指定一种语言（也可以不指定）：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```python</span></span><br><span class="line"><span class="code">while True:</span></span><br><span class="line"><span class="code">		print(&quot;Hello World!&quot;)</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&quot;Hello World!&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="六、链接"><a href="#六、链接" class="headerlink" title="六、链接"></a>六、链接</h2><h3 id="1-普通链接"><a href="#1-普通链接" class="headerlink" title="1. 普通链接"></a>1. 普通链接</h3><p>链接使用方法如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">链接名称</span>](<span class="link">链接地址</span>)</span><br><span class="line">或</span><br><span class="line">&lt;链接地址&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这是我的[<span class="string">博客</span>](<span class="link">frspble.github.io</span>)</span><br></pre></td></tr></table></figure>
+
+<p>这是我的<a href="https://frspble.github.io/">博客</a></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="language-xml">&lt;https://frspble.github.io&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="https://frspble.github.io/">https://frspble.github.io</a></p>
+<h3 id="2-高级链接"><a href="#2-高级链接" class="headerlink" title="2. 高级链接"></a>2. 高级链接</h3><p>可以通过变量来设置一个链接，变量赋值在文档末尾进行：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [<span class="string">Frspble 的博客</span>][<span class="symbol">1</span>]</span><br><span class="line">这个链接用 frspble 作为网址变量 [<span class="string">Frspble 的博客</span>][<span class="symbol">frspble</span>]</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">  [1]: https://frspble.github.io</span><br><span class="line">  [frspble]: https://frspble.github.io</span><br></pre></td></tr></table></figure>
+
+<p>显示效果：</p>
+<p>这个链接用 1 作为网址变量 <a href="https://frspble.github.io/">Frspble 的博客</a><br>这个链接用 frspble 作为网址变量 <a href="https://frspble.github.io/">Frspble 的博客</a><br>然后在文档的结尾为变量赋值（网址）</p>
+<hr>
+<h2 id="七、图片"><a href="#七、图片" class="headerlink" title="七、图片"></a>七、图片</h2><p>Markdown 图片语法格式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">alt 属性文本</span>](<span class="link">图片地址</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">alt 属性文本</span>](<span class="link">图片地址 &quot;可选标题&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>也可以像网址那样对图片网址使用变量:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [<span class="string">Frspble</span>][<span class="symbol">1</span>].</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">[<span class="symbol">1</span>]: <span class="link">http://example.com/images/exapmle.png</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h2><p>Markdown 制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。</p>
+<p>语法格式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">|  表头   | 表头  |</span><br><span class="line">|  ----  | ----  |</span><br><span class="line">| 单元格  | 单元格 |</span><br><span class="line">| 单元格  | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<p><strong>对齐方式</strong></p>
+<ul>
+<li><strong>-:</strong> 设置内容和标题栏居右对齐。</li>
+<li><strong>:-</strong> 设置内容和标题栏居左对齐。</li>
+<li><strong>:-:</strong> 设置内容和标题栏居中对齐。</li>
+</ul>
+<p>实例如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :-----| ----: | :----: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="九、高级技巧"><a href="#九、高级技巧" class="headerlink" title="九、高级技巧"></a>九、高级技巧</h2><h3 id="1-支持的-HTML-元素"><a href="#1-支持的-HTML-元素" class="headerlink" title="1. 支持的 HTML 元素"></a>1. 支持的 HTML 元素</h3><p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</p>
+<p>目前支持的 HTML 元素有：<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>等 </p>
+<h3 id="2-转义"><a href="#2-转义" class="headerlink" title="2. 转义"></a>2. 转义</h3><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**文本加粗**</span> </span><br><span class="line">\<span class="emphasis">*\*</span> 正常显示星号 \<span class="emphasis">*\*</span></span><br></pre></td></tr></table></figure>
+
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">`   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   下划线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  小括号</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   感叹号</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-公式"><a href="#3-公式" class="headerlink" title="3. 公式"></a>3. 公式</h3><p><strong>Markdown Preview Enhanced</strong> 使用 <a href="https://github.com/Khan/KaTeX">KaTeX</a> 或者 <a href="https://github.com/mathjax/MathJax">MathJax</a> 来渲染数学表达式。</p>
+<p>KaTeX 拥有比 MathJax 更快的性能，但是它却少了很多 MathJax 拥有的特性。你可以查看 KaTeX supported functions&#x2F;symbols 来了解 KaTeX 支持那些符号和函数。</p>
+<p>默认下的分隔符：</p>
+<ul>
+<li><code>$...$</code> 或者 <code>\(...\)</code> 中的数学表达式将会在行内显示。</li>
+<li><code>$$...$$</code> 或者 <code>\[...\]</code> 或者 &#96;&#96;&#96;&#96;math&#96; 中的数学表达式将会在块内显示。</li>
+</ul>
+<h3 id="4-画流程图、时序图-顺序图-、甘特图"><a href="#4-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="4. 画流程图、时序图 (顺序图)、甘特图"></a>4. 画流程图、时序图 (顺序图)、甘特图</h3><p>以下几个实例效果图如下：</p>
+<p><strong>(1) 横向流程图源码格式：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```mermaid</span><br><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a=1| D[结果1]</span><br><span class="line">    C --&gt;|a=2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a=1| D[结果1]</span><br><span class="line">    C --&gt;|a=2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>(2) 竖向流程图源码格式：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```mermaid</span><br><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a=1| D[结果1]</span><br><span class="line">    C --&gt; |a=2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a=1| D[结果1]</span><br><span class="line">    C --&gt; |a=2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>(3) 标准流程图源码格式：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```flow</span><br><span class="line">st=&gt;start: 开始框</span><br><span class="line">op=&gt;operation: 处理框</span><br><span class="line">cond=&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1=&gt;subroutine: 子流程</span><br><span class="line">io=&gt;inputoutput: 输入输出框</span><br><span class="line">e=&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">st=&gt;start: 开始框</span><br><span class="line">op=&gt;operation: 处理框</span><br><span class="line">cond=&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1=&gt;subroutine: 子流程</span><br><span class="line">io=&gt;inputoutput: 输入输出框</span><br><span class="line">e=&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>(4) 标准流程图源码格式（横向）：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```flow</span><br><span class="line">st=&gt;start: 开始框</span><br><span class="line">op=&gt;operation: 处理框</span><br><span class="line">cond=&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1=&gt;subroutine: 子流程</span><br><span class="line">io=&gt;inputoutput: 输入输出框</span><br><span class="line">e=&gt;end: 结束框</span><br><span class="line">st(right)-&gt;op(right)-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(bottom)-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">st=&gt;start: 开始框</span><br><span class="line">op=&gt;operation: 处理框</span><br><span class="line">cond=&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1=&gt;subroutine: 子流程</span><br><span class="line">io=&gt;inputoutput: 输入输出框</span><br><span class="line">e=&gt;end: 结束框</span><br><span class="line">st(right)-&gt;op(right)-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(bottom)-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>(5) UML时序图源码样例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```sequence</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>(6) UML时序图源码复杂样例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```sequence</span><br><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>(7) UML标准时序图样例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```mermaid</span><br><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br/&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br/&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>(8) 甘特图样例：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```mermaid</span><br><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br></pre></td></tr></table></figure>
+
+<p>注：该篇文章大部分内容来自<a href="https://www.runoob.com/markdown/md-tutorial.html">菜鸟教程</a>，仅为个人方便翻阅，如有侵权，请联系我删除。</p>
 ]]></content>
+      <categories>
+        <category>个人笔记</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手教你搭建开发环境之 C/C++</title>
+    <url>/2022/10/01/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20C&amp;C++/</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
+<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
+<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
+<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
+<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
+<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
+<p>下面是详细的安装步骤：</p>
+<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
+<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
+<p>下载完成后点击“打开文件”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
+<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
+<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
+<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
+<p>下面是配置步骤：</p>
+<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
+<p>点击下图中的链接下载，等待下载完成后运行。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
+<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
+<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
+<p>当然也可自行修改，需要保证路径中只包含英文。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
+<p>修改路径后点击 “Extract”，等待解压完成。</p>
+<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
+<p>回到桌面，右键“此电脑”，点击属性</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
+<p>然后点击 “高级系统设置”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
+<p>选择 “环境变量”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
+<p>双击 “Path”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
+<p>点击 “新建”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
+<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
+<p>确认无误后连续点击三个“确定”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
+<p>至此，你已经完成了 MinGW 的配置。</p>
+<p><strong>接下来安装 VS code</strong></p>
+<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>点击 Download 按钮</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
+<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
+<p>由于安装过程较为简单，此处不再赘述。</p>
+<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
+<p>同样的方法搜索 “C”，安装C语言插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
+<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C语言</tag>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/2022/10/02/%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B9%8B%20Python/</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Python 计算n阶行列式的多种方法</title>
+    <url>/2022/11/12/%E4%BD%BF%E7%94%A8%20Python%20%E8%AE%A1%E7%AE%97%20n%20%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="探讨使用-Python-实现计算-n-阶行列式的多种方法"><a href="#探讨使用-Python-实现计算-n-阶行列式的多种方法" class="headerlink" title="探讨使用 Python 实现计算 n 阶行列式的多种方法"></a>探讨使用 Python 实现计算 n 阶行列式的多种方法</h1><p>前些日子刚学线性代数，被手算高阶行列式折磨（主要因为当时才只学了定义），于是想用Python来做验算。自然也就想到了Python强大的第三方科学计算库 —— Numpy。经过一通操作，便有了以下的动态：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202222120.jpeg" alt="图片"></p>
+<p>以下是输入和输出的结果：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">input:[[ 2  1  4  1],</span><br><span class="line">       [ 3 -1  2  1],</span><br><span class="line">       [ 1  2  3  2],</span><br><span class="line">       [ 5  0  6  2]]</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">output: 6.217248937900884e-15</span><br></pre></td></tr></table></figure>
+
+<p>但是这个行列式的结果应该是0才对啊！！！</p>
+<p>观察 Numpy 计算的结果，猜测可能是浮点数导致的误差。那既然现成的库不靠谱，就只能自己造轮子了。当时我用定义法写了一个简单的小程序。后来随着更深入的学习，我也了解到了更多的计算方法，也翻了一些参考资料，所以今天就来讨论一下计算行列式的多种方法。</p>
+<p>我简单总结了一下计算行列式的几种方法，具体如下：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202158888.png" alt="图片"></p>
+<p>按照以上总结的方法，下面就来一一实现。此处只讨论实现方式，不考虑时间复杂度和优化问题。</p>
+<h2 id="一、逆序数法"><a href="#一、逆序数法" class="headerlink" title="一、逆序数法"></a>一、逆序数法</h2><p>逆序数法总共分为三步：计算逆序数、计算全排列、通过定义计算结果。</p>
+<p>我们将这三步分为三个函数来一步步实现。</p>
+<p>首先是计算逆序数，最容易想到的就是这个算法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_t</span>(<span class="params">rank</span>):</span><br><span class="line">    t = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i1 <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(rank)):</span><br><span class="line">        <span class="keyword">for</span> i2 <span class="keyword">in</span> <span class="built_in">range</span>(i1 + <span class="number">1</span>, <span class="built_in">len</span>(rank)):</span><br><span class="line">            <span class="keyword">if</span> rank[i1] &gt; rank[i2]:</span><br><span class="line">                t += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> t</span><br></pre></td></tr></table></figure>
+
+<p>简单解释一下就是从一串数组中挨个遍历每一个数，然后查找该数前面大于该数的数量并且计数。</p>
+<p>第二个函数是获得 n 个数的全排列，可以使用递归的方法来解决：确定第1位，对n-1位进行全排列，确定第二位，对n-2位进行全排列……</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    length = <span class="built_in">len</span>(rank)</span><br><span class="line">    permutations = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_permute</span>(<span class="params">index=<span class="number">0</span></span>):</span><br><span class="line">        <span class="keyword">if</span> index == length:</span><br><span class="line">            permutations.append(rank[<span class="number">0</span>:length])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(index, length):</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">            _permute(index + <span class="number">1</span>)</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">    _permute()</span><br><span class="line">    <span class="keyword">return</span> permutations</span><br></pre></td></tr></table></figure>
+
+<p>后来发现还有更简单直接的方法：调用Python的内置库 itertools 来实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">list</span>(itertools.permutations(rank))</span><br></pre></td></tr></table></figure>
+
+<p>准备好以上两个函数后就可以根据定义进行计算了：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_1</span>(<span class="params">det</span>):</span><br><span class="line">    <span class="comment"># 行列式为0时直接返回0</span></span><br><span class="line">    <span class="keyword">if</span> det == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="comment"># 行列式为一阶时直接返回结果</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(det) == <span class="number">1</span>:    </span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    p = get_permutations(<span class="built_in">range</span>(<span class="number">1</span>, n + <span class="number">1</span>))</span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 遍历全排列</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> p:    </span><br><span class="line">        t = get_t(r)</span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        part = (-<span class="number">1</span>) ** t</span><br><span class="line">        <span class="comment"># 遍历排列中元素并计算结果</span></span><br><span class="line">        <span class="keyword">for</span> c <span class="keyword">in</span> r:   </span><br><span class="line">            part *= det[i][c - <span class="number">1</span>]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        result += part</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="二、等价转换法"><a href="#二、等价转换法" class="headerlink" title="二、等价转换法"></a>二、等价转换法</h2><p>该方法就是通过不断的变换将行列式转换为上三角形行列式，然后计算对角线的乘积。具体的实现方法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_2</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="comment"># 遍历列</span></span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        row = col</span><br><span class="line">        result *= det[row][col]</span><br><span class="line">        <span class="comment"># 寻找不是0的行</span></span><br><span class="line">        <span class="keyword">while</span> det[row][col] == <span class="number">0</span> <span class="keyword">and</span> row &lt; n - <span class="number">1</span>:</span><br><span class="line">            row += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 化简行列式</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row + <span class="number">1</span>, n):</span><br><span class="line">            <span class="keyword">if</span> det[i][col] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                k = - det[i][col] / det[row][col]</span><br><span class="line">                <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(col, n):</span><br><span class="line">                    det[i][j] += det[row][j] * k</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="三、代数余子式法"><a href="#三、代数余子式法" class="headerlink" title="三、代数余子式法"></a>三、代数余子式法</h2><p>该方法就是将行列式不断降阶，直到变为容易计算的低阶行列式。</p>
+<p>该方法比较适合用递归来解决，实现代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_3</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    <span class="comment"># 处理基础情况</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]*det[<span class="number">1</span>][<span class="number">1</span>] - det[<span class="number">0</span>][<span class="number">1</span>]*det[<span class="number">1</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="comment"># 求代数余子式并计算结果</span></span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        C = []</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            C.append(det[j][<span class="number">1</span>:])</span><br><span class="line">        C.remove(C[i])</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">            result -= calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            result += calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+
+
+<p>以上就是个人对于使用 Python 计算行列式的三种常用方法的总结，个人能力有限，可能存在错误，欢迎各位指正。</p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>大学</tag>
+        <tag>数学</tag>
+        <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows subsystem for Android (WSA) 的配置方法</title>
+    <url>/2022/11/05/WSA%20%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
+<p>WSA，顾名思义，就是运行在Windows上的Android子系统。说白了就是可以在Windows上运行安卓软件，这在之前就已经有安卓模拟器可以实现，但是WSA的体验更好。可以像使用Windows原生应用一样使用Android软件。</p>
+<p>下面就详细为大家介绍一下如何安装配置 WSA。</p>
+<h2 id="一、修改地区"><a href="#一、修改地区" class="headerlink" title="一、修改地区"></a>一、修改地区</h2><p>由于目前WSA还处于测试阶段，只上架了美区的微软应用商店，所以需要修改系统地区为美国。</p>
+<p>首先打开设置，找到 “时间和语言”，然后点击 “语言和区域”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159569.png" alt="图片"></p>
+<p>找到 “国家或地区”，修改地区为 “美国”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159607.png" alt="图片"></p>
+<h2 id="二、安装-WSA-和-APK-安装程序"><a href="#二、安装-WSA-和-APK-安装程序" class="headerlink" title="二、安装 WSA 和 APK 安装程序"></a>二、安装 WSA 和 APK 安装程序</h2><p>打开WSA的安装链接：<em><a href="http://www.microsoft.com/store/productId/9P3395VX91NR">www.microsoft.com/store/productId/9P3395VX91NR</a></em></p>
+<p>点击：Get in Store app，之后会跳转到 微软应用商店，点击安装并等待安装成功。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159853.png" alt="图片"></p>
+<p>安装完成后，可以在微软应用商店下载另外一款用于给WSA安装APK的程序。在微软应用商店搜索WSA就可以找到。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159521.png" alt="图片"></p>
+<p>等待两个软件都安装成功，在开始菜单中可以找到 “适用于Android 的 Windows 子系统设置”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159842.png" alt="图片"></p>
+<p>打开设置，启用 “开发人员模式”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159293.png" alt="图片"></p>
+<h2 id="三、下载和配置-ADB（Android-Debug-Bridge）"><a href="#三、下载和配置-ADB（Android-Debug-Bridge）" class="headerlink" title="三、下载和配置 ADB（Android Debug Bridge）"></a>三、下载和配置 ADB（Android Debug Bridge）</h2><p>ADB 是Android官方提供的调试工具，可以理解为连接电脑和Android设备的桥梁。通过这座桥梁可以操作Android设备，也就可以为WSA安装APK。</p>
+<p>ADB 官网：<a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn</a></p>
+<p>点击下载</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159617.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200223.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200726.png" alt="图片"></p>
+<p>将下载好的压缩包解压到任意路径（不要包含中文），如图所示。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200960.png" alt="图片"></p>
+<h2 id="四、安装你需要的-APK"><a href="#四、安装你需要的-APK" class="headerlink" title="四、安装你需要的 APK"></a>四、安装你需要的 APK</h2><p>如果你正确完成了以上的配置，就可以直接双击你想要安装的APK，首次安装需要选择ADB路径，点击选取，选择你之前解压的ADB路径。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200170.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200932.png" alt="图片"></p>
+<p>然后根据提示启动 WSA 并等待安装即可。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200651.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200886.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201539.png" alt="图片"></p>
+<p>安装完成后将会自动运行你安装的App，想要再次启动时可以在开始菜单中找到该App。如果之后想要安装其他App，直接双击APK文件即可开始安装。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Android</tag>
+        <tag>WSA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语境法记单词资源分享</title>
+    <url>/2023/03/22/%E8%AF%AD%E5%A2%83%E6%B3%95%E8%AE%B0%E5%8D%95%E8%AF%8D%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<h1 id="提高工作效率，解放生产力，ChatGPT-还能这么用？"><a href="#提高工作效率，解放生产力，ChatGPT-还能这么用？" class="headerlink" title="提高工作效率，解放生产力，ChatGPT 还能这么用？"></a>提高工作效率，解放生产力，ChatGPT 还能这么用？</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
+<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
+<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
+<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
+<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
+<p>下面是一篇生成的文章示例：</p>
+<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
+<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
+<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
+<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
+<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
+<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
+<hr>
+<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
+]]></content>
+      <categories>
+        <category>资源分享</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>大学</tag>
+        <tag>ChatGPT</tag>
+        <tag>英语</tag>
+      </tags>
   </entry>
   <entry>
     <title>使用 ChatGPT 辅助背单词</title>
-    <url>/2023/03/22/%E4%BD%BF%E7%94%A8ChatGPT%E8%BE%85%E5%8A%A9%E8%83%8C%E5%8D%95%E8%AF%8D/</url>
+    <url>/2023/03/24/%E4%BD%BF%E7%94%A8ChatGPT%E8%BE%85%E5%8A%A9%E8%83%8C%E5%8D%95%E8%AF%8D/</url>
     <content><![CDATA[<h1 id="提高工作效率，解放生产力，ChatGPT-还能这么用？"><a href="#提高工作效率，解放生产力，ChatGPT-还能这么用？" class="headerlink" title="提高工作效率，解放生产力，ChatGPT 还能这么用？"></a>提高工作效率，解放生产力，ChatGPT 还能这么用？</h1><p>一个月前，发现我的OpenAI的点数要过期了，这么好的东西当然不能浪费，应该用 OpenAI 的接口做一些东西，进过一番思索，就有了用ChatGPT生成语境法背单词语料的想法。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202303250013481.png" alt="image-20230325001141110"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202150960.png" alt="image-20230325001141110"></p>
 <hr>
 <p>作为一名学生，背单词已经成为了日常，但是目前主流的背单词方式都只是针对独立的单词，背完单词如果不加以应用很快就会忘记，所以我想到可以用 ChatGPT 来给单词生成一段故事，这样就可以加深对于单词的记忆。</p>
 <p>有了想法，下面开始实践。</p>
 <p>我们首先打开ChatGPT，输入我们的需求，ChatGPT就会给出实现的代码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304020036249.png" alt="image-20230402003639084"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202151773.png" alt="image-20230402003639084"></p>
 <p>好了，以上就是我实现这个项目的全部过程，我们下期再见。</p>
 <hr>
 <p>显然这是不可能的，上面的代码根本无法达到我们所需的效果。现在 ChatGPT 虽然足够强大，但也远没有达到上述的地步。目前这类的大语言模型只是一个很好的辅助工具，合理的利用可以大大提升我们的学习和工作的效率。</p>
@@ -36,18 +522,18 @@
 <p>接下来就是调用 ChatGPT 的 API 来实现自动生成语料，这种简单的项目用 Python 来实现是最方便的，下面开始实践。</p>
 <p>首先，需要写一个调用 OpenAI 的 ChatGPT 的 API 来生成英文文章的函数。这里如果我们直接向ChatGPT 寻求帮助，写出来的代码并不可用。因为这是新的API，ChatGPT 并不清楚调用方法。好在OpenAI 的官方文档写的十分详细，直接参考官方文档（<a href="https://platform.openai.com/docs/guides/chat">Chat completion - OpenAI API</a>）就可以轻松完成。</p>
 <p>接下来就是对数据进行处理。这里可以直接让 ChatGPT 写一段 Python 代码，将 csv 表格的数据整理成 Python 列表，方便后续在 Python 中进行操作。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304051202034.png" alt="image-20230405120236913"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202152826.png" alt="image-20230405120236913"></p>
 <p>运行这段代码测试一下，报错了，因为我的csv文件使用的是GBK编码，而这里默认使用UTF-8来解码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202303232241903.png" alt="image-20230323224140784"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202155223.png" alt="image-20230323224140784"></p>
 <p>尽管我知道报错的原因，但还是将这段报错交给了ChatGPT，试试看他能不能解决这个问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202303232252304.png" alt="image-20230323225231252"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153055.png" alt="image-20230323225231252"></p>
 <p>从他的回答中可以看出他理解了这个报错的原因，也给出了解决方案，但是他并没有考虑到正确的编码是GBK，这里还是需要结合个人经验来判断。</p>
 <p>接下来就是使用单词列表中的单词生成语料，这里直接将需求交给ChatGPT。这里的描述一定要讲清楚需求，不然生成的代码会有问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304051207285.png" alt="image-20230405120715174"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153449.png" alt="image-20230405120715174"></p>
 <p>这段代码还存在一个问题，他将所有不在生成的文本中的单词都添加到了列表的最后，这样操作会打乱之前的词频排序，所以还需要让ChatGPT来修复一下这个问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304051244805.png" alt="image-20230405124415564"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154057.png" alt="image-20230405124415564"></p>
 <p>可以看到ChatGPT成功修复了这个问题，并且还提醒我，如果生成的文章中反复缺少某些词，这种方法可能会导致某些词被多次使用。那么我们就让他按照自己的思路来修改代码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304051249330.png" alt="image-20230405124935216"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154285.png" alt="image-20230405124935216"></p>
 <p>然而ChatGPT好像并没有理解自己的意思，这段代码和上面的建议没有太多的关系。不过我们现在已经有了思路，按照这个思路在之前的代码上稍加修改，便得到了最终的代码：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取单词的翻译</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_translation</span>(<span class="params">word</span>):</span><br><span class="line">    translation = df.loc[df[<span class="number">0</span>] == word, <span class="number">1</span>].values[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> translation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成文章并写出为文件</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_article</span>(<span class="params">word_list</span>):</span><br><span class="line">    response = generate_response(word_list)</span><br><span class="line">    result = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> choice <span class="keyword">in</span> response.choices:</span><br><span class="line">        result += choice.message.content</span><br><span class="line"></span><br><span class="line">    included_words = []</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> word_list:</span><br><span class="line">        index = result.lower().find(word.lower())</span><br><span class="line">        <span class="keyword">if</span> index == -<span class="number">1</span>:</span><br><span class="line">            missing_words.append(word)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            included_words.append(word)</span><br><span class="line">            result = re.sub(<span class="string">r&#x27;\b&#x27;</span> + word + <span class="string">r&#x27;\b&#x27;</span>, <span class="string">&#x27;**&#x27;</span> + word + <span class="string">&#x27;**&#x27;</span>, result)</span><br><span class="line"></span><br><span class="line">    included_words_translated = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> included_words:</span><br><span class="line">        included_words_translated.append(word + <span class="string">&#x27;: &#x27;</span> + get_translation(word))</span><br><span class="line"></span><br><span class="line">    article_file_name = <span class="string">&#x27;articles/&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">int</span>(time.time())) + <span class="string">&quot;_&quot;</span> + <span class="string">&quot;_&quot;</span>.join(included_words[:<span class="number">5</span>]) + <span class="string">&quot;.md&quot;</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(article_file_name, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&quot;\n&quot;</span>.join(included_words_translated) + <span class="string">&quot;\n\n---\n\n&quot;</span>)</span><br><span class="line">        f.write(result)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;已生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(included_words)) + <span class="built_in">str</span>(included_words))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;未生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(missing_words)) + <span class="built_in">str</span>(missing_words))</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line">    <span class="keyword">return</span> missing_words</span><br></pre></td></tr></table></figure>
 
@@ -56,16 +542,25 @@
 <p>我这里重构了 <code>generate_article()</code> 函数，将生成的文章直接保存为Markdown文件，并且返回未使用的单词。在 <code>generate_articles_from_word_list()</code> 函数中也做了对应的修改，将返回的未使用的单词加入到下一次生成的单词列表的开头。这样保证了既不丢失单词，又不破坏词频的顺序。</p>
 <p>当然，这段代码还有不少可以优化的地方，比如查找单词时加入查找单词的变形；一个单词如果尝试多次都无法生成文章，直接舍弃这个单词等等。</p>
 <p>现在，我们已经通过一个单词列表生成了一堆 Markdown 格式的文章。为了便于阅读和打印，我们接下来需要将这些文章合并为一个PDF文件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304051330616.png" alt="image-20230405133055489"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156874.png" alt="image-20230405133055489"></p>
 <p>依然是使用 ChatGPT 生成代码，稍作修改，即可完成 Markdown 文件到 PDF 的转换。</p>
 <p>另外，在转换时发现之前忘记给单词列表添加空格来换行，恰好这时候 OpenAI 发布了GPT4，而且 New Bing 使用的就是 GPT4，这里正好拿来做个测试。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304030018185.png" alt="image-20230403001809774"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304030018670.png" alt="image-20230403001829425"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304030018121.png" alt="image-20230403001852893"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156904.png" alt="image-20230403001809774"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157805.png" alt="image-20230403001829425"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157375.png" alt="image-20230403001852893"></p>
 <p>看起来 New Bing 的 GPT4 相比 3.5 没有特别大的提升（这里指基于 GPT4 的 New Bing 和 ChatGPT 3.5，ChatGPT4 没有测试，不做讨论），一个需求仍然需要多次的指正才能达到预期的效果。</p>
 <p>所以，现在 AI 水平仍然无法完全取代人类的工作。AI 不能让一个从来没有写过代码的人写出可用的代码，也不能代替人类产生新的想法。不过 AI 确实可以提升我们的工作效率。我作为一名普通的学生，只用了几个小时，就完成了以往可能是数名英语老师数周的工作量。</p>
 <p>截止写稿时，OpenAI 已经发布了GPT 4，完整版的 GPT4 能力有了进一步的提升，并且拥有了视觉能力，近几年AI的进步速度让人叹为观止，我一年前的想象如今已经变成现实。现在已经可以看到强人工智能的雏形，AGI 已经不再是天方夜谭。</p>
 <p>但无论如何，我们都要保持终身学习的态度，只有不断的学习新的知识，接收新生事物，才能跟上时代的步伐。</p>
 ]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>大学</tag>
+        <tag>ChatGPT</tag>
+        <tag>英语</tag>
+      </tags>
   </entry>
 </search>
