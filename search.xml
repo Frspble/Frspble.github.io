@@ -336,6 +336,47 @@
       </tags>
   </entry>
   <entry>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/posts/8176306d.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows subsystem for Android (WSA) 的配置方法</title>
     <url>/posts/f99f16f6.html</url>
     <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
@@ -379,47 +420,6 @@
         <tag>Windows</tag>
         <tag>Android</tag>
         <tag>WSA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手教你搭建开发环境之 Python</title>
-    <url>/posts/8176306d.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
-<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
-<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
-<p><strong>安装教程：</strong></p>
-<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
-<p>点击 Downloads</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
-<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
-<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
-<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
-<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
-<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
-<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
-<p>点击 Download</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
-<p>下载社区版</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
-<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
-<p>选择完成后继续按照提示操作完成安装。</p>
-<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
-<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
-<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
-<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -474,6 +474,76 @@
         <tag>大学</tag>
         <tag>数学</tag>
         <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一劳永逸的AI开发环境搭建教程</title>
+    <url>/posts/aa251266.html</url>
+    <content><![CDATA[<h1 id="Anconda-环境配置教程"><a href="#Anconda-环境配置教程" class="headerlink" title="Anconda 环境配置教程"></a>Anconda 环境配置教程</h1><p>最近涌现了好多AI开源项目，其中很多项目的硬件要求不高，可以自己部署到本地来运行。但是不同的项目要求的Python版本可能不同，电脑上安装了多个Python版本后管理起来十分麻烦。所以今天介绍一种一劳永逸的 AI 开发环境搭建的方式，可以让多个项目共存，并且管理起来也十分方便。</p>
+<p>今天要介绍的一个工具是 Anconda，它的核心是conda，它是一个开源的软件包管理系统和环境管理系统，可以在不同的环境中安装不同版本的软件包，以及在不同的环境之间切换。使用这个工具可以创建虚拟环境，每一个虚拟环境都对应一个Python版本，这样就可以轻松管理Python的版本。</p>
+<p>Anconda有两个版本，一个是完整的 Anconda，另一个是精简的 Miniconda，建议使用 Miniconda，相比 Anconda 占硬盘空间更小，而且对于搭建 AI 环境来说完全够用。</p>
+<p>下面是 Miniconda 的安装教程：</p>
+<ol>
+<li><p>首先打开 Miniconda 的下载链接：<a href="https://docs.conda.io/en/latest/miniconda.html#">Miniconda — conda documentation</a></p>
+</li>
+<li><p>然后根据你的系统版本下载安装包（这里以 Windows 为例）：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230422223548197.png" alt="image-20230422223548197"></p>
+</li>
+<li><p>下载好之后直接运行安装即可，这里不建议修改默认配置（为了方便使用可以勾选将 conda 添加到环境变量，但是要保证系统里没有安装任何版本的 Python）</p>
+</li>
+<li><p>安装完成之后，在开始菜单可以找到 Anaconda Prompt (anaconda3) 快捷方式，运行这个快捷方式就可以打开 Anconda 的命令行窗口。之后使用 Anconda 执行命令就都在这里操作。</p>
+</li>
+<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容即可</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 conda 创建虚拟环境命令（这里假设我们要部署Stable Diffusion WebUI，可以创建一个名为SD-WebUI的虚拟环境，python版本号为3.10）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>等待命令执行完成后，我们就拥有了一个名为SD-WebUI的虚拟环境，这个环境里的 Python 版本是 3.10，接下来就是启动这个虚拟环境，使用如下命令来启动：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate SD-WebUI</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行完成后，可以看到开头的 (base) 变成了 (SD-WebUI) ，说明我们已经成功进入了这个虚拟环境，接下来就可以在这个虚拟环境中继续部署了。</p>
+</li>
+<li><p>在这里再分享一些常用的 conda 命令：</p>
+<ol>
+<li><p>关闭当前的虚拟环境：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看虚拟环境列表：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看安装的包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除环境（完全删除名为env_name的环境）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name --all</span><br></pre></td></tr></table></figure>
+
+<p>也可以只删除环境中的某个包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name packge_name</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更改当前环境的Python版本：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p>另外，使用 conda 配置好环境之后，如果想要运行，通常需要重新打开 conda 的命令行来定位项目，这样操作很繁琐，这里提供一种解决方案。</p>
+<p>我们首先从 conda 命令行的启动快捷方式入手，查看 Anaconda Prompt (anaconda3) 的属性可以发现，其实这个快捷方式就是用 cmd 执行了一行命令，我这里的命令将如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%windir%\System32\cmd.exe &quot;/K&quot; C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3</span><br></pre></td></tr></table></figure>
+
+<p>知道了这个原理之后，我们就可以自己写一个 bat 文件来直接启动 conda 命令行，然后再自动启动我们所需的虚拟环境的命令，就可以做到一键启动了。下面是我给我的 Stable Diffusion WebUI 写的一键启动命令示例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3    <span class="comment"># 启动conda</span></span><br><span class="line">call conda activate SD-WebUI    <span class="comment"># 启动 SD-WebUI 虚拟环境</span></span><br><span class="line">python launch.py    <span class="comment"># 运行 WebUI</span></span><br></pre></td></tr></table></figure>
+
+<p>当然这只是最简单的启动命令，如果有需要还可以再加入一些其它的内容。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
+        <tag>AI</tag>
+        <tag>Anconda</tag>
       </tags>
   </entry>
   <entry>
@@ -561,76 +631,6 @@
         <tag>AI</tag>
         <tag>ChatGPT</tag>
         <tag>英语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无标题</title>
-    <url>/posts/aa251266.html</url>
-    <content><![CDATA[<h1 id="Anconda-环境配置教程"><a href="#Anconda-环境配置教程" class="headerlink" title="Anconda 环境配置教程"></a>Anconda 环境配置教程</h1><p>最近涌现了好多AI开源项目，其中很多项目的硬件要求不高，可以自己部署到本地来运行。但是不同的项目要求的Python版本可能不同，电脑上安装了多个Python版本后管理起来十分麻烦。所以今天介绍一种一劳永逸的 AI 开发环境搭建的方式，可以让多个项目共存，并且管理起来也十分方便。</p>
-<p>今天要介绍的一个工具是 Anconda，它的核心是conda，它是一个开源的软件包管理系统和环境管理系统，可以在不同的环境中安装不同版本的软件包，以及在不同的环境之间切换。使用这个工具可以创建虚拟环境，每一个虚拟环境都对应一个Python版本，这样就可以轻松管理Python的版本。</p>
-<p>Anconda有两个版本，一个是完整的 Anconda，另一个是精简的 Miniconda，建议使用 Miniconda，相比 Anconda 占硬盘空间更小，而且对于搭建 AI 环境来说完全够用。</p>
-<p>下面是 Miniconda 的安装教程：</p>
-<ol>
-<li><p>首先打开 Miniconda 的下载链接：<a href="https://docs.conda.io/en/latest/miniconda.html#">Miniconda — conda documentation</a></p>
-</li>
-<li><p>然后根据你的系统版本下载安装包（这里以 Windows 为例）：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230422223548197.png" alt="image-20230422223548197"></p>
-</li>
-<li><p>下载好之后直接运行安装即可，这里不建议修改默认配置（为了方便使用可以勾选将 conda 添加到环境变量，但是要保证系统里没有安装任何版本的 Python）</p>
-</li>
-<li><p>安装完成之后，在开始菜单可以找到 Anaconda Prompt (anaconda3) 快捷方式，运行这个快捷方式就可以打开 Anconda 的命令行窗口。之后使用 Anconda 执行命令就都在这里操作。</p>
-</li>
-<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容即可</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用 conda 创建虚拟环境命令（这里假设我们要部署Stable Diffusion WebUI，可以创建一个名为SD-WebUI的虚拟环境，python版本号为3.10）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>等待命令执行完成后，我们就拥有了一个名为SD-WebUI的虚拟环境，这个环境里的 Python 版本是 3.10，接下来就是启动这个虚拟环境，使用如下命令来启动：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate SD-WebUI</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行完成后，可以看到开头的 (base) 变成了 (SD-WebUI) ，说明我们已经成功进入了这个虚拟环境，接下来就可以在这个虚拟环境中继续部署了。</p>
-</li>
-<li><p>在这里再分享一些常用的 conda 命令：</p>
-<ol>
-<li><p>关闭当前的虚拟环境：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看虚拟环境列表：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看安装的包：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除环境（完全删除名为env_name的环境）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name --all</span><br></pre></td></tr></table></figure>
-
-<p>也可以只删除环境中的某个包：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name packge_name</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更改当前环境的Python版本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li><p>另外，使用 conda 配置好环境之后，如果想要运行，通常需要重新打开 conda 的命令行来定位项目，这样操作很繁琐，这里提供一种解决方案。</p>
-<p>我们首先从 conda 命令行的启动快捷方式入手，查看 Anaconda Prompt (anaconda3) 的属性可以发现，其实这个快捷方式就是用 cmd 执行了一行命令，我这里的命令将如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%windir%\System32\cmd.exe &quot;/K&quot; C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3</span><br></pre></td></tr></table></figure>
-
-<p>知道了这个原理之后，我们就可以自己写一个 bat 文件来直接启动 conda 命令行，然后再自动启动我们所需的虚拟环境的命令，就可以做到一键启动了。下面是我给我的 Stable Diffusion WebUI 写的一键启动命令示例：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3    <span class="comment"># 启动conda</span></span><br><span class="line">call conda activate SD-WebUI    <span class="comment"># 启动 SD-WebUI 虚拟环境</span></span><br><span class="line">python launch.py    <span class="comment"># 运行 WebUI</span></span><br></pre></td></tr></table></figure>
-
-<p>当然这只是最简单的启动命令，如果有需要还可以再加入一些其它的内容。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>Python</tag>
-        <tag>AI</tag>
-        <tag>Anconda</tag>
       </tags>
   </entry>
 </search>
