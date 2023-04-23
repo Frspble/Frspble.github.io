@@ -493,8 +493,11 @@
 </li>
 <li><p>安装完成之后，在开始菜单可以找到 Anaconda Prompt (anaconda3) 快捷方式，运行这个快捷方式就可以打开 Anconda 的命令行窗口。之后使用 Anconda 执行命令就都在这里操作。</p>
 </li>
-<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容即可</p>
+<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>另外有的时候可能还会用到 pip，还可以为 pip 配置国内镜像：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>使用 conda 创建虚拟环境命令（这里假设我们要部署Stable Diffusion WebUI，可以创建一个名为SD-WebUI的虚拟环境，python版本号为3.10）：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
@@ -505,7 +508,7 @@
 <li><p>执行完成后，可以看到开头的 (base) 变成了 (SD-WebUI) ，说明我们已经成功进入了这个虚拟环境，接下来就可以在这个虚拟环境中继续部署了。</p>
 </li>
 <li><p>在这里再分享一些常用的 conda 命令：</p>
-<ol>
+</li>
 <li><p>关闭当前的虚拟环境：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
 </li>
@@ -522,8 +525,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name packge_name</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>更改当前环境的Python版本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure></li>
-</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>另外，使用 conda 配置好环境之后，如果想要运行，通常需要重新打开 conda 的命令行来定位项目，这样操作很繁琐，这里提供一种解决方案。</p>
 <p>我们首先从 conda 命令行的启动快捷方式入手，查看 Anaconda Prompt (anaconda3) 的属性可以发现，其实这个快捷方式就是用 cmd 执行了一行命令，我这里的命令将如下：</p>
@@ -631,6 +633,85 @@
         <tag>AI</tag>
         <tag>ChatGPT</tag>
         <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Stable Diffusion 的搭建和测试</title>
+    <url>/posts/57dee8fe.html</url>
+    <content><![CDATA[<h1 id="Stable-Diffusion-的搭建和测试"><a href="#Stable-Diffusion-的搭建和测试" class="headerlink" title="Stable Diffusion 的搭建和测试"></a>Stable Diffusion 的搭建和测试</h1><p>最近在网上看到了一些据说用AI生成的照片，我一开始还不相信这是AI生成的，直到我亲自部署并尝试才相信。</p>
+<p>那么下面就来和各位分享一下我搭建Stable Diffusion的过程，以及用Stable Diffusion生成的照片。</p>
+<p>首先，我们之前已经介绍过如何搭建方便的 AI 开发环境，还没有搭建的可以翻一下之前的文章。</p>
+<p>除了之前介绍的 conda 外，我们还需要安装 Git，安装十分简单，此处不再赘述。下载链接：<a href="https://git-scm.com/downloads">Git - Downloads (git-scm.com)</a></p>
+<p>这两样都准备好之后，就可以开始安装了。</p>
+<ol>
+<li><p>首先打开 Anconda Prompt，创建一个新的虚拟环境：</p>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建好之后激活这个环境：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate SD-WebUI</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>cd 到想要存放SD工程的目录（根据自己的需要来，我这里放到了D盘的 AI 目录下）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 git 将工程克隆下来，并且进入这个目录：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/AUTOMATIC1111/stable-diffusion-webui.git</span><br><span class="line"><span class="built_in">cd</span> stable-diffusion-webui</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>由于目前最新的 WebUI 已经自带了一键安装程序，所以我们这里可以直接 call 自带的安装程序，这个安装程序会自动创建python虚拟环境，自动下载依赖包，一键就能完成安装（这里使用 Git 克隆的时候可能会存在网络问题，请自行解决）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call webui.bat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装完成后就可以直接运行了，这里运行也是直接在 conda 的SD-WebUI虚拟环境中<code>call webui.bat</code>即可</p>
+</li>
+<li><p>为了方便之后的使用，我这里写了一个一键运行的脚本（这里的 miniconda 路径需要根据你本地的情况做修改）：</p>
+<p>一键运行.bat：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call C:\Users\Frspble\miniconda3\Scripts\activate.bat C:\Users\Frspble\miniconda3</span><br><span class="line">call conda activate SD-WebUI</span><br><span class="line">call webui.bat</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当提示<code>Running on local URL:  http://127.0.0.1:7860</code>时，代表 webui 已经运行成功，打开<code>http://127.0.0.1:7860</code>这个链接就可以看到 webui 的界面了。</p>
+</li>
+<li><p>下面分享一些常用的 WebUI 插件和设置：</p>
+<ol>
+<li><p>在设置-用户界面-快捷设置列表这里可以填入 <code>sd_model_checkpoint, sd_vae, CLIP_stop_at_last_layers</code></p>
+<p>这样在界面上方就可以快捷切换 VAE 和 CLIP跳过层。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230423154054368.png" alt="image-20230423154054368"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230423154813828.png" alt="image-20230423154813828"></p>
+</li>
+<li><p>常用插件：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>英文名</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>简体中文语言包</td>
+<td>stable-diffusion-webui-localization-zh_CN</td>
+<td><a href="https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN">https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN</a></td>
+</tr>
+<tr>
+<td>双语对照翻译</td>
+<td>sd-webui-bilingual-localization</td>
+<td><a href="https://github.com/journey-ad/sd-webui-bilingual-localization">https://github.com/journey-ad/sd-webui-bilingual-localization</a>)</td>
+</tr>
+<tr>
+<td>ControlNet</td>
+<td>sd-webui-controlnet</td>
+<td><a href="https://github.com/Mikubill/sd-webui-controlnet.git">https://github.com/Mikubill/sd-webui-controlnet.git</a></td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>AI</tag>
+        <tag>Stable Diffusion</tag>
+        <tag>CV</tag>
       </tags>
   </entry>
 </search>
