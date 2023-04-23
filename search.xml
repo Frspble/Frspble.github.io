@@ -703,6 +703,11 @@
 </ol>
 </li>
 </ol>
+<p>下面分享一些我使用 Stable Diffusion 生成的几张照片，这里使用的模型是 Chilloutmi 外加 KoreanDollLikeness Lora，使用了几张之前拍摄的照片，用 img2img 替换原有的人物主体生成。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/9C0519D93715C45AE5B4EB579158AE1A.jpg" alt="9C0519D93715C45AE5B4EB579158AE1A"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/DCE6FF9ACEF51EBD7DB3B6991C6F3483.jpg" alt="DCE6FF9ACEF51EBD7DB3B6991C6F3483"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/634D0BC293F3DC8547939C9FCB6943B9.jpg" alt="634D0BC293F3DC8547939C9FCB6943B9"></p>
+<p>可以看到，这个效果确实已经可以做到以假乱真了，如果不仔细看图片确实无法分辨是否是AI生成的。</p>
 ]]></content>
       <categories>
         <category>技术探讨</category>
