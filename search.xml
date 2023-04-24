@@ -1,6 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>手把手教你搭建开发环境之 C/C++</title>
+    <url>/posts/85ab07ea.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
+<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
+<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
+<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
+<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
+<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
+<p>下面是详细的安装步骤：</p>
+<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
+<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
+<p>下载完成后点击“打开文件”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
+<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
+<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
+<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
+<p>下面是配置步骤：</p>
+<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
+<p>点击下图中的链接下载，等待下载完成后运行。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
+<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
+<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
+<p>当然也可自行修改，需要保证路径中只包含英文。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
+<p>修改路径后点击 “Extract”，等待解压完成。</p>
+<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
+<p>回到桌面，右键“此电脑”，点击属性</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
+<p>然后点击 “高级系统设置”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
+<p>选择 “环境变量”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
+<p>双击 “Path”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
+<p>点击 “新建”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
+<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
+<p>确认无误后连续点击三个“确定”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
+<p>至此，你已经完成了 MinGW 的配置。</p>
+<p><strong>接下来安装 VS code</strong></p>
+<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>点击 Download 按钮</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
+<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
+<p>由于安装过程较为简单，此处不再赘述。</p>
+<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
+<p>同样的方法搜索 “C”，安装C语言插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
+<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C语言</tag>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/posts/8176306d.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows subsystem for Android (WSA) 的配置方法</title>
+    <url>/posts/f99f16f6.html</url>
+    <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
+<p>WSA，顾名思义，就是运行在Windows上的Android子系统。说白了就是可以在Windows上运行安卓软件，这在之前就已经有安卓模拟器可以实现，但是WSA的体验更好。可以像使用Windows原生应用一样使用Android软件。</p>
+<p>下面就详细为大家介绍一下如何安装配置 WSA。</p>
+<h2 id="一、修改地区"><a href="#一、修改地区" class="headerlink" title="一、修改地区"></a>一、修改地区</h2><p>由于目前WSA还处于测试阶段，只上架了美区的微软应用商店，所以需要修改系统地区为美国。</p>
+<p>首先打开设置，找到 “时间和语言”，然后点击 “语言和区域”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159569.png" alt="图片"></p>
+<p>找到 “国家或地区”，修改地区为 “美国”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159607.png" alt="图片"></p>
+<h2 id="二、安装-WSA-和-APK-安装程序"><a href="#二、安装-WSA-和-APK-安装程序" class="headerlink" title="二、安装 WSA 和 APK 安装程序"></a>二、安装 WSA 和 APK 安装程序</h2><p>打开WSA的安装链接：<em><a href="http://www.microsoft.com/store/productId/9P3395VX91NR">www.microsoft.com/store/productId/9P3395VX91NR</a></em></p>
+<p>点击：Get in Store app，之后会跳转到 微软应用商店，点击安装并等待安装成功。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159853.png" alt="图片"></p>
+<p>安装完成后，可以在微软应用商店下载另外一款用于给WSA安装APK的程序。在微软应用商店搜索WSA就可以找到。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159521.png" alt="图片"></p>
+<p>等待两个软件都安装成功，在开始菜单中可以找到 “适用于Android 的 Windows 子系统设置”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159842.png" alt="图片"></p>
+<p>打开设置，启用 “开发人员模式”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159293.png" alt="图片"></p>
+<h2 id="三、下载和配置-ADB（Android-Debug-Bridge）"><a href="#三、下载和配置-ADB（Android-Debug-Bridge）" class="headerlink" title="三、下载和配置 ADB（Android Debug Bridge）"></a>三、下载和配置 ADB（Android Debug Bridge）</h2><p>ADB 是Android官方提供的调试工具，可以理解为连接电脑和Android设备的桥梁。通过这座桥梁可以操作Android设备，也就可以为WSA安装APK。</p>
+<p>ADB 官网：<a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn</a></p>
+<p>点击下载</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159617.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200223.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200726.png" alt="图片"></p>
+<p>将下载好的压缩包解压到任意路径（不要包含中文），如图所示。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200960.png" alt="图片"></p>
+<h2 id="四、安装你需要的-APK"><a href="#四、安装你需要的-APK" class="headerlink" title="四、安装你需要的 APK"></a>四、安装你需要的 APK</h2><p>如果你正确完成了以上的配置，就可以直接双击你想要安装的APK，首次安装需要选择ADB路径，点击选取，选择你之前解压的ADB路径。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200170.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200932.png" alt="图片"></p>
+<p>然后根据提示启动 WSA 并等待安装即可。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200651.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200886.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201539.png" alt="图片"></p>
+<p>安装完成后将会自动运行你安装的App，想要再次启动时可以在开始菜单中找到该App。如果之后想要安装其他App，直接双击APK文件即可开始安装。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Android</tag>
+        <tag>WSA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用 Python 计算n阶行列式的多种方法</title>
+    <url>/posts/e2553edc.html</url>
+    <content><![CDATA[<h1 id="探讨使用-Python-实现计算-n-阶行列式的多种方法"><a href="#探讨使用-Python-实现计算-n-阶行列式的多种方法" class="headerlink" title="探讨使用 Python 实现计算 n 阶行列式的多种方法"></a>探讨使用 Python 实现计算 n 阶行列式的多种方法</h1><p>前些日子刚学线性代数，被手算高阶行列式折磨（主要因为当时才只学了定义），于是想用Python来做验算。自然也就想到了Python强大的第三方科学计算库 —— Numpy。经过一通操作，便有了以下的动态：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202222120.jpeg" alt="图片"></p>
+<p>以下是输入和输出的结果：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">input:[[ 2  1  4  1],</span><br><span class="line">       [ 3 -1  2  1],</span><br><span class="line">       [ 1  2  3  2],</span><br><span class="line">       [ 5  0  6  2]]</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">output: 6.217248937900884e-15</span><br></pre></td></tr></table></figure>
+
+<p>但是这个行列式的结果应该是0才对啊！！！</p>
+<p>观察 Numpy 计算的结果，猜测可能是浮点数导致的误差。那既然现成的库不靠谱，就只能自己造轮子了。当时我用定义法写了一个简单的小程序。后来随着更深入的学习，我也了解到了更多的计算方法，也翻了一些参考资料，所以今天就来讨论一下计算行列式的多种方法。</p>
+<p>我简单总结了一下计算行列式的几种方法，具体如下：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202158888.png" alt="图片"></p>
+<p>按照以上总结的方法，下面就来一一实现。此处只讨论实现方式，不考虑时间复杂度和优化问题。</p>
+<h2 id="一、逆序数法"><a href="#一、逆序数法" class="headerlink" title="一、逆序数法"></a>一、逆序数法</h2><p>逆序数法总共分为三步：计算逆序数、计算全排列、通过定义计算结果。</p>
+<p>我们将这三步分为三个函数来一步步实现。</p>
+<p>首先是计算逆序数，最容易想到的就是这个算法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_t</span>(<span class="params">rank</span>):</span><br><span class="line">    t = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i1 <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(rank)):</span><br><span class="line">        <span class="keyword">for</span> i2 <span class="keyword">in</span> <span class="built_in">range</span>(i1 + <span class="number">1</span>, <span class="built_in">len</span>(rank)):</span><br><span class="line">            <span class="keyword">if</span> rank[i1] &gt; rank[i2]:</span><br><span class="line">                t += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> t</span><br></pre></td></tr></table></figure>
+
+<p>简单解释一下就是从一串数组中挨个遍历每一个数，然后查找该数前面大于该数的数量并且计数。</p>
+<p>第二个函数是获得 n 个数的全排列，可以使用递归的方法来解决：确定第1位，对n-1位进行全排列，确定第二位，对n-2位进行全排列……</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    length = <span class="built_in">len</span>(rank)</span><br><span class="line">    permutations = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_permute</span>(<span class="params">index=<span class="number">0</span></span>):</span><br><span class="line">        <span class="keyword">if</span> index == length:</span><br><span class="line">            permutations.append(rank[<span class="number">0</span>:length])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(index, length):</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">            _permute(index + <span class="number">1</span>)</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">    _permute()</span><br><span class="line">    <span class="keyword">return</span> permutations</span><br></pre></td></tr></table></figure>
+
+<p>后来发现还有更简单直接的方法：调用Python的内置库 itertools 来实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">list</span>(itertools.permutations(rank))</span><br></pre></td></tr></table></figure>
+
+<p>准备好以上两个函数后就可以根据定义进行计算了：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_1</span>(<span class="params">det</span>):</span><br><span class="line">    <span class="comment"># 行列式为0时直接返回0</span></span><br><span class="line">    <span class="keyword">if</span> det == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="comment"># 行列式为一阶时直接返回结果</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(det) == <span class="number">1</span>:    </span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    p = get_permutations(<span class="built_in">range</span>(<span class="number">1</span>, n + <span class="number">1</span>))</span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 遍历全排列</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> p:    </span><br><span class="line">        t = get_t(r)</span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        part = (-<span class="number">1</span>) ** t</span><br><span class="line">        <span class="comment"># 遍历排列中元素并计算结果</span></span><br><span class="line">        <span class="keyword">for</span> c <span class="keyword">in</span> r:   </span><br><span class="line">            part *= det[i][c - <span class="number">1</span>]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        result += part</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="二、等价转换法"><a href="#二、等价转换法" class="headerlink" title="二、等价转换法"></a>二、等价转换法</h2><p>该方法就是通过不断的变换将行列式转换为上三角形行列式，然后计算对角线的乘积。具体的实现方法如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_2</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="comment"># 遍历列</span></span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        row = col</span><br><span class="line">        result *= det[row][col]</span><br><span class="line">        <span class="comment"># 寻找不是0的行</span></span><br><span class="line">        <span class="keyword">while</span> det[row][col] == <span class="number">0</span> <span class="keyword">and</span> row &lt; n - <span class="number">1</span>:</span><br><span class="line">            row += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 化简行列式</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row + <span class="number">1</span>, n):</span><br><span class="line">            <span class="keyword">if</span> det[i][col] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                k = - det[i][col] / det[row][col]</span><br><span class="line">                <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(col, n):</span><br><span class="line">                    det[i][j] += det[row][j] * k</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="三、代数余子式法"><a href="#三、代数余子式法" class="headerlink" title="三、代数余子式法"></a>三、代数余子式法</h2><p>该方法就是将行列式不断降阶，直到变为容易计算的低阶行列式。</p>
+<p>该方法比较适合用递归来解决，实现代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_3</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    <span class="comment"># 处理基础情况</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]*det[<span class="number">1</span>][<span class="number">1</span>] - det[<span class="number">0</span>][<span class="number">1</span>]*det[<span class="number">1</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="comment"># 求代数余子式并计算结果</span></span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        C = []</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            C.append(det[j][<span class="number">1</span>:])</span><br><span class="line">        C.remove(C[i])</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">            result -= calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            result += calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
+
+
+
+<p>以上就是个人对于使用 Python 计算行列式的三种常用方法的总结，个人能力有限，可能存在错误，欢迎各位指正。</p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>大学</tag>
+        <tag>数学</tag>
+        <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 快速入门</title>
     <url>/posts/bc534f5.html</url>
     <content><![CDATA[<h1 id="Markdown-快速入门"><a href="#Markdown-快速入门" class="headerlink" title="Markdown 快速入门"></a>Markdown 快速入门</h1><h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><h3 id="1-使用-x3D-和-标记"><a href="#1-使用-x3D-和-标记" class="headerlink" title="1. 使用 &#x3D; 和 - 标记"></a>1. 使用 &#x3D; 和 - 标记</h3><p>“&#x3D;” 标记一级标题</p>
@@ -271,166 +477,6 @@
       </tags>
   </entry>
   <entry>
-    <title>手把手教你搭建开发环境之 C/C++</title>
-    <url>/posts/85ab07ea.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
-<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
-<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
-<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
-<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
-<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
-<p>下面是详细的安装步骤：</p>
-<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
-<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
-<p>下载完成后点击“打开文件”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
-<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
-<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
-<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
-<p>下面是配置步骤：</p>
-<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
-<p>点击下图中的链接下载，等待下载完成后运行。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
-<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
-<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
-<p>当然也可自行修改，需要保证路径中只包含英文。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
-<p>修改路径后点击 “Extract”，等待解压完成。</p>
-<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
-<p>回到桌面，右键“此电脑”，点击属性</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
-<p>然后点击 “高级系统设置”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
-<p>选择 “环境变量”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
-<p>双击 “Path”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
-<p>点击 “新建”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
-<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
-<p>确认无误后连续点击三个“确定”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
-<p>至此，你已经完成了 MinGW 的配置。</p>
-<p><strong>接下来安装 VS code</strong></p>
-<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>点击 Download 按钮</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
-<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
-<p>由于安装过程较为简单，此处不再赘述。</p>
-<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
-<p>同样的方法搜索 “C”，安装C语言插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
-<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C语言</tag>
-        <tag>环境搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用 Python 计算n阶行列式的多种方法</title>
-    <url>/posts/e2553edc.html</url>
-    <content><![CDATA[<h1 id="探讨使用-Python-实现计算-n-阶行列式的多种方法"><a href="#探讨使用-Python-实现计算-n-阶行列式的多种方法" class="headerlink" title="探讨使用 Python 实现计算 n 阶行列式的多种方法"></a>探讨使用 Python 实现计算 n 阶行列式的多种方法</h1><p>前些日子刚学线性代数，被手算高阶行列式折磨（主要因为当时才只学了定义），于是想用Python来做验算。自然也就想到了Python强大的第三方科学计算库 —— Numpy。经过一通操作，便有了以下的动态：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202222120.jpeg" alt="图片"></p>
-<p>以下是输入和输出的结果：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">input:[[ 2  1  4  1],</span><br><span class="line">       [ 3 -1  2  1],</span><br><span class="line">       [ 1  2  3  2],</span><br><span class="line">       [ 5  0  6  2]]</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">output: 6.217248937900884e-15</span><br></pre></td></tr></table></figure>
-
-<p>但是这个行列式的结果应该是0才对啊！！！</p>
-<p>观察 Numpy 计算的结果，猜测可能是浮点数导致的误差。那既然现成的库不靠谱，就只能自己造轮子了。当时我用定义法写了一个简单的小程序。后来随着更深入的学习，我也了解到了更多的计算方法，也翻了一些参考资料，所以今天就来讨论一下计算行列式的多种方法。</p>
-<p>我简单总结了一下计算行列式的几种方法，具体如下：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202158888.png" alt="图片"></p>
-<p>按照以上总结的方法，下面就来一一实现。此处只讨论实现方式，不考虑时间复杂度和优化问题。</p>
-<h2 id="一、逆序数法"><a href="#一、逆序数法" class="headerlink" title="一、逆序数法"></a>一、逆序数法</h2><p>逆序数法总共分为三步：计算逆序数、计算全排列、通过定义计算结果。</p>
-<p>我们将这三步分为三个函数来一步步实现。</p>
-<p>首先是计算逆序数，最容易想到的就是这个算法：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_t</span>(<span class="params">rank</span>):</span><br><span class="line">    t = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i1 <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(rank)):</span><br><span class="line">        <span class="keyword">for</span> i2 <span class="keyword">in</span> <span class="built_in">range</span>(i1 + <span class="number">1</span>, <span class="built_in">len</span>(rank)):</span><br><span class="line">            <span class="keyword">if</span> rank[i1] &gt; rank[i2]:</span><br><span class="line">                t += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> t</span><br></pre></td></tr></table></figure>
-
-<p>简单解释一下就是从一串数组中挨个遍历每一个数，然后查找该数前面大于该数的数量并且计数。</p>
-<p>第二个函数是获得 n 个数的全排列，可以使用递归的方法来解决：确定第1位，对n-1位进行全排列，确定第二位，对n-2位进行全排列……</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    length = <span class="built_in">len</span>(rank)</span><br><span class="line">    permutations = []</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">_permute</span>(<span class="params">index=<span class="number">0</span></span>):</span><br><span class="line">        <span class="keyword">if</span> index == length:</span><br><span class="line">            permutations.append(rank[<span class="number">0</span>:length])</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(index, length):</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">            _permute(index + <span class="number">1</span>)</span><br><span class="line">            rank[i], rank[index] = rank[index], rank[i]</span><br><span class="line">    _permute()</span><br><span class="line">    <span class="keyword">return</span> permutations</span><br></pre></td></tr></table></figure>
-
-<p>后来发现还有更简单直接的方法：调用Python的内置库 itertools 来实现：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_permutations</span>(<span class="params">rank</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">list</span>(itertools.permutations(rank))</span><br></pre></td></tr></table></figure>
-
-<p>准备好以上两个函数后就可以根据定义进行计算了：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_1</span>(<span class="params">det</span>):</span><br><span class="line">    <span class="comment"># 行列式为0时直接返回0</span></span><br><span class="line">    <span class="keyword">if</span> det == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="comment"># 行列式为一阶时直接返回结果</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(det) == <span class="number">1</span>:    </span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    p = get_permutations(<span class="built_in">range</span>(<span class="number">1</span>, n + <span class="number">1</span>))</span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 遍历全排列</span></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> p:    </span><br><span class="line">        t = get_t(r)</span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        part = (-<span class="number">1</span>) ** t</span><br><span class="line">        <span class="comment"># 遍历排列中元素并计算结果</span></span><br><span class="line">        <span class="keyword">for</span> c <span class="keyword">in</span> r:   </span><br><span class="line">            part *= det[i][c - <span class="number">1</span>]</span><br><span class="line">            i += <span class="number">1</span></span><br><span class="line">        result += part</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="二、等价转换法"><a href="#二、等价转换法" class="headerlink" title="二、等价转换法"></a>二、等价转换法</h2><p>该方法就是通过不断的变换将行列式转换为上三角形行列式，然后计算对角线的乘积。具体的实现方法如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_2</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="comment"># 遍历列</span></span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        row = col</span><br><span class="line">        result *= det[row][col]</span><br><span class="line">        <span class="comment"># 寻找不是0的行</span></span><br><span class="line">        <span class="keyword">while</span> det[row][col] == <span class="number">0</span> <span class="keyword">and</span> row &lt; n - <span class="number">1</span>:</span><br><span class="line">            row += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 化简行列式</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(row + <span class="number">1</span>, n):</span><br><span class="line">            <span class="keyword">if</span> det[i][col] == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                k = - det[i][col] / det[row][col]</span><br><span class="line">                <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(col, n):</span><br><span class="line">                    det[i][j] += det[row][j] * k</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="三、代数余子式法"><a href="#三、代数余子式法" class="headerlink" title="三、代数余子式法"></a>三、代数余子式法</h2><p>该方法就是将行列式不断降阶，直到变为容易计算的低阶行列式。</p>
-<p>该方法比较适合用递归来解决，实现代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_det_3</span>(<span class="params">det</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(det)</span><br><span class="line">    <span class="comment"># 处理基础情况</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> det[<span class="number">0</span>][<span class="number">0</span>]*det[<span class="number">1</span>][<span class="number">1</span>] - det[<span class="number">0</span>][<span class="number">1</span>]*det[<span class="number">1</span>][<span class="number">0</span>]</span><br><span class="line">    <span class="comment"># 求代数余子式并计算结果</span></span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        C = []</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            C.append(det[j][<span class="number">1</span>:])</span><br><span class="line">        C.remove(C[i])</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">2</span> == <span class="number">1</span>:</span><br><span class="line">            result -= calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            result += calculate_det_3(C) * det[i][<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-
-
-<p>以上就是个人对于使用 Python 计算行列式的三种常用方法的总结，个人能力有限，可能存在错误，欢迎各位指正。</p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>大学</tag>
-        <tag>数学</tag>
-        <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手教你搭建开发环境之 Python</title>
-    <url>/posts/8176306d.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
-<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
-<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
-<p><strong>安装教程：</strong></p>
-<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
-<p>点击 Downloads</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
-<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
-<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
-<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
-<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
-<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
-<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
-<p>点击 Download</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
-<p>下载社区版</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
-<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
-<p>选择完成后继续按照提示操作完成安装。</p>
-<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
-<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
-<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
-<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>New Bing 首发体验报告</title>
     <url>/posts/ab5ddeae.html</url>
     <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
@@ -455,52 +501,6 @@
         <tag>AI</tag>
         <tag>ChatGPT</tag>
         <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows subsystem for Android (WSA) 的配置方法</title>
-    <url>/posts/f99f16f6.html</url>
-    <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
-<p>WSA，顾名思义，就是运行在Windows上的Android子系统。说白了就是可以在Windows上运行安卓软件，这在之前就已经有安卓模拟器可以实现，但是WSA的体验更好。可以像使用Windows原生应用一样使用Android软件。</p>
-<p>下面就详细为大家介绍一下如何安装配置 WSA。</p>
-<h2 id="一、修改地区"><a href="#一、修改地区" class="headerlink" title="一、修改地区"></a>一、修改地区</h2><p>由于目前WSA还处于测试阶段，只上架了美区的微软应用商店，所以需要修改系统地区为美国。</p>
-<p>首先打开设置，找到 “时间和语言”，然后点击 “语言和区域”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159569.png" alt="图片"></p>
-<p>找到 “国家或地区”，修改地区为 “美国”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159607.png" alt="图片"></p>
-<h2 id="二、安装-WSA-和-APK-安装程序"><a href="#二、安装-WSA-和-APK-安装程序" class="headerlink" title="二、安装 WSA 和 APK 安装程序"></a>二、安装 WSA 和 APK 安装程序</h2><p>打开WSA的安装链接：<em><a href="http://www.microsoft.com/store/productId/9P3395VX91NR">www.microsoft.com/store/productId/9P3395VX91NR</a></em></p>
-<p>点击：Get in Store app，之后会跳转到 微软应用商店，点击安装并等待安装成功。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159853.png" alt="图片"></p>
-<p>安装完成后，可以在微软应用商店下载另外一款用于给WSA安装APK的程序。在微软应用商店搜索WSA就可以找到。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159521.png" alt="图片"></p>
-<p>等待两个软件都安装成功，在开始菜单中可以找到 “适用于Android 的 Windows 子系统设置”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159842.png" alt="图片"></p>
-<p>打开设置，启用 “开发人员模式”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159293.png" alt="图片"></p>
-<h2 id="三、下载和配置-ADB（Android-Debug-Bridge）"><a href="#三、下载和配置-ADB（Android-Debug-Bridge）" class="headerlink" title="三、下载和配置 ADB（Android Debug Bridge）"></a>三、下载和配置 ADB（Android Debug Bridge）</h2><p>ADB 是Android官方提供的调试工具，可以理解为连接电脑和Android设备的桥梁。通过这座桥梁可以操作Android设备，也就可以为WSA安装APK。</p>
-<p>ADB 官网：<a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn</a></p>
-<p>点击下载</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159617.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200223.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200726.png" alt="图片"></p>
-<p>将下载好的压缩包解压到任意路径（不要包含中文），如图所示。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200960.png" alt="图片"></p>
-<h2 id="四、安装你需要的-APK"><a href="#四、安装你需要的-APK" class="headerlink" title="四、安装你需要的 APK"></a>四、安装你需要的 APK</h2><p>如果你正确完成了以上的配置，就可以直接双击你想要安装的APK，首次安装需要选择ADB路径，点击选取，选择你之前解压的ADB路径。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200170.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200932.png" alt="图片"></p>
-<p>然后根据提示启动 WSA 并等待安装即可。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200651.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200886.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201539.png" alt="图片"></p>
-<p>安装完成后将会自动运行你安装的App，想要再次启动时可以在开始菜单中找到该App。如果之后想要安装其他App，直接双击APK文件即可开始安装。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>Android</tag>
-        <tag>WSA</tag>
       </tags>
   </entry>
   <entry>
@@ -583,83 +583,15 @@
       </tags>
   </entry>
   <entry>
-    <title>让 &quot;ChatGPT&quot; 运行在自己的电脑上</title>
-    <url>/posts/438d7117.html</url>
-    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
-<p>下面是不同量化等级所需要的显存对比：</p>
-<table>
-<thead>
-<tr>
-<th><strong>量化等级</strong></th>
-<th><strong>最低 GPU 显存</strong>（推理）</th>
-<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>FP16（无量化）</td>
-<td>13 GB</td>
-<td>14 GB</td>
-</tr>
-<tr>
-<td>INT8</td>
-<td>8 GB</td>
-<td>9 GB</td>
-</tr>
-<tr>
-<td>INT4</td>
-<td>6 GB</td>
-<td>7 GB</td>
-</tr>
-</tbody></table>
-<p>下面开始部署教程：</p>
-<ol>
-<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行 cli_demo.py，自动下载模型并运行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
-
-<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
-
-<hr>
-<blockquote>
-<p>2023.04.23 补充：</p>
-<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
-</blockquote>
-<hr>
-</li>
-<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
-
-<p>即可以运行 WebUI 版的 ChatGLM</p>
-</li>
-</ol>
-<p>以上就是ChatGLM 的部署过程。</p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>用 AI 生成足以以假乱真的照片</title>
     <url>/posts/57dee8fe.html</url>
-    <content><![CDATA[<h1 id="Stable-Diffusion-的搭建和测试"><a href="#Stable-Diffusion-的搭建和测试" class="headerlink" title="Stable Diffusion 的搭建和测试"></a>Stable Diffusion 的搭建和测试</h1><p>最近在网上看到了一些据说用AI生成的照片，我一开始还不相信这是AI生成的，直到我亲自部署并尝试才相信。</p>
+    <content><![CDATA[<h1 id="Stable-Diffusion-的搭建和测试"><a href="#Stable-Diffusion-的搭建和测试" class="headerlink" title="Stable Diffusion 的搭建和测试"></a>Stable Diffusion 的搭建和测试</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 30 GB 的硬盘空余空间</p>
+<p>至少 4GB 显存的独立显卡（最好是N卡）</p>
+<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍GPU的部署方式）</p>
+</blockquote>
+<p>最近在网上看到了一些据说用AI生成的照片，我一开始还不相信这是AI生成的，直到我亲自部署并尝试才相信。</p>
 <p>那么下面就来和各位分享一下我搭建Stable Diffusion的过程，以及用Stable Diffusion生成的照片。</p>
 <p>首先，我们之前已经介绍过如何搭建方便的 AI 开发环境，还没有搭建的可以翻一下之前的文章。</p>
 <p>除了之前介绍的 conda 外，我们还需要安装 Git，安装十分简单，此处不再赘述。下载链接：<a href="https://git-scm.com/downloads">Git - Downloads (git-scm.com)</a></p>
@@ -741,69 +673,83 @@
       </tags>
   </entry>
   <entry>
-    <title>语境法记单词资源分享</title>
-    <url>/posts/824e06e6.html</url>
-    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
-<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
-<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
-<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
-<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
-<p>下面是一篇生成的文章示例：</p>
-<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
-<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
-<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
-<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
-<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
-<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
+    <title>在本地搭建属于自己的 &quot;ChatGPT&quot;</title>
+    <url>/posts/438d7117.html</url>
+    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 30 GB 的硬盘空余空间</p>
+<p>至少 4GB 显存的 N 卡</p>
+<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
+</blockquote>
+<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
+<p>下面是不同量化等级所需要的显存对比：</p>
+<table>
+<thead>
+<tr>
+<th><strong>量化等级</strong></th>
+<th><strong>最低 GPU 显存</strong>（推理）</th>
+<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FP16（无量化）</td>
+<td>13 GB</td>
+<td>14 GB</td>
+</tr>
+<tr>
+<td>INT8</td>
+<td>8 GB</td>
+<td>9 GB</td>
+</tr>
+<tr>
+<td>INT4</td>
+<td>6 GB</td>
+<td>7 GB</td>
+</tr>
+</tbody></table>
+<p>下面开始部署教程：</p>
+<ol>
+<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行 cli_demo.py，自动下载模型并运行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
+
+<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
+
 <hr>
-<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
-]]></content>
-      <categories>
-        <category>资源分享</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
-        <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>英语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AI 项目汇总&amp;进度跟踪（持续更新）</title>
-    <url>/posts/2e12a5d7.html</url>
-    <content><![CDATA[<h1 id="各类-AI-项目汇总（持续更新）"><a href="#各类-AI-项目汇总（持续更新）" class="headerlink" title="各类 AI 项目汇总（持续更新）"></a>各类 AI 项目汇总（持续更新）</h1><h2 id="大语言模型"><a href="#大语言模型" class="headerlink" title="大语言模型"></a>大语言模型</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a>ChatGPT</h3><p>简介：相信这个模型就不用过多介绍了吧</p>
-<p>链接：<a href="https://chat.openai.com/">ChatGPT</a></p>
-<p>费用：GPT3.5 免费使用，GPT4  $20 &#x2F; 月。</p>
-<h3 id="LLMA"><a href="#LLMA" class="headerlink" title="LLMA"></a>LLMA</h3><p>简介：Meta 开发的大语言模型，属于基础模型，需要微调才能有好的结果</p>
-<p>链接：<a href="https://github.com/facebookresearch/llama">LLaMA</a></p>
-<p>费用：开源</p>
-<h4 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a>Claude</h4><p>简介：由 OpenAI 出走的前员工们集体创建的 Anthropic 公司新推出的一款类 ChatGPT 模型</p>
-<p>链接：<a href="https://www.anthropic.com/">Claude</a></p>
-<p>费用：目前免费</p>
-<h4 id="RWKV"><a href="#RWKV" class="headerlink" title="RWKV"></a>RWKV</h4><p>简介：由个人开发者开发的类 ChatGPT 模型</p>
-<p>链接：<a href="https://github.com/BlinkDL/RWKV-LM">RWKV</a></p>
-<p>费用：开源</p>
-<h4 id="ChatGLM"><a href="#ChatGLM" class="headerlink" title="ChatGLM"></a>ChatGLM</h4><p>简介：清华大学开发的大语言模型</p>
-<p>链接：<a href="https://github.com/THUDM/ChatGLM-6B">ChatGLM-6B</a></p>
-<p>费用：开源</p>
-<h4 id="MOSS"><a href="#MOSS" class="headerlink" title="MOSS"></a>MOSS</h4><p>简介：复旦大学开发的大语言模型</p>
-<p>链接：<a href="https://github.com/OpenLMLab/MOSS">MOSS</a></p>
-<p>费用：开源</p>
-<h2 id="图像生成模型"><a href="#图像生成模型" class="headerlink" title="图像生成模型"></a>图像生成模型</h2><h4 id="Stable-Diffusion"><a href="#Stable-Diffusion" class="headerlink" title="Stable Diffusion"></a>Stable Diffusion</h4><p>简介：stability 开发的图像生成模型，目前几乎所有的AI绘图都是基于这个模型</p>
-<p>链接：<a href="https://stability.ai/blog/stable-diffusion-v2-release">Stable Diffusion</a></p>
-<p>费用：开源</p>
-<h4 id="DALL-E2"><a href="#DALL-E2" class="headerlink" title="DALL-E2"></a>DALL-E2</h4><p>简介：OpenAI 的图像生成模型，比Stable Diffusion发布更早</p>
-<p>链接：<a href="https://openai.com/product/dall-e-2">DALL·E 2</a></p>
-<p>费用：收费，新账号赠送点数，用尽后需要购买点数使用</p>
+<blockquote>
+<p>2023.04.23 补充：</p>
+<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<hr>
+</li>
+<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
+
+<p>即可以运行 WebUI 版的 ChatGLM</p>
+</li>
+</ol>
+<p>以上就是ChatGLM 的部署过程。</p>
 ]]></content>
       <categories>
         <category>技术探讨</category>
       </categories>
       <tags>
+        <tag>环境搭建</tag>
         <tag>AI</tag>
-        <tag>ChatGPT</tag>
         <tag>NLP</tag>
-        <tag>CV</tag>
       </tags>
   </entry>
   <entry>
@@ -857,6 +803,72 @@
 ]]></content>
       <categories>
         <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>大学</tag>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AI 项目汇总&amp;进度跟踪（持续更新）</title>
+    <url>/posts/2e12a5d7.html</url>
+    <content><![CDATA[<h1 id="各类-AI-项目汇总（持续更新）"><a href="#各类-AI-项目汇总（持续更新）" class="headerlink" title="各类 AI 项目汇总（持续更新）"></a>各类 AI 项目汇总（持续更新）</h1><h2 id="大语言模型"><a href="#大语言模型" class="headerlink" title="大语言模型"></a>大语言模型</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a>ChatGPT</h3><p>简介：相信这个模型就不用过多介绍了吧</p>
+<p>链接：<a href="https://chat.openai.com/">ChatGPT</a></p>
+<p>费用：GPT3.5 免费使用，GPT4  $20 &#x2F; 月。</p>
+<h3 id="LLMA"><a href="#LLMA" class="headerlink" title="LLMA"></a>LLMA</h3><p>简介：Meta 开发的大语言模型，属于基础模型，需要微调才能有好的结果</p>
+<p>链接：<a href="https://github.com/facebookresearch/llama">LLaMA</a></p>
+<p>费用：开源</p>
+<h4 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a>Claude</h4><p>简介：由 OpenAI 出走的前员工们集体创建的 Anthropic 公司新推出的一款类 ChatGPT 模型</p>
+<p>链接：<a href="https://www.anthropic.com/">Claude</a></p>
+<p>费用：目前免费</p>
+<h4 id="RWKV"><a href="#RWKV" class="headerlink" title="RWKV"></a>RWKV</h4><p>简介：由个人开发者开发的类 ChatGPT 模型</p>
+<p>链接：<a href="https://github.com/BlinkDL/RWKV-LM">RWKV</a></p>
+<p>费用：开源</p>
+<h4 id="ChatGLM"><a href="#ChatGLM" class="headerlink" title="ChatGLM"></a>ChatGLM</h4><p>简介：清华大学开发的大语言模型</p>
+<p>链接：<a href="https://github.com/THUDM/ChatGLM-6B">ChatGLM-6B</a></p>
+<p>费用：开源</p>
+<h4 id="MOSS"><a href="#MOSS" class="headerlink" title="MOSS"></a>MOSS</h4><p>简介：复旦大学开发的大语言模型</p>
+<p>链接：<a href="https://github.com/OpenLMLab/MOSS">MOSS</a></p>
+<p>费用：开源</p>
+<h2 id="图像生成模型"><a href="#图像生成模型" class="headerlink" title="图像生成模型"></a>图像生成模型</h2><h4 id="Stable-Diffusion"><a href="#Stable-Diffusion" class="headerlink" title="Stable Diffusion"></a>Stable Diffusion</h4><p>简介：stability 开发的图像生成模型，目前几乎所有的AI绘图都是基于这个模型</p>
+<p>链接：<a href="https://stability.ai/blog/stable-diffusion-v2-release">Stable Diffusion</a></p>
+<p>费用：开源</p>
+<h4 id="DALL-E2"><a href="#DALL-E2" class="headerlink" title="DALL-E2"></a>DALL-E2</h4><p>简介：OpenAI 的图像生成模型，比Stable Diffusion发布更早</p>
+<p>链接：<a href="https://openai.com/product/dall-e-2">DALL·E 2</a></p>
+<p>费用：收费，新账号赠送点数，用尽后需要购买点数使用</p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>CV</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语境法记单词资源分享</title>
+    <url>/posts/824e06e6.html</url>
+    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
+<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
+<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
+<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
+<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
+<p>下面是一篇生成的文章示例：</p>
+<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
+<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
+<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
+<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
+<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
+<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
+<hr>
+<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
+]]></content>
+      <categories>
+        <category>资源分享</category>
       </categories>
       <tags>
         <tag>大学</tag>

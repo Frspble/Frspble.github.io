@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>让 &#34;ChatGPT&#34; 运行在自己的电脑上 | BoGe&#39;s Blog</title>
+<title>在本地搭建属于自己的 &#34;ChatGPT&#34; | BoGe&#39;s Blog</title>
 <noscript>开启Javascript是必要的</noscript>
 <link rel="icon" type="image/x-icon" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
 <link rel="apple-touch-icon" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
 <meta name="apple-mobile-web-app-title" content="BoGe&#39;s Blog">
 <link rel="bookmark" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
-<meta name="description" content="ChatGLM 本地搭建运行近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。下面是不同量化等级所需要的显存对比：量化等级最低 G">
+<meta name="description" content="ChatGLM 本地搭建运行硬件要求：至少 30 GB 的硬盘空余空间至少 4GB 显存的 N 卡（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）近期清华大学开源了一个类 C">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -216,14 +216,6 @@
             </div>
             <div class="card-tag-cloud">
                 
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1em; color: #d3d3d3">笔记
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/Markdown/" style="font-size: 1em; color: #d3d3d3">Markdown
-                        <sup>1</sup>
-                    </a>
-                
                     <a href="/tags/C/" style="font-size: 1em; color: #d3d3d3">C++
                         <sup>1</sup>
                     </a>
@@ -240,6 +232,18 @@
                         <sup>3</sup>
                     </a>
                 
+                    <a href="/tags/Windows/" style="font-size: 1em; color: #d3d3d3">Windows
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Android/" style="font-size: 1em; color: #d3d3d3">Android
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/WSA/" style="font-size: 1em; color: #d3d3d3">WSA
+                        <sup>1</sup>
+                    </a>
+                
                     <a href="/tags/%E5%A4%A7%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">大学
                         <sup>3</sup>
                     </a>
@@ -249,6 +253,14 @@
                     </a>
                 
                     <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 1em; color: #d3d3d3">线性代数
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1em; color: #d3d3d3">笔记
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Markdown/" style="font-size: 1em; color: #d3d3d3">Markdown
                         <sup>1</sup>
                     </a>
                 
@@ -262,18 +274,6 @@
                 
                     <a href="/tags/NLP/" style="font-size: 1em; color: #d3d3d3">NLP
                         <sup>3</sup>
-                    </a>
-                
-                    <a href="/tags/Windows/" style="font-size: 1em; color: #d3d3d3">Windows
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/Android/" style="font-size: 1em; color: #d3d3d3">Android
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/WSA/" style="font-size: 1em; color: #d3d3d3">WSA
-                        <sup>1</sup>
                     </a>
                 
                     <a href="/tags/Anconda/" style="font-size: 1em; color: #d3d3d3">Anconda
@@ -311,7 +311,7 @@
         </div>
         <div id="page-name-mask">
             <div id="page-name">
-                <a id="page-name-text" onclick="acrylic.toTop()">让 &#34;ChatGPT&#34; 运行在自己的电脑上</a>
+                <a id="page-name-text" onclick="acrylic.toTop()">在本地搭建属于自己的 &#34;ChatGPT&#34;</a>
             </div>
         </div>
         <div id="menus">
@@ -449,7 +449,7 @@
             </div>
         </div>
     </div>
-    <h1 class="post-title">让 &#34;ChatGPT&#34; 运行在自己的电脑上</h1>
+    <h1 class="post-title">在本地搭建属于自己的 &#34;ChatGPT&#34;</h1>
     <div id="post-meta">
         <div class="meta-secondline">
             <span class="post-meta-date" title="发布于">
@@ -462,13 +462,13 @@
                 
                     <span class="post-meta-wordcount">
                         <i class="fas fa-file-word fa-fw post-meta-icon" title="文章字数"></i>
-                        <span class="word-count">463</span>
+                        <span class="word-count">515</span>
                     </span>
                 
                 
                     <span class="post-meta-time">
                         <i class="fas fa-clock post-meta-icon" title="阅读耗时"></i>
-                        <span>1 min</span>
+                        <span>2 min</span>
                     </span>
                 
             
@@ -503,7 +503,13 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
+            <h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 30 GB 的硬盘空余空间</p>
+<p>至少 4GB 显存的 N 卡</p>
+<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
+</blockquote>
+<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
 <p>下面是不同量化等级所需要的显存对比：</p>
 <table>
 <thead>
@@ -639,7 +645,7 @@
     </div>
 </div>
                 <div class="share-link weibo"><a class="share-button" target="_blank"
-    href="https://service.weibo.com/share/share.php?title=让 &#34;ChatGPT&#34; 运行在自己的电脑上&amp;url=https://frspble.github.io/posts/438d7117.html&amp;pic=https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/logo_bg.jpg"
+    href="https://service.weibo.com/share/share.php?title=在本地搭建属于自己的 &#34;ChatGPT&#34;&amp;url=https://frspble.github.io/posts/438d7117.html&amp;pic=https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/logo_bg.jpg"
     title="分享到微博" rel="noopener external nofollow noreferrer noopener">
     <i class="fab fa-weibo" style="font-size:22px"></i>
 </a>
@@ -680,7 +686,7 @@
     <div class="post-copyright__author">
         <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
         <a class="post-copyright-title" href="#">
-            <span>让 &#34;ChatGPT&#34; 运行在自己的电脑上</span>
+            <span>在本地搭建属于自己的 &#34;ChatGPT&#34;</span>
         </a>
     </div>
     <div class="post-copyright__type">
@@ -875,9 +881,9 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/posts/438d7117.html" title="让 &#34;ChatGPT&#34; 运行在自己的电脑上">
+                <a class="thumbnail" href="/posts/438d7117.html" title="在本地搭建属于自己的 &#34;ChatGPT&#34;">
                     <img
-                        alt="让 &#34;ChatGPT&#34; 运行在自己的电脑上"
+                        alt="在本地搭建属于自己的 &#34;ChatGPT&#34;"
                         src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/logo_bg.jpg">
                 </a>
                 <div class="content">
@@ -886,8 +892,8 @@
                             技术探讨
                         </a>
                     
-                    <a class="title" href="/posts/438d7117.html" title="让 &#34;ChatGPT&#34; 运行在自己的电脑上">
-                        让 &#34;ChatGPT&#34; 运行在自己的电脑上
+                    <a class="title" href="/posts/438d7117.html" title="在本地搭建属于自己的 &#34;ChatGPT&#34;">
+                        在本地搭建属于自己的 &#34;ChatGPT&#34;
                     </a>
                 </div>
             </div>

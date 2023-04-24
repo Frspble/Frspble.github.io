@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-title" content="BoGe&#39;s Blog">
 <link rel="bookmark" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
-<meta name="description" content="Stable Diffusion 的搭建和测试最近在网上看到了一些据说用AI生成的照片，我一开始还不相信这是AI生成的，直到我亲自部署并尝试才相信。那么下面就来和各位分享一下我搭建Stable Dif">
+<meta name="description" content="Stable Diffusion 的搭建和测试硬件要求：至少 30 GB 的硬盘空余空间至少 4GB 显存的独立显卡（最好是N卡）（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍GPU的部署方式）">
 <meta name="theme-color" content="#1C1C1F">
 <link rel="stylesheet" href="/css/var.css">
 <link rel="stylesheet" href="/css/main.css">
@@ -216,14 +216,6 @@
             </div>
             <div class="card-tag-cloud">
                 
-                    <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1em; color: #d3d3d3">笔记
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/Markdown/" style="font-size: 1em; color: #d3d3d3">Markdown
-                        <sup>1</sup>
-                    </a>
-                
                     <a href="/tags/C/" style="font-size: 1em; color: #d3d3d3">C++
                         <sup>1</sup>
                     </a>
@@ -240,6 +232,18 @@
                         <sup>3</sup>
                     </a>
                 
+                    <a href="/tags/Windows/" style="font-size: 1em; color: #d3d3d3">Windows
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Android/" style="font-size: 1em; color: #d3d3d3">Android
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/WSA/" style="font-size: 1em; color: #d3d3d3">WSA
+                        <sup>1</sup>
+                    </a>
+                
                     <a href="/tags/%E5%A4%A7%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">大学
                         <sup>3</sup>
                     </a>
@@ -249,6 +253,14 @@
                     </a>
                 
                     <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 1em; color: #d3d3d3">线性代数
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1em; color: #d3d3d3">笔记
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Markdown/" style="font-size: 1em; color: #d3d3d3">Markdown
                         <sup>1</sup>
                     </a>
                 
@@ -262,18 +274,6 @@
                 
                     <a href="/tags/NLP/" style="font-size: 1em; color: #d3d3d3">NLP
                         <sup>3</sup>
-                    </a>
-                
-                    <a href="/tags/Windows/" style="font-size: 1em; color: #d3d3d3">Windows
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/Android/" style="font-size: 1em; color: #d3d3d3">Android
-                        <sup>1</sup>
-                    </a>
-                
-                    <a href="/tags/WSA/" style="font-size: 1em; color: #d3d3d3">WSA
-                        <sup>1</sup>
                     </a>
                 
                     <a href="/tags/Anconda/" style="font-size: 1em; color: #d3d3d3">Anconda
@@ -467,13 +467,13 @@
                 
                     <span class="post-meta-wordcount">
                         <i class="fas fa-file-word fa-fw post-meta-icon" title="文章字数"></i>
-                        <span class="word-count">742</span>
+                        <span class="word-count">801</span>
                     </span>
                 
                 
                     <span class="post-meta-time">
                         <i class="fas fa-clock post-meta-icon" title="阅读耗时"></i>
-                        <span>2 min</span>
+                        <span>3 min</span>
                     </span>
                 
             
@@ -508,7 +508,13 @@
                 <main class="layout" id="content-inner">
     <div id="post">
         <article class="post-content" id="article-container">
-            <h1 id="Stable-Diffusion-的搭建和测试"><a href="#Stable-Diffusion-的搭建和测试" class="headerlink" title="Stable Diffusion 的搭建和测试"></a>Stable Diffusion 的搭建和测试</h1><p>最近在网上看到了一些据说用AI生成的照片，我一开始还不相信这是AI生成的，直到我亲自部署并尝试才相信。</p>
+            <h1 id="Stable-Diffusion-的搭建和测试"><a href="#Stable-Diffusion-的搭建和测试" class="headerlink" title="Stable Diffusion 的搭建和测试"></a>Stable Diffusion 的搭建和测试</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 30 GB 的硬盘空余空间</p>
+<p>至少 4GB 显存的独立显卡（最好是N卡）</p>
+<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍GPU的部署方式）</p>
+</blockquote>
+<p>最近在网上看到了一些据说用AI生成的照片，我一开始还不相信这是AI生成的，直到我亲自部署并尝试才相信。</p>
 <p>那么下面就来和各位分享一下我搭建Stable Diffusion的过程，以及用Stable Diffusion生成的照片。</p>
 <p>首先，我们之前已经介绍过如何搭建方便的 AI 开发环境，还没有搭建的可以翻一下之前的文章。</p>
 <p>除了之前介绍的 conda 外，我们还需要安装 Git，安装十分简单，此处不再赘述。下载链接：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git - Downloads (git-scm.com)</a></p>
@@ -723,7 +729,7 @@
             <a href="/posts/438d7117.html">
                 <div class="pagination-info">
                     <div class="label">上一篇</div>
-                    <div class="prev_info">让 &#34;ChatGPT&#34; 运行在自己的电脑上</div>
+                    <div class="prev_info">在本地搭建属于自己的 &#34;ChatGPT&#34;</div>
                 </div>
             </a>
         </div>
@@ -895,9 +901,9 @@
                 
         
             <div class="aside-list-item">
-                <a class="thumbnail" href="/posts/438d7117.html" title="让 &#34;ChatGPT&#34; 运行在自己的电脑上">
+                <a class="thumbnail" href="/posts/438d7117.html" title="在本地搭建属于自己的 &#34;ChatGPT&#34;">
                     <img
-                        alt="让 &#34;ChatGPT&#34; 运行在自己的电脑上"
+                        alt="在本地搭建属于自己的 &#34;ChatGPT&#34;"
                         src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/logo_bg.jpg">
                 </a>
                 <div class="content">
@@ -906,8 +912,8 @@
                             技术探讨
                         </a>
                     
-                    <a class="title" href="/posts/438d7117.html" title="让 &#34;ChatGPT&#34; 运行在自己的电脑上">
-                        让 &#34;ChatGPT&#34; 运行在自己的电脑上
+                    <a class="title" href="/posts/438d7117.html" title="在本地搭建属于自己的 &#34;ChatGPT&#34;">
+                        在本地搭建属于自己的 &#34;ChatGPT&#34;
                     </a>
                 </div>
             </div>
