@@ -271,45 +271,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一键分离音乐的人声和伴奏</title>
-    <url>/posts/7ed7a174.html</url>
-    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
-<p>硬件要求：</p>
-<p>至少 10GB 的硬盘空间</p>
-<p>有6GB以上显存的独立显卡（N卡）</p>
-<p>（没有显卡也可以跑，但速度会慢许多）</p>
-</blockquote>
-<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
-<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
-<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
-<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
-<p>使用方法：</p>
-<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
-<p>安装完成后双击运行，会看到如下界面：</p>
-<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
-
-<blockquote>
-<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
-</blockquote>
-<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>UVR</tag>
-        <tag>AI</tag>
-        <tag>音频处理</tag>
-        <tag>开源项目</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>手把手教你搭建开发环境之 C/C++</title>
     <url>/posts/85ab07ea.html</url>
     <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
@@ -372,6 +333,45 @@
         <tag>C++</tag>
         <tag>C语言</tag>
         <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一键分离音乐的人声和伴奏</title>
+    <url>/posts/7ed7a174.html</url>
+    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 10GB 的硬盘空间</p>
+<p>有6GB以上显存的独立显卡（N卡）</p>
+<p>（没有显卡也可以跑，但速度会慢许多）</p>
+</blockquote>
+<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
+<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
+<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
+<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
+<p>使用方法：</p>
+<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
+<p>安装完成后双击运行，会看到如下界面：</p>
+<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
+
+<blockquote>
+<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
+</blockquote>
+<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>UVR</tag>
+        <tag>AI</tag>
+        <tag>音频处理</tag>
+        <tag>开源项目</tag>
       </tags>
   </entry>
   <entry>
@@ -449,6 +449,47 @@
       </tags>
   </entry>
   <entry>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/posts/8176306d.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>介绍一种很新的在 Windows 上运行安卓软件的方法</title>
     <url>/posts/f99f16f6.html</url>
     <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
@@ -492,6 +533,33 @@
         <tag>Windows</tag>
         <tag>Android</tag>
         <tag>WSA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>New Bing 首发体验报告</title>
+    <url>/posts/ab5ddeae.html</url>
+    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
+<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
+<p>当然，现在的 New Bing 仍然存在一些问题：</p>
+<ol>
+<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
+</li>
+<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
+</li>
+<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
+</li>
+<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
+</li>
+</ol>
+<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -546,47 +614,6 @@
         <tag>大学</tag>
         <tag>数学</tag>
         <tag>线性代数</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手教你搭建开发环境之 Python</title>
-    <url>/posts/8176306d.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
-<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
-<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
-<p><strong>安装教程：</strong></p>
-<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
-<p>点击 Downloads</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
-<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
-<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
-<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
-<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
-<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
-<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
-<p>点击 Download</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
-<p>下载社区版</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
-<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
-<p>选择完成后继续按照提示操作完成安装。</p>
-<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
-<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
-<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
-<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -662,37 +689,95 @@
         <category>基础教程</category>
       </categories>
       <tags>
-        <tag>AI</tag>
         <tag>环境搭建</tag>
+        <tag>AI</tag>
         <tag>Python</tag>
         <tag>Anconda</tag>
       </tags>
   </entry>
   <entry>
-    <title>New Bing 首发体验报告</title>
-    <url>/posts/ab5ddeae.html</url>
-    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
-<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
-<p>当然，现在的 New Bing 仍然存在一些问题：</p>
+    <title>在本地搭建属于自己的 &quot;ChatGPT&quot;</title>
+    <url>/posts/438d7117.html</url>
+    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 30 GB 的硬盘空余空间</p>
+<p>至少 6GB 显存的 N 卡</p>
+<p>至少 16GB 内存</p>
+<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
+</blockquote>
+<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
+<p>下面是不同量化等级所需要的显存对比：</p>
+<table>
+<thead>
+<tr>
+<th><strong>量化等级</strong></th>
+<th><strong>最低 GPU 显存</strong>（推理）</th>
+<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FP16（无量化）</td>
+<td>13 GB</td>
+<td>14 GB</td>
+</tr>
+<tr>
+<td>INT8</td>
+<td>8 GB</td>
+<td>9 GB</td>
+</tr>
+<tr>
+<td>INT4</td>
+<td>6 GB</td>
+<td>7 GB</td>
+</tr>
+</tbody></table>
+<p>今天就来和大家分享一下搭建的过程。如果你还没有安装Ancodna，可以翻看一下之前发过的教程：<a href="https://frspble.github.io/posts/aa251266.html">一劳永逸的AI开发环境搭建教程</a></p>
+<p>下面开始部署教程：</p>
 <ol>
-<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
+<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
+<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
+<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
+<li><p>运行 cli_demo.py，自动下载模型并运行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
+
+<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p>2023.04.23 补充：</p>
+<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<hr>
+</li>
+<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
+
+<p>即可以运行 WebUI 版的 ChatGLM</p>
 </li>
 </ol>
-<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+<p>以上就是ChatGLM 的部署过程。</p>
 ]]></content>
       <categories>
-        <category>闲聊</category>
+        <category>技术探讨</category>
       </categories>
       <tags>
+        <tag>环境搭建</tag>
         <tag>AI</tag>
-        <tag>ChatGPT</tag>
+        <tag>开源项目</tag>
         <tag>NLP</tag>
+        <tag>Anconda</tag>
+        <tag>ChatGLM</tag>
       </tags>
   </entry>
   <entry>
@@ -779,95 +864,12 @@
         <category>技术探讨</category>
       </categories>
       <tags>
-        <tag>AI</tag>
         <tag>环境搭建</tag>
+        <tag>AI</tag>
+        <tag>开源项目</tag>
         <tag>Anconda</tag>
         <tag>Stable Diffusion</tag>
         <tag>CV</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在本地搭建属于自己的 &quot;ChatGPT&quot;</title>
-    <url>/posts/438d7117.html</url>
-    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
-<p>硬件要求：</p>
-<p>至少 30 GB 的硬盘空余空间</p>
-<p>至少 6GB 显存的 N 卡</p>
-<p>至少 16GB 内存</p>
-<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
-</blockquote>
-<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
-<p>下面是不同量化等级所需要的显存对比：</p>
-<table>
-<thead>
-<tr>
-<th><strong>量化等级</strong></th>
-<th><strong>最低 GPU 显存</strong>（推理）</th>
-<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>FP16（无量化）</td>
-<td>13 GB</td>
-<td>14 GB</td>
-</tr>
-<tr>
-<td>INT8</td>
-<td>8 GB</td>
-<td>9 GB</td>
-</tr>
-<tr>
-<td>INT4</td>
-<td>6 GB</td>
-<td>7 GB</td>
-</tr>
-</tbody></table>
-<p>今天就来和大家分享一下搭建的过程。如果你还没有安装Ancodna，可以翻看一下之前发过的教程：<a href="https://frspble.github.io/posts/aa251266.html">一劳永逸的AI开发环境搭建教程</a></p>
-<p>下面开始部署教程：</p>
-<ol>
-<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行 cli_demo.py，自动下载模型并运行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
-
-<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
-
-<hr>
-<blockquote>
-<p>2023.04.23 补充：</p>
-<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
-</blockquote>
-<hr>
-</li>
-<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
-
-<p>即可以运行 WebUI 版的 ChatGLM</p>
-</li>
-</ol>
-<p>以上就是ChatGLM 的部署过程。</p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>环境搭建</tag>
-        <tag>Anconda</tag>
-        <tag>NLP</tag>
-        <tag>ChatGLM</tag>
       </tags>
   </entry>
   <entry>
@@ -893,9 +895,76 @@
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>大学</tag>
         <tag>ChatGPT</tag>
+        <tag>大学</tag>
         <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AI 项目汇总&amp;进度跟踪（持续更新）</title>
+    <url>/posts/2e12a5d7.html</url>
+    <content><![CDATA[<h1 id="各类-AI-项目汇总（持续更新）"><a href="#各类-AI-项目汇总（持续更新）" class="headerlink" title="各类 AI 项目汇总（持续更新）"></a>各类 AI 项目汇总（持续更新）</h1><p>ChatGPT 爆火以来，各种AI模型如雨后春笋般涌现，几乎每天都有新的模型出现，让人眼花缭乱，所以在此做一个汇总，方便自己和他人。</p>
+<h2 id="大语言模型"><a href="#大语言模型" class="headerlink" title="大语言模型"></a>大语言模型</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a><strong>ChatGPT</strong></h3><p>简介：相信这个模型就不用过多介绍了吧</p>
+<p>链接：<a href="https://chat.openai.com/">ChatGPT</a></p>
+<p>费用：GPT3.5 免费使用，GPT4  $20 &#x2F; 月。</p>
+<h3 id="NewBing"><a href="#NewBing" class="headerlink" title="NewBing"></a><strong>NewBing</strong></h3><p>简介：微软基于GPT改进的可联网的大语言模型</p>
+<p>链接：<a href="https://www.bing.com/new">The New Bing</a></p>
+<p>费用：免费使用，需要申请</p>
+<h3 id="LLaMA"><a href="#LLaMA" class="headerlink" title="LLaMA"></a><strong>LLaMA</strong></h3><p>简介：Meta 开发的大语言模型，属于基础模型，需要微调才能有好的结果</p>
+<p>链接：<a href="https://github.com/facebookresearch/llama">LLaMA</a></p>
+<p>费用：开源</p>
+<h4 id="Alpaca"><a href="#Alpaca" class="headerlink" title="Alpaca"></a><strong>Alpaca</strong></h4><p>简介：斯坦福大学基于LLaMA微调的模型，降低了使用门槛</p>
+<p>链接：<a href="https://github.com/tatsu-lab/stanford_alpaca">Stanford’s Alpaca models</a></p>
+<h4 id="Chinese-Vicuna"><a href="#Chinese-Vicuna" class="headerlink" title="Chinese-Vicuna"></a><strong>Chinese-Vicuna</strong></h4><p>简介：一个中文低资源的LLaMA + Lora方案</p>
+<p>链接：<a href="https://github.com/Facico/Chinese-Vicuna">Chinese-Vicuna</a></p>
+<h3 id="BLOOM"><a href="#BLOOM" class="headerlink" title="BLOOM"></a><strong>BLOOM</strong></h3><p>简介：BigScience 的大语言模型</p>
+<p>链接：<a href="https://huggingface.co/bigscience/bloom">bigscience&#x2F;bloom · Hugging Face</a></p>
+<p>费用：开源</p>
+<h3 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a><strong>Claude</strong></h3><p>简介：由 OpenAI 出走的前员工们集体创建的 Anthropic 公司新推出的一款类 ChatGPT 模型</p>
+<p>链接：<a href="https://www.anthropic.com/">Claude</a></p>
+<p>费用：目前免费</p>
+<h3 id="RWKV"><a href="#RWKV" class="headerlink" title="RWKV"></a><strong>RWKV</strong></h3><p>简介：由个人开发者开发的类 ChatGPT 大语言模型</p>
+<p>链接：<a href="https://github.com/BlinkDL/RWKV-LM">RWKV</a></p>
+<p>费用：开源</p>
+<h3 id="ChatGLM"><a href="#ChatGLM" class="headerlink" title="ChatGLM"></a><strong>ChatGLM</strong></h3><p>简介：清华大学开发的大语言模型</p>
+<p>链接：<a href="https://github.com/THUDM/ChatGLM-6B">ChatGLM-6B</a></p>
+<p>费用：开源</p>
+<h3 id="MOSS"><a href="#MOSS" class="headerlink" title="MOSS"></a><strong>MOSS</strong></h3><p>简介：复旦大学开发的大语言模型</p>
+<p>链接：<a href="https://github.com/OpenLMLab/MOSS">MOSS</a></p>
+<p>费用：开源</p>
+<h3 id="文心一言"><a href="#文心一言" class="headerlink" title="文心一言"></a><strong>文心一言</strong></h3><p>简介：百度开发的大语言模型</p>
+<p>链接：<a href="https://yiyan.baidu.com/welcome">文心一言</a></p>
+<p>费用：免费，但要申请，通过速度很慢</p>
+<h3 id="通义千问"><a href="#通义千问" class="headerlink" title="通义千问"></a><strong>通义千问</strong></h3><p>简介：阿里开发的大语言模型</p>
+<p>链接：<a href="https://tongyi.aliyun.com/">通义千问 </a></p>
+<p>费用：需要邀请码，目前仅对部分用户开放</p>
+<h3 id="星火认知大模型"><a href="#星火认知大模型" class="headerlink" title="星火认知大模型"></a><strong>星火认知大模型</strong></h3><p>简介：科大讯飞开发的大语言模型</p>
+<p>链接：<a href="https://xinghuo.xfyun.cn/">讯飞星火认知大模型</a></p>
+<p>费用：免费，需要申请，通过迅速</p>
+<h2 id="图像生成模型"><a href="#图像生成模型" class="headerlink" title="图像生成模型"></a>图像生成模型</h2><h3 id="Stable-Diffusion"><a href="#Stable-Diffusion" class="headerlink" title="Stable Diffusion"></a><strong>Stable Diffusion</strong></h3><p>简介：stability 开发的图像生成模型，目前几乎所有的AI绘图都是基于这个模型</p>
+<p>链接：<a href="https://stability.ai/blog/stable-diffusion-v2-release">Stable Diffusion</a></p>
+<p>费用：开源</p>
+<h3 id="DALL-E2"><a href="#DALL-E2" class="headerlink" title="DALL-E2"></a><strong>DALL-E2</strong></h3><p>简介：OpenAI 的图像生成模型，比Stable Diffusion发布更早</p>
+<p>链接：<a href="https://openai.com/product/dall-e-2">DALL·E 2</a></p>
+<p>费用：收费，新账号赠送点数，用尽后需要购买点数使用</p>
+<h3 id="Bing-Creater"><a href="#Bing-Creater" class="headerlink" title="Bing Creater"></a><strong>Bing Creater</strong></h3><p>简介：微软的图像生成模型</p>
+<p>链接：<a href="https://www.bing.com/create">Bing Creater</a></p>
+<p>费用：需要点数，可免费领取</p>
+<h3 id="Midjourney"><a href="#Midjourney" class="headerlink" title="Midjourney"></a><strong>Midjourney</strong></h3><p>简介：可以说是目前效果最好的图像生成模型</p>
+<p>链接：<a href="https://www.midjourney.com/">Midjourney</a></p>
+<p>费用：可免费试用，收费版价格为 $10 &#x2F; $30 &#x2F; $60 &#x2F; 月</p>
+<h3 id="文心一格"><a href="#文心一格" class="headerlink" title="文心一格"></a><strong>文心一格</strong></h3><p>简介：百度的图像生成模型</p>
+<p>链接：<a href="https://yige.baidu.com/">文心一格</a></p>
+<p>费用：需要点数，可充值，也可签到获取</p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>CV</tag>
       </tags>
   </entry>
   <entry>
@@ -952,47 +1021,9 @@
       </categories>
       <tags>
         <tag>AI</tag>
+        <tag>ChatGPT</tag>
         <tag>大学</tag>
-        <tag>ChatGPT</tag>
         <tag>英语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AI 项目汇总&amp;进度跟踪（持续更新）</title>
-    <url>/posts/2e12a5d7.html</url>
-    <content><![CDATA[<h1 id="各类-AI-项目汇总（持续更新）"><a href="#各类-AI-项目汇总（持续更新）" class="headerlink" title="各类 AI 项目汇总（持续更新）"></a>各类 AI 项目汇总（持续更新）</h1><h2 id="大语言模型"><a href="#大语言模型" class="headerlink" title="大语言模型"></a>大语言模型</h2><h3 id="ChatGPT"><a href="#ChatGPT" class="headerlink" title="ChatGPT"></a>ChatGPT</h3><p>简介：相信这个模型就不用过多介绍了吧</p>
-<p>链接：<a href="https://chat.openai.com/">ChatGPT</a></p>
-<p>费用：GPT3.5 免费使用，GPT4  $20 &#x2F; 月。</p>
-<h3 id="LLaMA"><a href="#LLaMA" class="headerlink" title="LLaMA"></a>LLaMA</h3><p>简介：Meta 开发的大语言模型，属于基础模型，需要微调才能有好的结果</p>
-<p>链接：<a href="https://github.com/facebookresearch/llama">LLaMA</a></p>
-<p>费用：开源</p>
-<h4 id="Claude"><a href="#Claude" class="headerlink" title="Claude"></a>Claude</h4><p>简介：由 OpenAI 出走的前员工们集体创建的 Anthropic 公司新推出的一款类 ChatGPT 模型</p>
-<p>链接：<a href="https://www.anthropic.com/">Claude</a></p>
-<p>费用：目前免费</p>
-<h4 id="RWKV"><a href="#RWKV" class="headerlink" title="RWKV"></a>RWKV</h4><p>简介：由个人开发者开发的类 ChatGPT 模型</p>
-<p>链接：<a href="https://github.com/BlinkDL/RWKV-LM">RWKV</a></p>
-<p>费用：开源</p>
-<h4 id="ChatGLM"><a href="#ChatGLM" class="headerlink" title="ChatGLM"></a>ChatGLM</h4><p>简介：清华大学开发的大语言模型</p>
-<p>链接：<a href="https://github.com/THUDM/ChatGLM-6B">ChatGLM-6B</a></p>
-<p>费用：开源</p>
-<h4 id="MOSS"><a href="#MOSS" class="headerlink" title="MOSS"></a>MOSS</h4><p>简介：复旦大学开发的大语言模型</p>
-<p>链接：<a href="https://github.com/OpenLMLab/MOSS">MOSS</a></p>
-<p>费用：开源</p>
-<h2 id="图像生成模型"><a href="#图像生成模型" class="headerlink" title="图像生成模型"></a>图像生成模型</h2><h4 id="Stable-Diffusion"><a href="#Stable-Diffusion" class="headerlink" title="Stable Diffusion"></a>Stable Diffusion</h4><p>简介：stability 开发的图像生成模型，目前几乎所有的AI绘图都是基于这个模型</p>
-<p>链接：<a href="https://stability.ai/blog/stable-diffusion-v2-release">Stable Diffusion</a></p>
-<p>费用：开源</p>
-<h4 id="DALL-E2"><a href="#DALL-E2" class="headerlink" title="DALL-E2"></a>DALL-E2</h4><p>简介：OpenAI 的图像生成模型，比Stable Diffusion发布更早</p>
-<p>链接：<a href="https://openai.com/product/dall-e-2">DALL·E 2</a></p>
-<p>费用：收费，新账号赠送点数，用尽后需要购买点数使用</p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>NLP</tag>
-        <tag>CV</tag>
       </tags>
   </entry>
 </search>
