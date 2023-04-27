@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星星之火，能否燎原？讯飞星火认知大模型测试 | BoGe&#39;s Blog</title>
+<noscript>开启Javascript是必要的</noscript>
+<link rel="icon" type="image/x-icon" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
+<link rel="apple-touch-icon" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
+<meta name="apple-mobile-web-app-title" content="BoGe&#39;s Blog">
+<link rel="bookmark" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
+<meta name="description" content="讯飞星火认知大模型测试前几天科大讯飞开始了星火认知大模型的内测申请，我第一时间提交了申请，今天就收到了申请通过的消息。目前看来讯飞应该是国内最快开放的大语言模型了（百度的到现在还没给通过，阿里的还在小">
+<meta name="theme-color" content="#1C1C1F">
+<link rel="stylesheet" href="/css/var.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+    <script data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}" src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+
+<link rel="stylesheet" href="/lib/snackbar.min.css">
+
+
+<script src="/lib/qrcode.min.js"></script>
+
+
+    
+<script src="https://cdn.staticfile.org/twikoo/1.6.10/twikoo.all.min.js"></script>
+
+
+
+
+
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+
+    <script>LA.init({id:"K2JuUODZ2wlZtOl3",ck:"K2JuUODZ2wlZtOl3"})</script>
+
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2022-12-07 00:00:00","lazyload":{"enable":false,"error":"https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp"},"hightlight":{"enable":true,"limit":200},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":false,"localsearch":{"preload":false,"path":"/search.xml"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":true,"is_page":false,"page":false,"toc":true,"comment":true};</script>
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body id="body">
+        
+            <div id="loading-box" onclick="preloader.endLoading();" class style="zoom: 1;">
+    <div class="loading-bg">
+        <img class="loading-img nolazyload" alt="loading image"
+            src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp">
+        </div>
+</div>
+<script>
+    const preloader = {
+        endLoading: () => {
+            document.getElementById('loading-box').classList.add("loaded")
+        },
+        initLoading: () => {
+            document.getElementById('loading-box').classList.remove("loaded")
+        },
+        removePaceDone: () => {
+            document.getElementById('body').classList = 'pace-done'
+        }
+    }
+    window.addEventListener('load',()=> { preloader.endLoading() })
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+</script>
+<style>
+    #loading-box {
+        -webkit-user-select: none;
+    }
+
+    #loading-box .loading-bg {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: var(--heo-background);
+        z-index: 1999;
+        opacity: 1;
+        transition: 0.2s;
+        pointer-events: all;
+        animation: showLoading 0.3s 0s backwards;
+    }
+
+    #loading-box.loaded .loading-bg {
+        pointer-events: none;
+        transition: 0.2s;
+        animation: hideLoading 0.3s 0s forwards;
+    }
+
+    #loading-box .loading-img {
+        width: 100px;
+        margin: auto;
+        animation-duration: 0.2s;
+        animation-name: loadingAction;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes loadingAction {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes hideLoading {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes showLoading {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+        
+        <div id="console" style="zoom: 1;" class="">
+    <div class="close-btn" onclick="acrylic.hideConsole()" href="javascript:void(0);">
+        <i class="fas fa-circle-xmark"></i>
+    </div>
+    <div class="button-group">
+        <div class="console-btn-item"> <a class="darkmode_switchbutton" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow" data-pjax-state=""><i class="fas fa-moon"
+                    style="font-size: 1rem;"></i></a></div>
+        
+        <div class="console-btn-item" id="consoleFPS" onclick="acrylic.FPSToggle()" title="帧率显示开关"><a class="FPS-switch"
+                data-pjax-state=""><i class="fas fa-gauge"></i></a></div>
+    </div>
+    <div class="console-mask" onclick="acrylic.hideConsole()" href="javascript:void(0);" rel="external nofollow"></div>
+</div>
+        <div id="sidebar" style="zoom: 1;">
+    <div id="menu-mask" style="display: none;"></div>
+    <div id="sidebar-menus" class>
+        <span class="sidebar-menu-item-title">功能</span>
+        <div class="sidebar-menu-item">
+            <a class="darkmode_switchbutton menu-child" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow">
+                <i class="fas fa-moon" style="font-size: 1rem;"></i>
+                <span>显示模式</span>
+            </a>
+        </div>
+        
+        <div class="menus_items">
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 文库</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/archives/">
+                                <i class="fas fa-box-archive"></i>
+                                <span> 文章列表</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/categories/">
+                                <i class="fas fa-cube"></i>
+                                <span> 全部分类</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/tags/">
+                                <i class="fas fa-tags"></i>
+                                <span> 全部标签</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" href="/says" rel="external nofollow">
+                    <span> 即刻</span>
+                </a>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" href="/about" rel="external nofollow">
+                    <span> 关于</span>
+                </a>
+             
+        </div>
+    
+</div>
+        <span class="sidebar-menu-item-title">标签</span>
+        <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
+            <div class="item-headline">
+                <i class="fas fa-tags"></i>
+                <span>标签</span>
+            </div>
+            <div class="card-tag-cloud">
+                
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1em; color: #d3d3d3">笔记
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Markdown/" style="font-size: 1em; color: #d3d3d3">Markdown
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E6%95%B0%E7%A0%81/" style="font-size: 1em; color: #d3d3d3">数码
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/UVR/" style="font-size: 1em; color: #d3d3d3">UVR
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/AI/" style="font-size: 1em; color: #d3d3d3">AI
+                        <sup>9</sup>
+                    </a>
+                
+                    <a href="/tags/%E9%9F%B3%E9%A2%91%E5%A4%84%E7%90%86/" style="font-size: 1em; color: #d3d3d3">音频处理
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" style="font-size: 1em; color: #d3d3d3">开源项目
+                        <sup>3</sup>
+                    </a>
+                
+                    <a href="/tags/C/" style="font-size: 1em; color: #d3d3d3">C++
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 1em; color: #d3d3d3">C语言
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 1em; color: #d3d3d3">环境搭建
+                        <sup>5</sup>
+                    </a>
+                
+                    <a href="/tags/Windows/" style="font-size: 1em; color: #d3d3d3">Windows
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Android/" style="font-size: 1em; color: #d3d3d3">Android
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/WSA/" style="font-size: 1em; color: #d3d3d3">WSA
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Python/" style="font-size: 1em; color: #d3d3d3">Python
+                        <sup>3</sup>
+                    </a>
+                
+                    <a href="/tags/%E5%A4%A7%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">大学
+                        <sup>3</sup>
+                    </a>
+                
+                    <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1em; color: #d3d3d3">数学
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 1em; color: #d3d3d3">线性代数
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/Anconda/" style="font-size: 1em; color: #d3d3d3">Anconda
+                        <sup>3</sup>
+                    </a>
+                
+                    <a href="/tags/Stable-Diffusion/" style="font-size: 1em; color: #d3d3d3">Stable Diffusion
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/CV/" style="font-size: 1em; color: #d3d3d3">CV
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/NLP/" style="font-size: 1em; color: #d3d3d3">NLP
+                        <sup>4</sup>
+                    </a>
+                
+                    <a href="/tags/ChatGLM/" style="font-size: 1em; color: #d3d3d3">ChatGLM
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/LLM/" style="font-size: 1em; color: #d3d3d3">LLM
+                        <sup>4</sup>
+                    </a>
+                
+                    <a href="/tags/ChatGPT/" style="font-size: 1em; color: #d3d3d3">ChatGPT
+                        <sup>4</sup>
+                    </a>
+                
+                    <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 1em; color: #d3d3d3">英语
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/%E6%98%9F%E7%81%AB%E8%AE%A4%E7%9F%A5%E5%A4%A7%E6%A8%A1%E5%9E%8B/" style="font-size: 1em; color: #d3d3d3">星火认知大模型
+                        <sup>1</sup>
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+</div>    
+        
+            <div class="post" id="body-wrap">
+                <header class="post-bg" id="page-header">
+    <nav id="nav" class="show">
+    <div id="nav-group">
+        <div id="blog_name">
+            
+            <a id="site-name" href="/" title="返回博客主页">
+                    
+                        <span class="heoicon">博鸽</span>
+                    
+            </a>
+        </div>
+        <div id="page-name-mask">
+            <div id="page-name">
+                <a id="page-name-text" onclick="acrylic.toTop()">星星之火，能否燎原？讯飞星火认知大模型测试</a>
+            </div>
+        </div>
+        <div id="menus">
+            <div class="menus_items">
+    
+        <div class="menus_item">
+            
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span> 文库</span>
+                </a>
+                <ul class="menus_item_child">
+                    
+                        <li>
+                            <a class="site-page child" href="/archives/">
+                                <i class="fas fa-box-archive"></i>
+                                <span> 文章列表</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/categories/">
+                                <i class="fas fa-cube"></i>
+                                <span> 全部分类</span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="site-page child" href="/tags/">
+                                <i class="fas fa-tags"></i>
+                                <span> 全部标签</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" href="/says" rel="external nofollow">
+                    <span> 即刻</span>
+                </a>
+             
+        </div>
+    
+        <div class="menus_item">
+            
+                <a class="site-page not-child" href="/about" rel="external nofollow">
+                    <span> 关于</span>
+                </a>
+             
+        </div>
+    
+</div>
+        </div>
+        <!-- <div id="nav-left">
+            <div id="fps-group">
+                <div id="fps">145</div><span class="fpsText">FPS</span>
+            </div>
+        </div> -->
+        <div id="nav-right">
+            
+
+    <div class="nav-button" id="randomPost_button">
+        <a class="site-page" onclick="toRandomPost()"
+            title="随机前往一个文章">
+            <i class="fas fa-shuffle" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+
+    <div class="nav-button" id="search-button">
+        <a class="site-page social-icon search" title="站内搜索"
+            href="javascript:void(0);" rel="external nofollow">
+            <i class="fas fa-magnifying-glass" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+
+    <div class="nav-button" id="nav-console">
+        <a class="console_switchbutton" onclick="acrylic.showConsole()"
+        title="显示中控台" href="javascript:void(0);" rel="external nofollow">
+        <i class="fas fa-bars-progress" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+<div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
+    <a class="totopbtn">
+        <i class="fas fa-arrow-up"></i>
+        <span id="percent">0</span>
+    </a>
+</div>
+<div id="toggle-menu">
+    <a class="site-page">
+        <i class="fas fa-bars fa-fw" style="font-size: 1rem;"></i>
+    </a>
+</div>
+        </div>
+    </div>
+</nav>
+    
+        <div class="coverdiv" id="coverdiv">
+    <img id="post-cover" class="nolazyload" src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/xinghuo.jpg" alt="cover">
+</div>
+<div id="post-info">
+    <div id="post-firstinfo">
+        <div class="meta-firstline">
+            <a class="post-meta-original" title="该文章为原创文章，注意版权协议">
+                原创
+            </a>
+            <span class="post-meta-categories">
+                
+                    <a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E6%8E%A2%E8%AE%A8/">技术探讨</a>
+                
+            </span>
+            <div class="tag_share">
+                <div class="post-meta__tag-list">
+                    
+                        <a class="post-meta__tags" href="/tags/AI/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">AI</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/NLP/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">NLP</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/ChatGLM/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">ChatGLM</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/LLM/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">LLM</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/ChatGPT/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">ChatGPT</span>
+                        </a>
+                    
+                        <a class="post-meta__tags" href="/tags/%E6%98%9F%E7%81%AB%E8%AE%A4%E7%9F%A5%E5%A4%A7%E6%A8%A1%E5%9E%8B/">
+                            <span class="tags-punctuation">#</span>
+                            <span class="tags-name">星火认知大模型</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="post-title">星星之火，能否燎原？讯飞星火认知大模型测试</h1>
+    <div id="post-meta">
+        <div class="meta-secondline">
+            <span class="post-meta-date" title="发布于">
+                <i class="post-meta-icon fa-fw fas fa-calendar"></i>
+                <time datetime="2023-04-27T00:00:00+08:00"></time>
+            </span>
+            
+            
+            
+                
+                    <span class="post-meta-wordcount">
+                        <i class="fas fa-file-word fa-fw post-meta-icon" title="文章字数"></i>
+                        <span class="word-count">1.3k</span>
+                    </span>
+                
+                
+                    <span class="post-meta-time">
+                        <i class="fas fa-clock post-meta-icon" title="阅读耗时"></i>
+                        <span>4 min</span>
+                    </span>
+                
+            
+            
+            
+                <span class="post-meta-commentcount" title="评论数">
+                    <i class="fa-solid fa-message"></i>
+                    <a href="#post-comment">
+                        <span id="twikoo-count"><i class="fas fa-spinner fa-pulse"></i></span>
+                    </a>
+                </span>
+                
+        </div>
+    </div>
+</div>
+<section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg"
+    xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave"
+            d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path>
+    </defs>
+    <g class="parallax">
+        <use href="#gentle-wave" x="48" y="0"></use>
+        <use href="#gentle-wave" x="48" y="3"></use>
+        <use href="#gentle-wave" x="48" y="5"></use>
+        <use href="#gentle-wave" x="48" y="7"></use>
+    </g>
+</svg>
+</section>
+        
+</header>
+                <main class="layout" id="content-inner">
+    <div id="post">
+        <article class="post-content" id="article-container">
+            <h1 id="讯飞星火认知大模型测试"><a href="#讯飞星火认知大模型测试" class="headerlink" title="讯飞星火认知大模型测试"></a>讯飞星火认知大模型测试</h1><p>前几天科大讯飞开始了星火认知大模型的内测申请，我第一时间提交了申请，今天就收到了申请通过的消息。目前看来讯飞应该是国内最快开放的大语言模型了（百度的到现在还没给通过，阿里的还在小规模测试）。下面就来看看这个模型到底怎么样吧。</p>
+<p>下面我将使用<strong>星火认知大模型和 ChatGPT-3.5、ChatGLM-6B</strong> 进行对比测试。这里主要测试了三个能力：写代码能力、文章生成能力和翻译能力。下面是测试的过程：</p>
+<blockquote>
+<p>注：由于我电脑显存只有 6GB，所以这里使用的 ChatGLM-6B 是经过 int4 量化的模型，实际表现不代表 ChatGLM 的完整能力</p>
+</blockquote>
+<h2 id="文章生成能力-amp-翻译能力"><a href="#文章生成能力-amp-翻译能力" class="headerlink" title="文章生成能力 &amp; 翻译能力"></a>文章生成能力 &amp; 翻译能力</h2><p>首先测试的是文章生成能力，这里用一个之前的例子来做测试：给 AI 一个单词列表，让他使用列表中的单词来写一篇英文文章，并且给出这篇文章的翻译。使用该方法可以同时测试模型的文章生成能力和翻译能力。以下是测试结果：</p>
+<h3 id="1-星火认知大模型"><a href="#1-星火认知大模型" class="headerlink" title="1. 星火认知大模型"></a>1. 星火认知大模型</h3><p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427215549786.png" alt="image-20230427215549786"></p>
+<p>星火大模型在我还没有给出单词列表的时候就自己生成了一个单词列表，并且按照我的提示生成了文章和翻译，生成的文章中确实包含了单词列表中所有的单词，给出的翻译也大体上没有问题。但是这毕竟是自己生成的单词列表，我们要测试的是给他指定的单词列表来生成文章的能力。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427220415902.png" alt="image-20230427220415902"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427220512305.png" alt="image-20230427220512305"></p>
+<p>在给出指定的单词列表后，星火大模型生成了一篇文章，但是并没有给出翻译，经过一次提示后才给出了中文翻译。给出的中文翻译大体意思没有问题，但有个别的单词翻译有一些小瑕疵。</p>
+<p>为了评估生成文章的能力，我这里使用了一个作文批改的 AI 来评估生成的内容：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427220914810.png" alt="image-20230427220914810"></p>
+<p>然后又使用了一个 Python 程序来判断生成的文章中使用了多少单词：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427222058582.png" alt="image-20230427222058582"></p>
+<p>所以最终星火认知大模型生成的文章获得了 94 分的高分，但是只使用了 6 个列表中的单词。</p>
+<h3 id="2-ChatGPT"><a href="#2-ChatGPT" class="headerlink" title="2. ChatGPT"></a>2. ChatGPT</h3><p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427221657578.png" alt="image-20230427221657578"></p>
+<p>ChatGPT 这边完美理解了我的指令，并且一次性生成了英文文章和中文翻译。但因为token的限制，中间被打断了一次，不过在提示 “继续” 后补全了内容。ChatGPT 的翻译十分流畅，但是有丢词语的现象出现。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427222337748.png" alt="image-20230427222337748"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427222432059.png" alt="image-20230427222432059"></p>
+<p>另外，ChatGPT 生成的文章也获得了98分的高分，并且在生成的文章中使用了16个单词。</p>
+<h3 id="3-ChatGML-6B（int4量化）"><a href="#3-ChatGML-6B（int4量化）" class="headerlink" title="3. ChatGML-6B（int4量化）"></a>3. ChatGML-6B（int4量化）</h3><p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427222629745.png" alt="image-20230427222629745"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427223056691.png" alt="image-20230427223056691"></p>
+<p>ChatGLM 这边由于我显存的问题，生成文章之后就显存溢出，无法继续生成翻译，所以只能再让他重新翻译一遍文章：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427223745257.png" alt="image-20230427223745257"></p>
+<p>可以看到，ChatGLM 给出的翻译意思大体正确，但是有个别的单词存在翻译错误。</p>
+<p>评估一下生成的文章的质量;</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427223327733.png" alt="image-20230427223327733"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427223358055.png" alt="image-20230427223358055"></p>
+<p>可以看到，ChatGLM 生成的文章也有95分的高分，但是仅用到了2个列表中的单词。</p>
+<h2 id="写代码能力"><a href="#写代码能力" class="headerlink" title="写代码能力"></a>写代码能力</h2><p>对于写代码能力测试，这里使用了一个特别简单的例子，让 AI 用 Python 写一个统计文章中包含多少列表中单词的小程序，下面是测试结果：</p>
+<h3 id="1-星火认知大模型-1"><a href="#1-星火认知大模型-1" class="headerlink" title="1. 星火认知大模型"></a>1. 星火认知大模型</h3><p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/NVIDIA_Share_xgawaFwo9U.png" alt="NVIDIA_Share_xgawaFwo9U"><img src="/../../img/posts/NVIDIA_Share_OPnn4WZfdY.png" alt="NVIDIA_Share_OPnn4WZfdY"></p>
+<p>可以看到星火大模型好像并没有理解我的问题，写出的代码和要求基本没有关系，无法正常运行。并且在指出问题后仍然没能改正。</p>
+<h3 id="2-ChatGPT-1"><a href="#2-ChatGPT-1" class="headerlink" title="2. ChatGPT"></a>2. ChatGPT</h3><p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/NVIDIA_Share_UCO4ilWrCM.png" alt="NVIDIA_Share_UCO4ilWrCM"></p>
+<p>可以看到 ChatGPT 理解了我的要求，并且写出了正确的代码，实测可以正常运行，我们还可以更近一步，让 ChatGPT 改进这段代码：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/NVIDIA_Share_fZyQUOrpnn.png" alt="NVIDIA_Share_fZyQUOrpnn"></p>
+<p>可以看到，我提示ChatGPT要考虑大小写的问题，ChatGPT正确理解了我的意思，并且修改了代码，实现了我所需要的功能，实测这段代码完美符合要求，可以正常运行。</p>
+<h3 id="3-ChatGLM（int4量化）"><a href="#3-ChatGLM（int4量化）" class="headerlink" title="3. ChatGLM（int4量化）"></a>3. ChatGLM（int4量化）</h3><p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427213941615.png" alt="image-20230427213941615"></p>
+<p>ChatGLM 理解了我的意思，写出了一段看着还有模有样的代码，但也是无法正常运行，仔细看会发现存在不少问题。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>通过上面的对比可以看到，目前国内的大模型和 ChatGPT 有一定的差距，即使是国产的模型，对于中文的理解能力也仍然有待提高。不过，目前可以看到各个大厂都加入到了大模型的开发中。星星之火，可以燎原。相信后续可以看到国产大语言模型能够有所突破，期待国产大模型百花齐放的那一天。</p>
+
+        </article>
+        <div class="post-tools" id="post-tools">
+            <div class="post-tools-left">
+                
+                    <div class="post-reward">
+    <div class="reward-button button--animated" title="赞赏作者">
+        <script>
+            if (utils.isMobile()) { const showReward=()=> {
+                const rewardMain = document.querySelector('.reward-main');
+                rewardMain.style.display = 'flex';
+                document.addEventListener('touchstart', hideReward);
+                };
+                const hideReward = () => {
+                const rewardMain = document.querySelector('.reward-main');
+                rewardMain.style.display = 'none';
+                document.removeEventListener('touchstart', hideReward);
+                };
+                const rewardButton = document.querySelector('.reward-button');
+                rewardButton.addEventListener('touchstart', event => {
+                event.stopPropagation();
+                showReward();
+                });
+                }
+          </script>
+        <i class="fas fa-hamburger"></i> 
+        打赏作者
+    </div>
+    <div class="reward-main">
+        <ul class="reward-all">
+            <span class="reward-title">感谢你赐予我前进的力量</span>
+            <ul class="reward-group">
+                
+                    <li class="reward-item">
+                        <a href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/QR_WeChat.png" target="_blank">
+                            <img class="post-qr-code-img" src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/QR_WeChat.png" alt="微信">
+                        </a>
+                        <div class="post-qr-code-desc">微信</div>
+                    </li>
+                
+                
+                    <li class="reward-item">
+                        <a href="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/QR_AliPay.png" target="_blank">
+                            <img class="post-qr-code-img" src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/QR_AliPay.png" alt="支付宝">
+                        </a>
+                        <div class="post-qr-code-desc">支付宝</div>
+                    </li>
+                
+            </ul>
+            <a class="reward-main-btn" href="/about">
+                <div class="reward-text">赞赏者名单</div>
+                <div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div>
+            </a>
+        </ul>
+    </div>
+</div>
+                
+                <div class="share-link mobile">
+    <div class="share-qrcode">
+        <div class="share-button" title="使用手机访问这篇文章">
+            <i class="fas fa-qrcode"></i>
+        </div>
+        <div class="share-main">
+            <div class="share-main-all">
+                <div id="qrcode" title="https://frspble.github.io/posts/4cb97879.html">
+                </div>
+                <div class="reward-dec">使用手机访问这篇文章</div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            new QRCode(document.getElementById("qrcode"), "https://frspble.github.io/posts/4cb97879.html");
+        </script>
+    </div>
+</div>
+                <div class="share-link weibo"><a class="share-button" target="_blank"
+    href="https://service.weibo.com/share/share.php?title=星星之火，能否燎原？讯飞星火认知大模型测试&amp;url=https://frspble.github.io/posts/4cb97879.html&amp;pic=https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/xinghuo.jpg"
+    title="分享到微博" rel="noopener external nofollow noreferrer noopener">
+    <i class="fab fa-weibo" style="font-size:22px"></i>
+</a>
+</div>
+<div class="share-link copyurl">
+<div class="share-button" id="post-share-url" title="复制链接" onclick="acrylic.copyPageUrl()">
+    <i class="fas fa-link"></i>
+</div>
+</div>
+            </div>
+            <div class="post-tools-right">
+                <div class="tag_share">
+                    <div class="post-meta__tag-list">
+                        
+                            <a href="/tags/AI/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                AI
+                                <span class="tagsPageCount">9</span>
+                            </a>
+                        
+                            <a href="/tags/NLP/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                NLP
+                                <span class="tagsPageCount">4</span>
+                            </a>
+                        
+                            <a href="/tags/ChatGLM/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                ChatGLM
+                                <span class="tagsPageCount">2</span>
+                            </a>
+                        
+                            <a href="/tags/LLM/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                LLM
+                                <span class="tagsPageCount">4</span>
+                            </a>
+                        
+                            <a href="/tags/ChatGPT/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                ChatGPT
+                                <span class="tagsPageCount">4</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%98%9F%E7%81%AB%E8%AE%A4%E7%9F%A5%E5%A4%A7%E6%A8%A1%E5%9E%8B/" class="post-meta__tags">
+                                <span class="tags-punctuation">#</span>
+                                星火认知大模型
+                                <span class="tagsPageCount">1</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-copyright">
+    <div class="post-copyright__author">
+        <a class="post-copyright__original" title="该文章为原创文章，注意版权协议">原创</a>
+        <a class="post-copyright-title" href="#">
+            <span>星星之火，能否燎原？讯飞星火认知大模型测试</span>
+        </a>
+    </div>
+    <div class="post-copyright__type">
+        <span class="post-copyright-info" id="post-copyright-url">
+            <a href="/posts/4cb97879.html">https://frspble.github.io/posts/4cb97879.html</a>
+        </span>
+        <button class="post-copyright-copybtn" onclick="acrylic.copyPageUrl()">
+            <i class="fas fa-paste copy-btn"></i>
+        </button>
+    </div>
+    <div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用 <a
+                href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> 协议，完整转载请注明来自 <a
+                href="/">BoGe&#39;s Blog</a>
+            </span>
+        </div>
+</div>
+        <nav class="pagination-post" id="pagination">
+    
+        
+            <div class="next-post pull-full">
+                <a href="/posts/2e12a5d7.html">
+                    <div class="pagination-info">
+                        <div class="label">下一篇</div>
+                        <div class="next_info">AI 项目汇总&amp;进度跟踪（持续更新）</div>
+                    </div>
+                </a>
+            </div>
+                
+        
+    
+</nav>
+        
+            <div id="post-comment">
+    <div class="comment-head">
+        <div class="comment-headline">
+            <i class="fas fa-message fa-fw"></i>
+            <span> 评论</span>
+        </div>
+    </div>
+    <div class="comment-wrap">
+        <div id="comment"></div>
+        <script>
+    async function initComment(){
+        var initOptions = Object.assign(
+            {"envId":"https://frspble.zeabur.app/","path":"window.location.pathname"},
+            {
+                el: '#comment',
+                onCommentLoaded: function() {
+                    GLOBALCONFIG.lightbox && acrylic.lightbox('#article-container img, #twikoo .tk-content img:not(.tk-owo-emotion)') 
+                }
+            }
+        )
+        await twikoo.init(initOptions)
+        
+            var countOptions = Object.assign(
+                {"envId":"https://frspble.zeabur.app/","path":"window.location.pathname"},
+                { 
+                    urls: [window.location.pathname],
+                    includeReply: false
+                }
+            )
+            const res = await twikoo.getCommentsCount(countOptions)
+            try{
+                document.getElementById('twikoo-count').innerText = res[0].count
+            }catch (e) {
+                document.getElementById('twikoo-count').innerText = '加载错误'
+            }
+             
+    }
+</script>
+    </div>
+</div>
+            
+    </div>
+    <div class="aside-content" id="aside-content">
+    
+    
+        
+        <div class="card-widget card-info">
+    <div class="card-content">
+        <div class="card-info-avatar is-center">
+            <div class="author-info__sayhi" id="author-info__sayhi">
+            </div>
+            <div class="author-info__name">
+                BoGe
+            </div>
+            <div class="author-info__description">这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还会时不时分享一些实用的<b>资源</b>。<br>相信你可以在这里找到对你有用的知识、教程和资源。</div>
+        </div>
+    </div>
+    <div class="banner-button-group">
+        <a class="banner-button" href="/about/">
+            <i class="fas fa-circle-chevron-right"></i>
+            <span class="banner-button-text">了解更多</span>
+        </a>
+    </div>
+    <div class="card-info-social-icons is-center">
+        
+            <a class="social-icon" target="_blank" rel="noopener" href="https://github.com/frspble" title="Github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        
+            <a class="social-icon" href="mailto:frspble@foxmail.com" title="Mail">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        
+    </div>
+</div>
+     
+    
+    <div class="sticky_layout">
+        
+            <div class="card-widget" id="card-toc">
+    <div class="item-headline">
+        <i class="fas fa-bars"></i>
+        <span>文章目录</span>
+    </div>
+    <div class="toc-content" id="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%AF%E9%A3%9E%E6%98%9F%E7%81%AB%E8%AE%A4%E7%9F%A5%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%B5%8B%E8%AF%95"><span class="toc-text">讯飞星火认知大模型测试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%94%9F%E6%88%90%E8%83%BD%E5%8A%9B-amp-%E7%BF%BB%E8%AF%91%E8%83%BD%E5%8A%9B"><span class="toc-text">文章生成能力 &amp; 翻译能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%98%9F%E7%81%AB%E8%AE%A4%E7%9F%A5%E5%A4%A7%E6%A8%A1%E5%9E%8B"><span class="toc-text">1. 星火认知大模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-ChatGPT"><span class="toc-text">2. ChatGPT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-ChatGML-6B%EF%BC%88int4%E9%87%8F%E5%8C%96%EF%BC%89"><span class="toc-text">3. ChatGML-6B（int4量化）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E4%BB%A3%E7%A0%81%E8%83%BD%E5%8A%9B"><span class="toc-text">写代码能力</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%98%9F%E7%81%AB%E8%AE%A4%E7%9F%A5%E5%A4%A7%E6%A8%A1%E5%9E%8B-1"><span class="toc-text">1. 星火认知大模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-ChatGPT-1"><span class="toc-text">2. ChatGPT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-ChatGLM%EF%BC%88int4%E9%87%8F%E5%8C%96%EF%BC%89"><span class="toc-text">3. ChatGLM（int4量化）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol>
+    </div>
+</div>
+            
+        
+            
+        <div class="card-widget card-recent-post">
+    <div class="item-headline">
+        <i class="fas fa-list-ol"></i>
+        <span>最近发布</span>
+    </div>
+    <div class="aside-list">
+        
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/posts/4cb97879.html" title="星星之火，能否燎原？讯飞星火认知大模型测试">
+                    <img
+                        alt="星星之火，能否燎原？讯飞星火认知大模型测试"
+                        src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/xinghuo.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/posts/4cb97879.html">
+                            技术探讨
+                        </a>
+                    
+                    <a class="title" href="/posts/4cb97879.html" title="星星之火，能否燎原？讯飞星火认知大模型测试">
+                        星星之火，能否燎原？讯飞星火认知大模型测试
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/posts/2e12a5d7.html" title="AI 项目汇总&amp;进度跟踪（持续更新）">
+                    <img
+                        alt="AI 项目汇总&amp;进度跟踪（持续更新）"
+                        src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/AI.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/posts/2e12a5d7.html">
+                            技术探讨
+                        </a>
+                    
+                    <a class="title" href="/posts/2e12a5d7.html" title="AI 项目汇总&amp;进度跟踪（持续更新）">
+                        AI 项目汇总&amp;进度跟踪（持续更新）
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/posts/e1e46786.html" title="使用 ChatGPT 辅助背单词">
+                    <img
+                        alt="使用 ChatGPT 辅助背单词"
+                        src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202206404.png">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/posts/e1e46786.html">
+                            技术探讨
+                        </a>
+                    
+                    <a class="title" href="/posts/e1e46786.html" title="使用 ChatGPT 辅助背单词">
+                        使用 ChatGPT 辅助背单词
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/posts/824e06e6.html" title="语境法记单词资源分享">
+                    <img
+                        alt="语境法记单词资源分享"
+                        src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202207812.png">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/posts/824e06e6.html">
+                            资源分享
+                        </a>
+                    
+                    <a class="title" href="/posts/824e06e6.html" title="语境法记单词资源分享">
+                        语境法记单词资源分享
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/posts/438d7117.html" title="在本地搭建属于自己的 &#34;ChatGPT&#34;">
+                    <img
+                        alt="在本地搭建属于自己的 &#34;ChatGPT&#34;"
+                        src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/ChatGLM.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/posts/438d7117.html">
+                            技术探讨
+                        </a>
+                    
+                    <a class="title" href="/posts/438d7117.html" title="在本地搭建属于自己的 &#34;ChatGPT&#34;">
+                        在本地搭建属于自己的 &#34;ChatGPT&#34;
+                    </a>
+                </div>
+            </div>
+            
+    </div>
+</div>
+     
+        
+    </div>
+</div> 
+</main>
+                <footer id="footer">
+                    <div id="footer_deal">
+    
+        <a class="deal_link" target="_blank" href="https://github.com/frspble" rel="external nofollow noopener" title="Github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    
+        <a class="deal_link" href="mailto:frspble@foxmail.com" rel="external nofollow" title="Mail">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    
+    <img class="footer_mini_logo" src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/boge_A.webp"
+        title="返回顶部" onclick="acrylic.toTop()">
+    
+        <a class="deal_link" target="_blank" href="https://www.youtube.com/@frspbles8618/" rel="external nofollow noopener" title="Youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    
+        <a class="deal_link" target="_blank" href="https://space.bilibili.com/102381065" rel="external nofollow noopener" title="BiliBili">
+            <i class="fa-brands fa-bilibili"></i>
+        </a>
+    
+</div>    
+<div id="heo-footer">
+    
+        <div class="footer-group">
+            <h3 class="footer-title">导航</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" href="/archives/" title="文章归档" rel="noopener external nofollow noreferrer">文章归档</a>
+                
+                    <a class="footer-item" href="/categories/" title="文章分类" rel="noopener external nofollow noreferrer">文章分类</a>
+                
+                    <a class="footer-item" href="/tags/" title="文章标签" rel="noopener external nofollow noreferrer">文章标签</a>
+                
+                    <a class="footer-item" href="/says/" title="即刻" rel="noopener external nofollow noreferrer">即刻</a>
+                
+                    <a class="footer-item" href="/about/" title="关于" rel="noopener external nofollow noreferrer">关于</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">服务</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://51.la/" title="51la统计" rel="noopener external nofollow noreferrer noopener">51la统计</a>
+                
+                    <a class="footer-item" target="_blank" href="https://tongji.baidu.com/" title="百度统计" rel="noopener external nofollow noreferrer noopener">百度统计</a>
+                
+                    <a class="footer-item" target="_blank" href="https://ql.tianli0.top/" title="TianliCDN" rel="noopener external nofollow noreferrer noopener">TianliCDN</a>
+                    
+            </div>
+        </div>
+    
+        <div class="footer-group">
+            <h3 class="footer-title">Acrylic</h3>
+            <div class="footer-links">
+                
+                    <a class="footer-item" target="_blank" href="https://acrylic.zhheo.com/" title="主题官网" rel="noopener external nofollow noreferrer noopener">主题官网</a>
+                
+                    <a class="footer-item" target="_blank" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic" title="Github" rel="noopener external nofollow noreferrer noopener">Github</a>
+                
+                    <a class="footer-item" target="_blank" href="https://blog.zhheo.com/" title="Heo" rel="noopener external nofollow noreferrer noopener">Heo</a>
+                    
+            </div>
+        </div>
+    
+    
+</div>
+<div id="footer-banner">
+    <div class="footer-banner-links">
+        <div class="footer-banner-left">
+            <div id="footer-banner-tips">
+                <div class="copyright">©2022 - 2023 By 
+                    <a class="footer-banner-link" href="/" rel="external nofollow">BoGe</a>
+                    <a class="footer-banner-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" rel="external nofollow" target="_blank"> Theme By Acrylic-Next</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-banner-right">
+            <a class="footer-banner-link" href="/rss/">订阅</a>
+            
+            <a class="footer-banner-link cc" target="_blank" href="https://creativecommons.org/licenses/by/4.0/" title="cc协议">
+                <i class="fa-solid fa-closed-captioning"></i>
+            </a>
+        </div>
+    </div>
+</div>
+                </footer>
+            </div>
+         
+        <div>
+    <script type="text/javascript" src="/js/utils.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+
+<script src="/lib/pjax.min.js"></script>
+
+
+
+<script src="/lib/snackbar.min.js"></script>
+
+
+    
+<script src="/lib/view-image.min.js"></script>
+
+
+
+<div id="js-pjax">
+    
+     
+</div>
+
+
+    
+<script src="/js/extend/covercolor/local.js"></script>
+
+        
+
+    <script>
+  let pjaxSelectors = [
+    'title',
+    '#body-wrap',
+    '#site-config',
+    'meta[name="description"]',
+    '#js-pjax'
+  ]
+  
+  const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+  })
+
+  document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+</script>
+    
+</div>
+        
+    <div id="local-search">
+    <div class="search-dialog">
+        <nav class="search-nav">
+            <span class="search-dialog-title">搜索</span>
+            <button class="search-close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </nav>
+        <div id="loading-database">
+            <i class="fas fa-spinner fa-pulse"></i>
+            <span>加载中</span>
+        </div>
+        <div class="search-wrap">
+            <div class="search-box">
+                <input class="search-box-input" placeholder="输入关键词快速查找" type="text" id="search-input" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off">
+            </div>
+            <div id="loading-status"></div>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <div id="search-mask"></div>
+</div>
+    
+<link rel="stylesheet" href="/css/search/local-search.css">
+
+    
+<script src="/js/extend/search/local-search.js"></script>
+
+
+     
+        <div class="needEndHide" id="nav-music" onclick="acrylic.musicToggle()">
+    <div id="nav-music-hoverTips">音乐已暂停</div>
+    <meting-js id="1708664797" server="tencent" type="playlist" mutex="true"
+        preload="none" data-lrctype="0" order="random" theme="var(--heo-main)"></meting-js>
+</div>
+    
+    </body>
+</html>
+<script>const posts=["posts/4cb97879.html","posts/2e12a5d7.html","posts/e1e46786.html","posts/824e06e6.html","posts/438d7117.html","posts/57dee8fe.html","posts/aa251266.html","posts/ab5ddeae.html","posts/e2553edc.html","posts/f99f16f6.html","posts/8176306d.html","posts/85ab07ea.html","posts/7ed7a174.html","posts/82e3f801.html","posts/bc534f5.html"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
