@@ -384,6 +384,47 @@
       </tags>
   </entry>
   <entry>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/posts/8176306d.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>手把手教你搭建开发环境之 C/C++</title>
     <url>/posts/85ab07ea.html</url>
     <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
@@ -443,9 +484,9 @@
         <category>基础教程</category>
       </categories>
       <tags>
+        <tag>环境搭建</tag>
         <tag>C++</tag>
         <tag>C语言</tag>
-        <tag>环境搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -492,47 +533,6 @@
         <tag>Windows</tag>
         <tag>Android</tag>
         <tag>WSA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手教你搭建开发环境之 Python</title>
-    <url>/posts/8176306d.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
-<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
-<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
-<p><strong>安装教程：</strong></p>
-<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
-<p>点击 Downloads</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
-<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
-<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
-<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
-<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
-<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
-<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
-<p>点击 Download</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
-<p>下载社区版</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
-<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
-<p>选择完成后继续按照提示操作完成安装。</p>
-<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
-<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
-<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
-<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -590,82 +590,145 @@
       </tags>
   </entry>
   <entry>
-    <title>一劳永逸的AI开发环境搭建教程</title>
-    <url>/posts/aa251266.html</url>
-    <content><![CDATA[<h1 id="Anconda-环境配置教程"><a href="#Anconda-环境配置教程" class="headerlink" title="Anconda 环境配置教程"></a>Anconda 环境配置教程</h1><p>最近涌现了好多AI开源项目，其中很多项目的硬件要求不高，可以自己部署到本地来运行。但是不同的项目要求的Python版本可能不同，电脑上安装了多个Python版本后管理起来十分麻烦。所以今天介绍一种一劳永逸的 AI 开发环境搭建的方式，可以让多个项目共存，并且管理起来也十分方便。</p>
-<p>今天要介绍的一个工具是 Anconda，它的核心是conda，它是一个开源的软件包管理系统和环境管理系统，可以在不同的环境中安装不同版本的软件包，以及在不同的环境之间切换。使用这个工具可以创建虚拟环境，每一个虚拟环境都对应一个Python版本，这样就可以轻松管理Python的版本。</p>
-<p>Anconda有两个版本，一个是完整的 Anconda，另一个是精简的 Miniconda，建议使用 Miniconda，相比 Anconda 占硬盘空间更小，而且对于搭建 AI 环境来说完全够用。</p>
-<p>下面是 Miniconda 的安装教程：</p>
+    <title>New Bing 首发体验报告</title>
+    <url>/posts/ab5ddeae.html</url>
+    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
+<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
+<p>当然，现在的 New Bing 仍然存在一些问题：</p>
 <ol>
-<li><p>首先打开 Miniconda 的下载链接：<a href="https://docs.conda.io/en/latest/miniconda.html#">Miniconda — conda documentation</a></p>
+<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
 </li>
-<li><p>然后根据你的系统版本下载安装包（这里以 Windows 为例）：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230422223548197.png" alt="image-20230422223548197"></p>
+<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
 </li>
-<li><p>下载好之后直接运行安装即可，这里不建议修改默认配置（为了方便使用可以勾选将 conda 添加到环境变量，但是要保证系统里没有安装任何版本的 Python）</p>
+<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
 </li>
-<li><p>安装完成之后，在开始菜单可以找到 Anaconda Prompt (anaconda3) 快捷方式，运行这个快捷方式就可以打开 Anconda 的命令行窗口。之后使用 Anconda 执行命令就都在这里操作。</p>
+<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
 </li>
-<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>另外有的时候可能还会用到 pip，还可以为 pip 配置国内镜像：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用 conda 创建虚拟环境命令（这里假设我们要部署Stable Diffusion WebUI，可以创建一个名为SD-WebUI的虚拟环境，python版本号为3.10）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>等待命令执行完成后，我们就拥有了一个名为SD-WebUI的虚拟环境，这个环境里的 Python 版本是 3.10，接下来就是启动这个虚拟环境，使用如下命令来启动：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate SD-WebUI</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行完成后，可以看到开头的 (base) 变成了 (SD-WebUI) ，说明我们已经成功进入了这个虚拟环境，接下来就可以在这个虚拟环境中继续部署了。</p>
-</li>
-<li><p>在这里再分享一些常用的 conda 命令：</p>
-<ol>
-<li>关闭当前的虚拟环境：</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>查看虚拟环境列表：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>查看安装的包：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>删除环境（完全删除名为env_name的环境）：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name --all</span><br></pre></td></tr></table></figure>
-
-<p>​      也可以只删除环境中的某个包：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name packge_name</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>更改当前环境的Python版本：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>另外，使用 conda 配置好环境之后，如果想要运行，通常需要重新打开 conda 的命令行来定位项目，这样操作很繁琐，这里提供一种解决方案。</p>
-<p>我们首先从 conda 命令行的启动快捷方式入手，查看 Anaconda Prompt (anaconda3) 的属性可以发现，其实这个快捷方式就是用 cmd 执行了一行命令，我这里的命令将如下：</p>
-   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%windir%\System32\cmd.exe &quot;/K&quot; C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3</span><br></pre></td></tr></table></figure>
-
-<p>知道了这个原理之后，我们就可以自己写一个 bat 文件来直接启动 conda 命令行，然后再自动启动我们所需的虚拟环境的命令，就可以做到一键启动了。下面是我给我的 Stable Diffusion WebUI 写的一键启动命令示例：</p>
-   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3    <span class="comment"># 启动conda</span></span><br><span class="line">call conda activate SD-WebUI    <span class="comment"># 启动 SD-WebUI 虚拟环境</span></span><br><span class="line">python launch.py    <span class="comment"># 运行 WebUI</span></span><br></pre></td></tr></table></figure>
-
-<p>当然这只是最简单的启动命令，如果有需要还可以再加入一些其它的内容。</p>
+<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
 ]]></content>
       <categories>
-        <category>基础教程</category>
+        <category>闲聊</category>
       </categories>
       <tags>
         <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在本地搭建属于自己的 &quot;ChatGPT&quot;</title>
+    <url>/posts/438d7117.html</url>
+    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 30 GB 的硬盘空余空间</p>
+<p>至少 6GB 显存的 N 卡</p>
+<p>至少 16GB 内存</p>
+<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
+</blockquote>
+<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
+<p>下面是不同量化等级所需要的显存对比：</p>
+<table>
+<thead>
+<tr>
+<th><strong>量化等级</strong></th>
+<th><strong>最低 GPU 显存</strong>（推理）</th>
+<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FP16（无量化）</td>
+<td>13 GB</td>
+<td>14 GB</td>
+</tr>
+<tr>
+<td>INT8</td>
+<td>8 GB</td>
+<td>9 GB</td>
+</tr>
+<tr>
+<td>INT4</td>
+<td>6 GB</td>
+<td>7 GB</td>
+</tr>
+</tbody></table>
+<p>今天就来和大家分享一下搭建的过程。如果你还没有安装Ancodna，可以翻看一下之前发过的教程：<a href="https://frspble.github.io/posts/aa251266.html">一劳永逸的AI开发环境搭建教程</a></p>
+<p>下面开始部署教程：</p>
+<ol>
+<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行 cli_demo.py，自动下载模型并运行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
+
+<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p>2023.04.23 补充：</p>
+<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<hr>
+</li>
+<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
+
+<p>即可以运行 WebUI 版的 ChatGLM</p>
+</li>
+</ol>
+<p>以上就是ChatGLM 的部署过程。</p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>开源项目</tag>
         <tag>环境搭建</tag>
-        <tag>Python</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+        <tag>ChatGLM</tag>
         <tag>Anconda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语境法记单词资源分享</title>
+    <url>/posts/824e06e6.html</url>
+    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
+<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
+<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
+<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
+<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
+<p>下面是一篇生成的文章示例：</p>
+<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
+<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
+<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
+<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
+<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
+<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
+<hr>
+<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
+]]></content>
+      <categories>
+        <category>资源分享</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>大学</tag>
+        <tag>ChatGPT</tag>
+        <tag>英语</tag>
       </tags>
   </entry>
   <entry>
@@ -761,145 +824,141 @@
       </tags>
   </entry>
   <entry>
-    <title>在本地搭建属于自己的 &quot;ChatGPT&quot;</title>
-    <url>/posts/438d7117.html</url>
-    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
-<p>硬件要求：</p>
-<p>至少 30 GB 的硬盘空余空间</p>
-<p>至少 6GB 显存的 N 卡</p>
-<p>至少 16GB 内存</p>
-<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
-</blockquote>
-<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
-<p>下面是不同量化等级所需要的显存对比：</p>
-<table>
-<thead>
-<tr>
-<th><strong>量化等级</strong></th>
-<th><strong>最低 GPU 显存</strong>（推理）</th>
-<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>FP16（无量化）</td>
-<td>13 GB</td>
-<td>14 GB</td>
-</tr>
-<tr>
-<td>INT8</td>
-<td>8 GB</td>
-<td>9 GB</td>
-</tr>
-<tr>
-<td>INT4</td>
-<td>6 GB</td>
-<td>7 GB</td>
-</tr>
-</tbody></table>
-<p>今天就来和大家分享一下搭建的过程。如果你还没有安装Ancodna，可以翻看一下之前发过的教程：<a href="https://frspble.github.io/posts/aa251266.html">一劳永逸的AI开发环境搭建教程</a></p>
-<p>下面开始部署教程：</p>
-<ol>
-<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行 cli_demo.py，自动下载模型并运行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
-
-<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
-
+    <title>使用 ChatGPT 辅助背单词</title>
+    <url>/posts/e1e46786.html</url>
+    <content><![CDATA[<h1 id="提高工作效率，解放生产力，ChatGPT-还能这么用？"><a href="#提高工作效率，解放生产力，ChatGPT-还能这么用？" class="headerlink" title="提高工作效率，解放生产力，ChatGPT 还能这么用？"></a>提高工作效率，解放生产力，ChatGPT 还能这么用？</h1><p>一个月前，发现我的OpenAI的点数要过期了，这么好的东西当然不能浪费，应该用 OpenAI 的接口做一些东西，进过一番思索，就有了用ChatGPT生成语境法背单词语料的想法。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202150960.png" alt="image-20230325001141110"></p>
 <hr>
-<blockquote>
-<p>2023.04.23 补充：</p>
-<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
-</blockquote>
+<p>作为一名学生，背单词已经成为了日常，但是目前主流的背单词方式都只是针对独立的单词，背完单词如果不加以应用很快就会忘记，所以我想到可以用 ChatGPT 来给单词生成一段故事，这样就可以加深对于单词的记忆。</p>
+<p>有了想法，下面开始实践。</p>
+<p>我们首先打开ChatGPT，输入我们的需求，ChatGPT就会给出实现的代码。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202151773.png" alt="image-20230402003639084"></p>
+<p>好了，以上就是我实现这个项目的全部过程，我们下期再见。</p>
 <hr>
-</li>
-<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
+<p>显然这是不可能的，上面的代码根本无法达到我们所需的效果。现在 ChatGPT 虽然足够强大，但也远没有达到上述的地步。目前这类的大语言模型只是一个很好的辅助工具，合理的利用可以大大提升我们的学习和工作的效率。</p>
+<p>下面我将和大家分享我用 ChatGPT 辅助实现批量生成语境法背单词的语料的方法。</p>
+<p>首先，单词列表是生成文章的基础，我们需要收集整理要背诵的单词列表。正好之前我做高考大纲词汇词频分析的时候收集了不少单词列表，这里就直接拿来用了。我将这些数据都整理成了csv格式，方便后续在 Python 中进行操作。</p>
+<p>接下来就是调用 ChatGPT 的 API 来实现自动生成语料，这种简单的项目用 Python 来实现是最方便的，下面开始实践。</p>
+<p>首先，需要写一个调用 OpenAI 的 ChatGPT 的 API 来生成英文文章的函数。这里如果我们直接向ChatGPT 寻求帮助，写出来的代码并不可用。因为这是新的API，ChatGPT 并不清楚调用方法。好在OpenAI 的官方文档写的十分详细，直接参考官方文档（<a href="https://platform.openai.com/docs/guides/chat">Chat completion - OpenAI API</a>）就可以轻松完成。</p>
+<p>接下来就是对数据进行处理。这里可以直接让 ChatGPT 写一段 Python 代码，将 csv 表格的数据整理成 Python 列表，方便后续在 Python 中进行操作。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202152826.png" alt="image-20230405120236913"></p>
+<p>运行这段代码测试一下，报错了，因为我的csv文件使用的是GBK编码，而这里默认使用UTF-8来解码。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202155223.png" alt="image-20230323224140784"></p>
+<p>尽管我知道报错的原因，但还是将这段报错交给了ChatGPT，试试看他能不能解决这个问题。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153055.png" alt="image-20230323225231252"></p>
+<p>从他的回答中可以看出他理解了这个报错的原因，也给出了解决方案，但是他并没有考虑到正确的编码是GBK，这里还是需要结合个人经验来判断。</p>
+<p>接下来就是使用单词列表中的单词生成语料，这里直接将需求交给ChatGPT。这里的描述一定要讲清楚需求，不然生成的代码会有问题。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153449.png" alt="image-20230405120715174"></p>
+<p>这段代码还存在一个问题，他将所有不在生成的文本中的单词都添加到了列表的最后，这样操作会打乱之前的词频排序，所以还需要让ChatGPT来修复一下这个问题。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154057.png" alt="image-20230405124415564"></p>
+<p>可以看到ChatGPT成功修复了这个问题，并且还提醒我，如果生成的文章中反复缺少某些词，这种方法可能会导致某些词被多次使用。那么我们就让他按照自己的思路来修改代码。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154285.png" alt="image-20230405124935216"></p>
+<p>然而ChatGPT好像并没有理解自己的意思，这段代码和上面的建议没有太多的关系。不过我们现在已经有了思路，按照这个思路在之前的代码上稍加修改，便得到了最终的代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取单词的翻译</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_translation</span>(<span class="params">word</span>):</span><br><span class="line">    translation = df.loc[df[<span class="number">0</span>] == word, <span class="number">1</span>].values[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> translation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成文章并写出为文件</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_article</span>(<span class="params">word_list</span>):</span><br><span class="line">    response = generate_response(word_list)</span><br><span class="line">    result = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> choice <span class="keyword">in</span> response.choices:</span><br><span class="line">        result += choice.message.content</span><br><span class="line"></span><br><span class="line">    included_words = []</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> word_list:</span><br><span class="line">        index = result.lower().find(word.lower())</span><br><span class="line">        <span class="keyword">if</span> index == -<span class="number">1</span>:</span><br><span class="line">            missing_words.append(word)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            included_words.append(word)</span><br><span class="line">            result = re.sub(<span class="string">r&#x27;\b&#x27;</span> + word + <span class="string">r&#x27;\b&#x27;</span>, <span class="string">&#x27;**&#x27;</span> + word + <span class="string">&#x27;**&#x27;</span>, result)</span><br><span class="line"></span><br><span class="line">    included_words_translated = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> included_words:</span><br><span class="line">        included_words_translated.append(word + <span class="string">&#x27;: &#x27;</span> + get_translation(word))</span><br><span class="line"></span><br><span class="line">    article_file_name = <span class="string">&#x27;articles/&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">int</span>(time.time())) + <span class="string">&quot;_&quot;</span> + <span class="string">&quot;_&quot;</span>.join(included_words[:<span class="number">5</span>]) + <span class="string">&quot;.md&quot;</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(article_file_name, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&quot;\n&quot;</span>.join(included_words_translated) + <span class="string">&quot;\n\n---\n\n&quot;</span>)</span><br><span class="line">        f.write(result)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;已生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(included_words)) + <span class="built_in">str</span>(included_words))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;未生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(missing_words)) + <span class="built_in">str</span>(missing_words))</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line">    <span class="keyword">return</span> missing_words</span><br></pre></td></tr></table></figure>
 
-<p>安装完成后执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 主函数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_articles_from_word_list</span>(<span class="params">word_list</span>):</span><br><span class="line">    current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">    word_list = word_list[<span class="number">20</span>:]</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">while</span> word_list <span class="keyword">or</span> missing_words:</span><br><span class="line">        missing_words = generate_article(current_words)</span><br><span class="line">        current_words = []</span><br><span class="line">        <span class="keyword">if</span> missing_words:</span><br><span class="line">            current_words.extend(missing_words)</span><br><span class="line">            current_words.extend(word_list[:<span class="number">20</span> - <span class="built_in">len</span>(missing_words)])</span><br><span class="line">            word_list = word_list[<span class="number">20</span> - <span class="built_in">len</span>(missing_words):]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">            word_list = word_list[<span class="number">20</span>:]</span><br></pre></td></tr></table></figure>
 
-<p>即可以运行 WebUI 版的 ChatGLM</p>
-</li>
-</ol>
-<p>以上就是ChatGLM 的部署过程。</p>
+<p>我这里重构了 <code>generate_article()</code> 函数，将生成的文章直接保存为Markdown文件，并且返回未使用的单词。在 <code>generate_articles_from_word_list()</code> 函数中也做了对应的修改，将返回的未使用的单词加入到下一次生成的单词列表的开头。这样保证了既不丢失单词，又不破坏词频的顺序。</p>
+<p>当然，这段代码还有不少可以优化的地方，比如查找单词时加入查找单词的变形；一个单词如果尝试多次都无法生成文章，直接舍弃这个单词等等。</p>
+<p>现在，我们已经通过一个单词列表生成了一堆 Markdown 格式的文章。为了便于阅读和打印，我们接下来需要将这些文章合并为一个PDF文件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156874.png" alt="image-20230405133055489"></p>
+<p>依然是使用 ChatGPT 生成代码，稍作修改，即可完成 Markdown 文件到 PDF 的转换。</p>
+<p>另外，在转换时发现之前忘记给单词列表添加空格来换行，恰好这时候 OpenAI 发布了GPT4，而且 New Bing 使用的就是 GPT4，这里正好拿来做个测试。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156904.png" alt="image-20230403001809774"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157805.png" alt="image-20230403001829425"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157375.png" alt="image-20230403001852893"></p>
+<p>看起来 New Bing 的 GPT4 相比 3.5 没有特别大的提升（这里指基于 GPT4 的 New Bing 和 ChatGPT 3.5，ChatGPT4 没有测试，不做讨论），一个需求仍然需要多次的指正才能达到预期的效果。</p>
+<p>所以，现在 AI 水平仍然无法完全取代人类的工作。AI 不能让一个从来没有写过代码的人写出可用的代码，也不能代替人类产生新的想法。不过 AI 确实可以提升我们的工作效率。我作为一名普通的学生，只用了几个小时，就完成了以往可能是数名英语老师数周的工作量。</p>
+<p>截止写稿时，OpenAI 已经发布了GPT 4，完整版的 GPT4 能力有了进一步的提升，并且拥有了视觉能力，近几年AI的进步速度让人叹为观止，我一年前的想象如今已经变成现实。现在已经可以看到强人工智能的雏形，AGI 已经不再是天方夜谭。</p>
+<p>但无论如何，我们都要保持终身学习的态度，只有不断的学习新的知识，接收新生事物，才能跟上时代的步伐。</p>
 ]]></content>
       <categories>
         <category>技术探讨</category>
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>开源项目</tag>
-        <tag>环境搭建</tag>
-        <tag>Anconda</tag>
-        <tag>NLP</tag>
-        <tag>ChatGLM</tag>
-        <tag>LLM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>New Bing 首发体验报告</title>
-    <url>/posts/ab5ddeae.html</url>
-    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
-<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
-<p>当然，现在的 New Bing 仍然存在一些问题：</p>
-<ol>
-<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
-</li>
-<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
-</li>
-<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
-</li>
-<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
-</li>
-</ol>
-<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
-]]></content>
-      <categories>
-        <category>闲聊</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>NLP</tag>
-        <tag>LLM</tag>
-        <tag>ChatGPT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>语境法记单词资源分享</title>
-    <url>/posts/824e06e6.html</url>
-    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
-<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
-<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
-<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
-<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
-<p>下面是一篇生成的文章示例：</p>
-<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
-<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
-<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
-<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
-<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
-<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
-<hr>
-<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
-]]></content>
-      <categories>
-        <category>资源分享</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
         <tag>大学</tag>
         <tag>ChatGPT</tag>
         <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一劳永逸的AI开发环境搭建教程</title>
+    <url>/posts/aa251266.html</url>
+    <content><![CDATA[<h1 id="Anconda-环境配置教程"><a href="#Anconda-环境配置教程" class="headerlink" title="Anconda 环境配置教程"></a>Anconda 环境配置教程</h1><p>最近涌现了好多AI开源项目，其中很多项目的硬件要求不高，可以自己部署到本地来运行。但是不同的项目要求的Python版本可能不同，电脑上安装了多个Python版本后管理起来十分麻烦。所以今天介绍一种一劳永逸的 AI 开发环境搭建的方式，可以让多个项目共存，并且管理起来也十分方便。</p>
+<p>今天要介绍的一个工具是 Anconda，它的核心是conda，它是一个开源的软件包管理系统和环境管理系统，可以在不同的环境中安装不同版本的软件包，以及在不同的环境之间切换。使用这个工具可以创建虚拟环境，每一个虚拟环境都对应一个Python版本，这样就可以轻松管理Python的版本。</p>
+<p>Anconda有两个版本，一个是完整的 Anconda，另一个是精简的 Miniconda，建议使用 Miniconda，相比 Anconda 占硬盘空间更小，而且对于搭建 AI 环境来说完全够用。</p>
+<p>下面是 Miniconda 的安装教程：</p>
+<ol>
+<li><p>首先打开 Miniconda 的下载链接：<a href="https://docs.conda.io/en/latest/miniconda.html#">Miniconda — conda documentation</a></p>
+</li>
+<li><p>然后根据你的系统版本下载安装包（这里以 Windows 为例）：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230422223548197.png" alt="image-20230422223548197"></p>
+</li>
+<li><p>下载好之后直接运行安装即可，这里不建议修改默认配置（为了方便使用可以勾选将 conda 添加到环境变量，但是要保证系统里没有安装任何版本的 Python）</p>
+</li>
+<li><p>安装完成之后，在开始菜单可以找到 Anaconda Prompt (anaconda3) 快捷方式，运行这个快捷方式就可以打开 Anconda 的命令行窗口。之后使用 Anconda 执行命令就都在这里操作。</p>
+</li>
+<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>另外有的时候可能还会用到 pip，还可以为 pip 配置国内镜像：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 conda 创建虚拟环境命令（这里假设我们要部署Stable Diffusion WebUI，可以创建一个名为SD-WebUI的虚拟环境，python版本号为3.10）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>等待命令执行完成后，我们就拥有了一个名为SD-WebUI的虚拟环境，这个环境里的 Python 版本是 3.10，接下来就是启动这个虚拟环境，使用如下命令来启动：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate SD-WebUI</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行完成后，可以看到开头的 (base) 变成了 (SD-WebUI) ，说明我们已经成功进入了这个虚拟环境，接下来就可以在这个虚拟环境中继续部署了。</p>
+</li>
+<li><p>在这里再分享一些常用的 conda 命令：</p>
+<ol>
+<li>关闭当前的虚拟环境：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>查看虚拟环境列表：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>查看安装的包：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>删除环境（完全删除名为env_name的环境）：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name --all</span><br></pre></td></tr></table></figure>
+
+<p>​      也可以只删除环境中的某个包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name packge_name</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>更改当前环境的Python版本：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>另外，使用 conda 配置好环境之后，如果想要运行，通常需要重新打开 conda 的命令行来定位项目，这样操作很繁琐，这里提供一种解决方案。</p>
+<p>我们首先从 conda 命令行的启动快捷方式入手，查看 Anaconda Prompt (anaconda3) 的属性可以发现，其实这个快捷方式就是用 cmd 执行了一行命令，我这里的命令将如下：</p>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%windir%\System32\cmd.exe &quot;/K&quot; C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3</span><br></pre></td></tr></table></figure>
+
+<p>知道了这个原理之后，我们就可以自己写一个 bat 文件来直接启动 conda 命令行，然后再自动启动我们所需的虚拟环境的命令，就可以做到一键启动了。下面是我给我的 Stable Diffusion WebUI 写的一键启动命令示例：</p>
+   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3    <span class="comment"># 启动conda</span></span><br><span class="line">call conda activate SD-WebUI    <span class="comment"># 启动 SD-WebUI 虚拟环境</span></span><br><span class="line">python launch.py    <span class="comment"># 运行 WebUI</span></span><br></pre></td></tr></table></figure>
+
+<p>当然这只是最简单的启动命令，如果有需要还可以再加入一些其它的内容。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Python</tag>
+        <tag>环境搭建</tag>
+        <tag>Anconda</tag>
       </tags>
   </entry>
   <entry>
@@ -967,68 +1026,28 @@
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>CV</tag>
         <tag>NLP</tag>
         <tag>LLM</tag>
+        <tag>CV</tag>
       </tags>
   </entry>
   <entry>
-    <title>使用 ChatGPT 辅助背单词</title>
-    <url>/posts/e1e46786.html</url>
-    <content><![CDATA[<h1 id="提高工作效率，解放生产力，ChatGPT-还能这么用？"><a href="#提高工作效率，解放生产力，ChatGPT-还能这么用？" class="headerlink" title="提高工作效率，解放生产力，ChatGPT 还能这么用？"></a>提高工作效率，解放生产力，ChatGPT 还能这么用？</h1><p>一个月前，发现我的OpenAI的点数要过期了，这么好的东西当然不能浪费，应该用 OpenAI 的接口做一些东西，进过一番思索，就有了用ChatGPT生成语境法背单词语料的想法。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202150960.png" alt="image-20230325001141110"></p>
-<hr>
-<p>作为一名学生，背单词已经成为了日常，但是目前主流的背单词方式都只是针对独立的单词，背完单词如果不加以应用很快就会忘记，所以我想到可以用 ChatGPT 来给单词生成一段故事，这样就可以加深对于单词的记忆。</p>
-<p>有了想法，下面开始实践。</p>
-<p>我们首先打开ChatGPT，输入我们的需求，ChatGPT就会给出实现的代码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202151773.png" alt="image-20230402003639084"></p>
-<p>好了，以上就是我实现这个项目的全部过程，我们下期再见。</p>
-<hr>
-<p>显然这是不可能的，上面的代码根本无法达到我们所需的效果。现在 ChatGPT 虽然足够强大，但也远没有达到上述的地步。目前这类的大语言模型只是一个很好的辅助工具，合理的利用可以大大提升我们的学习和工作的效率。</p>
-<p>下面我将和大家分享我用 ChatGPT 辅助实现批量生成语境法背单词的语料的方法。</p>
-<p>首先，单词列表是生成文章的基础，我们需要收集整理要背诵的单词列表。正好之前我做高考大纲词汇词频分析的时候收集了不少单词列表，这里就直接拿来用了。我将这些数据都整理成了csv格式，方便后续在 Python 中进行操作。</p>
-<p>接下来就是调用 ChatGPT 的 API 来实现自动生成语料，这种简单的项目用 Python 来实现是最方便的，下面开始实践。</p>
-<p>首先，需要写一个调用 OpenAI 的 ChatGPT 的 API 来生成英文文章的函数。这里如果我们直接向ChatGPT 寻求帮助，写出来的代码并不可用。因为这是新的API，ChatGPT 并不清楚调用方法。好在OpenAI 的官方文档写的十分详细，直接参考官方文档（<a href="https://platform.openai.com/docs/guides/chat">Chat completion - OpenAI API</a>）就可以轻松完成。</p>
-<p>接下来就是对数据进行处理。这里可以直接让 ChatGPT 写一段 Python 代码，将 csv 表格的数据整理成 Python 列表，方便后续在 Python 中进行操作。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202152826.png" alt="image-20230405120236913"></p>
-<p>运行这段代码测试一下，报错了，因为我的csv文件使用的是GBK编码，而这里默认使用UTF-8来解码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202155223.png" alt="image-20230323224140784"></p>
-<p>尽管我知道报错的原因，但还是将这段报错交给了ChatGPT，试试看他能不能解决这个问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153055.png" alt="image-20230323225231252"></p>
-<p>从他的回答中可以看出他理解了这个报错的原因，也给出了解决方案，但是他并没有考虑到正确的编码是GBK，这里还是需要结合个人经验来判断。</p>
-<p>接下来就是使用单词列表中的单词生成语料，这里直接将需求交给ChatGPT。这里的描述一定要讲清楚需求，不然生成的代码会有问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153449.png" alt="image-20230405120715174"></p>
-<p>这段代码还存在一个问题，他将所有不在生成的文本中的单词都添加到了列表的最后，这样操作会打乱之前的词频排序，所以还需要让ChatGPT来修复一下这个问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154057.png" alt="image-20230405124415564"></p>
-<p>可以看到ChatGPT成功修复了这个问题，并且还提醒我，如果生成的文章中反复缺少某些词，这种方法可能会导致某些词被多次使用。那么我们就让他按照自己的思路来修改代码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154285.png" alt="image-20230405124935216"></p>
-<p>然而ChatGPT好像并没有理解自己的意思，这段代码和上面的建议没有太多的关系。不过我们现在已经有了思路，按照这个思路在之前的代码上稍加修改，便得到了最终的代码：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取单词的翻译</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_translation</span>(<span class="params">word</span>):</span><br><span class="line">    translation = df.loc[df[<span class="number">0</span>] == word, <span class="number">1</span>].values[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> translation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成文章并写出为文件</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_article</span>(<span class="params">word_list</span>):</span><br><span class="line">    response = generate_response(word_list)</span><br><span class="line">    result = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> choice <span class="keyword">in</span> response.choices:</span><br><span class="line">        result += choice.message.content</span><br><span class="line"></span><br><span class="line">    included_words = []</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> word_list:</span><br><span class="line">        index = result.lower().find(word.lower())</span><br><span class="line">        <span class="keyword">if</span> index == -<span class="number">1</span>:</span><br><span class="line">            missing_words.append(word)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            included_words.append(word)</span><br><span class="line">            result = re.sub(<span class="string">r&#x27;\b&#x27;</span> + word + <span class="string">r&#x27;\b&#x27;</span>, <span class="string">&#x27;**&#x27;</span> + word + <span class="string">&#x27;**&#x27;</span>, result)</span><br><span class="line"></span><br><span class="line">    included_words_translated = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> included_words:</span><br><span class="line">        included_words_translated.append(word + <span class="string">&#x27;: &#x27;</span> + get_translation(word))</span><br><span class="line"></span><br><span class="line">    article_file_name = <span class="string">&#x27;articles/&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">int</span>(time.time())) + <span class="string">&quot;_&quot;</span> + <span class="string">&quot;_&quot;</span>.join(included_words[:<span class="number">5</span>]) + <span class="string">&quot;.md&quot;</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(article_file_name, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&quot;\n&quot;</span>.join(included_words_translated) + <span class="string">&quot;\n\n---\n\n&quot;</span>)</span><br><span class="line">        f.write(result)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;已生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(included_words)) + <span class="built_in">str</span>(included_words))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;未生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(missing_words)) + <span class="built_in">str</span>(missing_words))</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line">    <span class="keyword">return</span> missing_words</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 主函数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_articles_from_word_list</span>(<span class="params">word_list</span>):</span><br><span class="line">    current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">    word_list = word_list[<span class="number">20</span>:]</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">while</span> word_list <span class="keyword">or</span> missing_words:</span><br><span class="line">        missing_words = generate_article(current_words)</span><br><span class="line">        current_words = []</span><br><span class="line">        <span class="keyword">if</span> missing_words:</span><br><span class="line">            current_words.extend(missing_words)</span><br><span class="line">            current_words.extend(word_list[:<span class="number">20</span> - <span class="built_in">len</span>(missing_words)])</span><br><span class="line">            word_list = word_list[<span class="number">20</span> - <span class="built_in">len</span>(missing_words):]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">            word_list = word_list[<span class="number">20</span>:]</span><br></pre></td></tr></table></figure>
-
-<p>我这里重构了 <code>generate_article()</code> 函数，将生成的文章直接保存为Markdown文件，并且返回未使用的单词。在 <code>generate_articles_from_word_list()</code> 函数中也做了对应的修改，将返回的未使用的单词加入到下一次生成的单词列表的开头。这样保证了既不丢失单词，又不破坏词频的顺序。</p>
-<p>当然，这段代码还有不少可以优化的地方，比如查找单词时加入查找单词的变形；一个单词如果尝试多次都无法生成文章，直接舍弃这个单词等等。</p>
-<p>现在，我们已经通过一个单词列表生成了一堆 Markdown 格式的文章。为了便于阅读和打印，我们接下来需要将这些文章合并为一个PDF文件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156874.png" alt="image-20230405133055489"></p>
-<p>依然是使用 ChatGPT 生成代码，稍作修改，即可完成 Markdown 文件到 PDF 的转换。</p>
-<p>另外，在转换时发现之前忘记给单词列表添加空格来换行，恰好这时候 OpenAI 发布了GPT4，而且 New Bing 使用的就是 GPT4，这里正好拿来做个测试。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156904.png" alt="image-20230403001809774"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157805.png" alt="image-20230403001829425"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157375.png" alt="image-20230403001852893"></p>
-<p>看起来 New Bing 的 GPT4 相比 3.5 没有特别大的提升（这里指基于 GPT4 的 New Bing 和 ChatGPT 3.5，ChatGPT4 没有测试，不做讨论），一个需求仍然需要多次的指正才能达到预期的效果。</p>
-<p>所以，现在 AI 水平仍然无法完全取代人类的工作。AI 不能让一个从来没有写过代码的人写出可用的代码，也不能代替人类产生新的想法。不过 AI 确实可以提升我们的工作效率。我作为一名普通的学生，只用了几个小时，就完成了以往可能是数名英语老师数周的工作量。</p>
-<p>截止写稿时，OpenAI 已经发布了GPT 4，完整版的 GPT4 能力有了进一步的提升，并且拥有了视觉能力，近几年AI的进步速度让人叹为观止，我一年前的想象如今已经变成现实。现在已经可以看到强人工智能的雏形，AGI 已经不再是天方夜谭。</p>
-<p>但无论如何，我们都要保持终身学习的态度，只有不断的学习新的知识，接收新生事物，才能跟上时代的步伐。</p>
+    <title>Copilot Chat 体验报告</title>
+    <url>/posts/1e067619.html</url>
+    <content><![CDATA[<h1 id="Copilot-Chat-体验报告"><a href="#Copilot-Chat-体验报告" class="headerlink" title="Copilot Chat 体验报告"></a>Copilot Chat 体验报告</h1><p>前几天通过了 Copilot Chat 的内测申请，今天正好有一个要改的开源项目，便拿来试了试。<br>先说结论，这个东西非常好用，能提升不少效率。原本改这样一个开源项目可能需要半天到一天的时间，但是在 Copilot Chat 的帮助下只用了不到 2 小时就完成了所有的修改，并且整个过程我几乎没有写过一行完整的代码，大部分的代码都是用它生成的。</p>
+<p>其实很早之前 Github 就发布了 Copilot，基于GPT3，可以帮助开发者自动补全代码，当时就很惊艳。而现在 Copilot 新增了 Chat 分支（据说是基于 GPT4），能力又提升了一个台阶。 下面就详细说说它是如何提升效率的：<br>Copilot Chat 可以用来分析代码，上手一个开源项目时，分析代码通常要消耗不少的时间和精力。但有了Copilot Chat，只需要选中代码，输入 <code>\explain</code> 就可以直接让他解释这段代码，有不懂的地方还可以继续对他追问，这就省去了直接读源码的过程，提升了不少效率。<br>另外它还可以直接写代码，告诉他需求，他就会直接在IDE中写好代码，如果有错误还可以让他继续修改。整个过程几乎不需要自己写代码就能完成。之前没有AI的时候，通常会在IDE和浏览器直接反复切换，大部分的时间都花在查找文档和搜索报错上，而现在，有问题都可以直接甩给AI，节省了大量的时间。</p>
+<p>不过目前它仍然存在一些问题，有的时候还是会犯一些常识性的错误，目前内测版的插件不太稳定，有的时候会无法获取选中的代码。但这毕竟还是内测阶段，有些小bug很正常。希望后续可以增加联网的功能，这样在写代码时就完全不用在浏览器和IDE直接反复横跳了。</p>
+<p>微软上个月在 Copilot X 发布会上的现场演示，只用了十几分钟就搭好一个在线网站；最近 Claude 和 MetaAI 让大语言模型可以一次性输入大量 token，使得AI可以在极短的时间内阅读大量的文本，AI 的学习能力已经远超人类。这短短半年已经给了我太多震撼，仿佛正在经历一部科幻电影，以往科幻的情节正在逐步变为现实。AI 的发展速度已经远超我们的想象。未来会如何发展，我们无法预测，但我们能做的，就是保持学习的心态，不断接受新鲜事物，做好迎接未来的准备。</p>
 ]]></content>
       <categories>
-        <category>技术探讨</category>
+        <category>闲聊</category>
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>大学</tag>
         <tag>ChatGPT</tag>
-        <tag>英语</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+        <tag>Copilot</tag>
       </tags>
   </entry>
   <entry>
@@ -1080,10 +1099,10 @@
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>NLP</tag>
-        <tag>ChatGLM</tag>
-        <tag>LLM</tag>
         <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+        <tag>ChatGLM</tag>
         <tag>星火认知大模型</tag>
       </tags>
   </entry>
