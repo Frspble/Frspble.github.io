@@ -345,45 +345,6 @@
       </tags>
   </entry>
   <entry>
-    <title>一键分离音乐的人声和伴奏</title>
-    <url>/posts/7ed7a174.html</url>
-    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
-<p>硬件要求：</p>
-<p>至少 10GB 的硬盘空间</p>
-<p>有6GB以上显存的独立显卡（N卡）</p>
-<p>（没有显卡也可以跑，但速度会慢许多）</p>
-</blockquote>
-<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
-<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
-<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
-<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
-<p>使用方法：</p>
-<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
-<p>安装完成后双击运行，会看到如下界面：</p>
-<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
-
-<blockquote>
-<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
-</blockquote>
-<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>UVR</tag>
-        <tag>AI</tag>
-        <tag>音频处理</tag>
-        <tag>开源项目</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>手把手教你搭建开发环境之 Python</title>
     <url>/posts/8176306d.html</url>
     <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
@@ -422,71 +383,6 @@
       <tags>
         <tag>Python</tag>
         <tag>环境搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手教你搭建开发环境之 C/C++</title>
-    <url>/posts/85ab07ea.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
-<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
-<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
-<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
-<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
-<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
-<p>下面是详细的安装步骤：</p>
-<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
-<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
-<p>下载完成后点击“打开文件”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
-<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
-<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
-<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
-<p>下面是配置步骤：</p>
-<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
-<p>点击下图中的链接下载，等待下载完成后运行。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
-<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
-<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
-<p>当然也可自行修改，需要保证路径中只包含英文。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
-<p>修改路径后点击 “Extract”，等待解压完成。</p>
-<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
-<p>回到桌面，右键“此电脑”，点击属性</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
-<p>然后点击 “高级系统设置”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
-<p>选择 “环境变量”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
-<p>双击 “Path”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
-<p>点击 “新建”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
-<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
-<p>确认无误后连续点击三个“确定”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
-<p>至此，你已经完成了 MinGW 的配置。</p>
-<p><strong>接下来安装 VS code</strong></p>
-<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>点击 Download 按钮</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
-<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
-<p>由于安装过程较为简单，此处不再赘述。</p>
-<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
-<p>同样的方法搜索 “C”，安装C语言插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
-<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>C++</tag>
-        <tag>C语言</tag>
       </tags>
   </entry>
   <entry>
@@ -533,6 +429,34 @@
         <tag>Windows</tag>
         <tag>Android</tag>
         <tag>WSA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>New Bing 首发体验报告</title>
+    <url>/posts/ab5ddeae.html</url>
+    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
+<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
+<p>当然，现在的 New Bing 仍然存在一些问题：</p>
+<ol>
+<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
+</li>
+<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
+</li>
+<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
+</li>
+<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
+</li>
+</ol>
+<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
       </tags>
   </entry>
   <entry>
@@ -590,145 +514,121 @@
       </tags>
   </entry>
   <entry>
-    <title>New Bing 首发体验报告</title>
-    <url>/posts/ab5ddeae.html</url>
-    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
-<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
-<p>当然，现在的 New Bing 仍然存在一些问题：</p>
+    <title>一劳永逸的AI开发环境搭建教程</title>
+    <url>/posts/aa251266.html</url>
+    <content><![CDATA[<h1 id="Anconda-环境配置教程"><a href="#Anconda-环境配置教程" class="headerlink" title="Anconda 环境配置教程"></a>Anconda 环境配置教程</h1><p>最近涌现了好多AI开源项目，其中很多项目的硬件要求不高，可以自己部署到本地来运行。但是不同的项目要求的Python版本可能不同，电脑上安装了多个Python版本后管理起来十分麻烦。所以今天介绍一种一劳永逸的 AI 开发环境搭建的方式，可以让多个项目共存，并且管理起来也十分方便。</p>
+<p>今天要介绍的一个工具是 Anconda，它的核心是conda，它是一个开源的软件包管理系统和环境管理系统，可以在不同的环境中安装不同版本的软件包，以及在不同的环境之间切换。使用这个工具可以创建虚拟环境，每一个虚拟环境都对应一个Python版本，这样就可以轻松管理Python的版本。</p>
+<p>Anconda有两个版本，一个是完整的 Anconda，另一个是精简的 Miniconda，建议使用 Miniconda，相比 Anconda 占硬盘空间更小，而且对于搭建 AI 环境来说完全够用。</p>
+<p>下面是 Miniconda 的安装教程：</p>
 <ol>
-<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
+<li><p>首先打开 Miniconda 的下载链接：<a href="https://docs.conda.io/en/latest/miniconda.html#">Miniconda — conda documentation</a></p>
 </li>
-<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
+<li><p>然后根据你的系统版本下载安装包（这里以 Windows 为例）：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230422223548197.png" alt="image-20230422223548197"></p>
 </li>
-<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
+<li><p>下载好之后直接运行安装即可，这里不建议修改默认配置（为了方便使用可以勾选将 conda 添加到环境变量，但是要保证系统里没有安装任何版本的 Python）</p>
 </li>
-<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
+<li><p>安装完成之后，在开始菜单可以找到 Anaconda Prompt (anaconda3) 快捷方式，运行这个快捷方式就可以打开 Anconda 的命令行窗口。之后使用 Anconda 执行命令就都在这里操作。</p>
 </li>
+<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>另外有的时候可能还会用到 pip，还可以为 pip 配置国内镜像：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 conda 创建虚拟环境命令（这里假设我们要部署Stable Diffusion WebUI，可以创建一个名为SD-WebUI的虚拟环境，python版本号为3.10）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>等待命令执行完成后，我们就拥有了一个名为SD-WebUI的虚拟环境，这个环境里的 Python 版本是 3.10，接下来就是启动这个虚拟环境，使用如下命令来启动：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate SD-WebUI</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行完成后，可以看到开头的 (base) 变成了 (SD-WebUI) ，说明我们已经成功进入了这个虚拟环境，接下来就可以在这个虚拟环境中继续部署了。</p>
+</li>
+<li><p>在这里再分享一些常用的 conda 命令：</p>
+<ol>
+<li>关闭当前的虚拟环境：</li>
 </ol>
-<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>查看虚拟环境列表：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>查看安装的包：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>删除环境（完全删除名为env_name的环境）：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name --all</span><br></pre></td></tr></table></figure>
+
+<p>​      也可以只删除环境中的某个包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name packge_name</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>更改当前环境的Python版本：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>另外，使用 conda 配置好环境之后，如果想要运行，通常需要重新打开 conda 的命令行来定位项目，这样操作很繁琐，这里提供一种解决方案。</p>
+<p>我们首先从 conda 命令行的启动快捷方式入手，查看 Anaconda Prompt (anaconda3) 的属性可以发现，其实这个快捷方式就是用 cmd 执行了一行命令，我这里的命令将如下：</p>
+   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%windir%\System32\cmd.exe &quot;/K&quot; C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3</span><br></pre></td></tr></table></figure>
+
+<p>知道了这个原理之后，我们就可以自己写一个 bat 文件来直接启动 conda 命令行，然后再自动启动我们所需的虚拟环境的命令，就可以做到一键启动了。下面是我给我的 Stable Diffusion WebUI 写的一键启动命令示例：</p>
+   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3    <span class="comment"># 启动conda</span></span><br><span class="line">call conda activate SD-WebUI    <span class="comment"># 启动 SD-WebUI 虚拟环境</span></span><br><span class="line">python launch.py    <span class="comment"># 运行 WebUI</span></span><br></pre></td></tr></table></figure>
+
+<p>当然这只是最简单的启动命令，如果有需要还可以再加入一些其它的内容。</p>
 ]]></content>
       <categories>
-        <category>闲聊</category>
+        <category>基础教程</category>
       </categories>
       <tags>
+        <tag>Python</tag>
+        <tag>环境搭建</tag>
         <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>NLP</tag>
-        <tag>LLM</tag>
+        <tag>Anconda</tag>
       </tags>
   </entry>
   <entry>
-    <title>在本地搭建属于自己的 &quot;ChatGPT&quot;</title>
-    <url>/posts/438d7117.html</url>
-    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
+    <title>一键分离音乐的人声和伴奏</title>
+    <url>/posts/7ed7a174.html</url>
+    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
 <p>硬件要求：</p>
-<p>至少 30 GB 的硬盘空余空间</p>
-<p>至少 6GB 显存的 N 卡</p>
-<p>至少 16GB 内存</p>
-<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
+<p>至少 10GB 的硬盘空间</p>
+<p>有6GB以上显存的独立显卡（N卡）</p>
+<p>（没有显卡也可以跑，但速度会慢许多）</p>
 </blockquote>
-<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
-<p>下面是不同量化等级所需要的显存对比：</p>
-<table>
-<thead>
-<tr>
-<th><strong>量化等级</strong></th>
-<th><strong>最低 GPU 显存</strong>（推理）</th>
-<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>FP16（无量化）</td>
-<td>13 GB</td>
-<td>14 GB</td>
-</tr>
-<tr>
-<td>INT8</td>
-<td>8 GB</td>
-<td>9 GB</td>
-</tr>
-<tr>
-<td>INT4</td>
-<td>6 GB</td>
-<td>7 GB</td>
-</tr>
-</tbody></table>
-<p>今天就来和大家分享一下搭建的过程。如果你还没有安装Ancodna，可以翻看一下之前发过的教程：<a href="https://frspble.github.io/posts/aa251266.html">一劳永逸的AI开发环境搭建教程</a></p>
-<p>下面开始部署教程：</p>
-<ol>
-<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行 cli_demo.py，自动下载模型并运行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
+<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
+<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
+<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
+<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
+<p>使用方法：</p>
+<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
+<p>安装完成后双击运行，会看到如下界面：</p>
+<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
 
-<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
-
-<hr>
 <blockquote>
-<p>2023.04.23 补充：</p>
-<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
+<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
 </blockquote>
-<hr>
-</li>
-<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
-
-<p>即可以运行 WebUI 版的 ChatGLM</p>
-</li>
-</ol>
-<p>以上就是ChatGLM 的部署过程。</p>
+<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
 ]]></content>
       <categories>
         <category>技术探讨</category>
       </categories>
       <tags>
         <tag>AI</tag>
+        <tag>UVR</tag>
+        <tag>音频处理</tag>
         <tag>开源项目</tag>
-        <tag>环境搭建</tag>
-        <tag>NLP</tag>
-        <tag>LLM</tag>
-        <tag>ChatGLM</tag>
-        <tag>Anconda</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>语境法记单词资源分享</title>
-    <url>/posts/824e06e6.html</url>
-    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
-<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
-<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
-<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
-<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
-<p>下面是一篇生成的文章示例：</p>
-<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
-<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
-<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
-<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
-<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
-<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
-<hr>
-<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
-]]></content>
-      <categories>
-        <category>资源分享</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>大学</tag>
-        <tag>ChatGPT</tag>
-        <tag>英语</tag>
       </tags>
   </entry>
   <entry>
@@ -815,12 +715,126 @@
         <category>技术探讨</category>
       </categories>
       <tags>
-        <tag>AI</tag>
-        <tag>开源项目</tag>
         <tag>环境搭建</tag>
+        <tag>AI</tag>
         <tag>Anconda</tag>
+        <tag>开源项目</tag>
         <tag>Stable Diffusion</tag>
         <tag>CV</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语境法记单词资源分享</title>
+    <url>/posts/824e06e6.html</url>
+    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
+<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
+<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
+<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
+<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
+<p>下面是一篇生成的文章示例：</p>
+<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
+<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
+<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
+<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
+<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
+<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
+<hr>
+<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
+]]></content>
+      <categories>
+        <category>资源分享</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>大学</tag>
+        <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在本地搭建属于自己的 &quot;ChatGPT&quot;</title>
+    <url>/posts/438d7117.html</url>
+    <content><![CDATA[<h1 id="ChatGLM-本地搭建运行"><a href="#ChatGLM-本地搭建运行" class="headerlink" title="ChatGLM 本地搭建运行"></a>ChatGLM 本地搭建运行</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 30 GB 的硬盘空余空间</p>
+<p>至少 6GB 显存的 N 卡</p>
+<p>至少 16GB 内存</p>
+<p>（没有显卡也可以跑，但是速度会很慢，且该文章没有介绍 GPU 的部署方式）</p>
+</blockquote>
+<p>近期清华大学开源了一个类 ChatGPT 的大语言模型——ChatGML，这个模型只有6B，量化之后最少只需要6G显存。</p>
+<p>下面是不同量化等级所需要的显存对比：</p>
+<table>
+<thead>
+<tr>
+<th><strong>量化等级</strong></th>
+<th><strong>最低 GPU 显存</strong>（推理）</th>
+<th><strong>最低 GPU 显存</strong>（高效参数微调）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FP16（无量化）</td>
+<td>13 GB</td>
+<td>14 GB</td>
+</tr>
+<tr>
+<td>INT8</td>
+<td>8 GB</td>
+<td>9 GB</td>
+</tr>
+<tr>
+<td>INT4</td>
+<td>6 GB</td>
+<td>7 GB</td>
+</tr>
+</tbody></table>
+<p>今天就来和大家分享一下搭建的过程。如果你还没有安装Ancodna，可以翻看一下之前发过的教程：<a href="https://frspble.github.io/posts/aa251266.html">一劳永逸的AI开发环境搭建教程</a></p>
+<p>下面开始部署教程：</p>
+<ol>
+<li><p>打开 Anconda Prompt，为 ChatGLM 新建一个虚拟环境并激活：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n ChatGLM python=3.11</span><br><span class="line">conda activate ChatGLM</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入到想要安装的路径下（我这里是放到了 D 盘的 AI 目录下），然后使用 Git 克隆项目：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">D:</span><br><span class="line"><span class="built_in">cd</span> AI</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/THUDM/ChatGLM-6B</span><br><span class="line"><span class="built_in">cd</span> ChatGLM-6B</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用 Pip 安装 Pytorch 和依赖库：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行 cli_demo.py，自动下载模型并运行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python cli_demo.py</span><br></pre></td></tr></table></figure>
+
+<p><strong>需要注意的是</strong>，如果你的内存足够，这里可以直接运行，但如果你的内存不足，可以使用量化模型，需要修改源代码，具体修改方式如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 按需修改，目前只支持 4/8 bit 量化</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b&quot;</span>, trust_remote_code=True).quantize(8).half().cuda()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p>2023.04.23 补充：</p>
+<p>最新版的 ChatGLM 发布了量化后的模型，可以按如下方式修改，这样会自动下载量化后的模型，小内存设备推荐使用这种方式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将&quot;THUDM/chatglm-6b&quot;改为&quot;THUDM/chatglm-6b-int4&quot;</span></span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&quot;THUDM/chatglm-6b-int4&quot;</span>, trust_remote_code=True).half().cuda()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<hr>
+</li>
+<li><p>如果你感觉命令行不好看，官方还做了WebUI的版本，需要安装 gradio 库使用。在命令行输入以下内容来安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install gradio</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python web_demo.py</span><br></pre></td></tr></table></figure>
+
+<p>即可以运行 WebUI 版的 ChatGLM</p>
+</li>
+</ol>
+<p>以上就是ChatGLM 的部署过程。</p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>AI</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+        <tag>Anconda</tag>
+        <tag>开源项目</tag>
+        <tag>ChatGLM</tag>
       </tags>
   </entry>
   <entry>
@@ -877,88 +891,9 @@
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>大学</tag>
         <tag>ChatGPT</tag>
+        <tag>大学</tag>
         <tag>英语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一劳永逸的AI开发环境搭建教程</title>
-    <url>/posts/aa251266.html</url>
-    <content><![CDATA[<h1 id="Anconda-环境配置教程"><a href="#Anconda-环境配置教程" class="headerlink" title="Anconda 环境配置教程"></a>Anconda 环境配置教程</h1><p>最近涌现了好多AI开源项目，其中很多项目的硬件要求不高，可以自己部署到本地来运行。但是不同的项目要求的Python版本可能不同，电脑上安装了多个Python版本后管理起来十分麻烦。所以今天介绍一种一劳永逸的 AI 开发环境搭建的方式，可以让多个项目共存，并且管理起来也十分方便。</p>
-<p>今天要介绍的一个工具是 Anconda，它的核心是conda，它是一个开源的软件包管理系统和环境管理系统，可以在不同的环境中安装不同版本的软件包，以及在不同的环境之间切换。使用这个工具可以创建虚拟环境，每一个虚拟环境都对应一个Python版本，这样就可以轻松管理Python的版本。</p>
-<p>Anconda有两个版本，一个是完整的 Anconda，另一个是精简的 Miniconda，建议使用 Miniconda，相比 Anconda 占硬盘空间更小，而且对于搭建 AI 环境来说完全够用。</p>
-<p>下面是 Miniconda 的安装教程：</p>
-<ol>
-<li><p>首先打开 Miniconda 的下载链接：<a href="https://docs.conda.io/en/latest/miniconda.html#">Miniconda — conda documentation</a></p>
-</li>
-<li><p>然后根据你的系统版本下载安装包（这里以 Windows 为例）：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230422223548197.png" alt="image-20230422223548197"></p>
-</li>
-<li><p>下载好之后直接运行安装即可，这里不建议修改默认配置（为了方便使用可以勾选将 conda 添加到环境变量，但是要保证系统里没有安装任何版本的 Python）</p>
-</li>
-<li><p>安装完成之后，在开始菜单可以找到 Anaconda Prompt (anaconda3) 快捷方式，运行这个快捷方式就可以打开 Anconda 的命令行窗口。之后使用 Anconda 执行命令就都在这里操作。</p>
-</li>
-<li><p>为了加快下载包的速度，接下来为 Anconda 的镜像，在命令行中输入以下内容：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --<span class="built_in">set</span> show_channel_urls <span class="built_in">yes</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>另外有的时候可能还会用到 pip，还可以为 pip 配置国内镜像：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用 conda 创建虚拟环境命令（这里假设我们要部署Stable Diffusion WebUI，可以创建一个名为SD-WebUI的虚拟环境，python版本号为3.10）：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create -n SD-WebUI python=3.10</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>等待命令执行完成后，我们就拥有了一个名为SD-WebUI的虚拟环境，这个环境里的 Python 版本是 3.10，接下来就是启动这个虚拟环境，使用如下命令来启动：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda activate SD-WebUI</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行完成后，可以看到开头的 (base) 变成了 (SD-WebUI) ，说明我们已经成功进入了这个虚拟环境，接下来就可以在这个虚拟环境中继续部署了。</p>
-</li>
-<li><p>在这里再分享一些常用的 conda 命令：</p>
-<ol>
-<li>关闭当前的虚拟环境：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>查看虚拟环境列表：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>查看安装的包：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda list</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>删除环境（完全删除名为env_name的环境）：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name --all</span><br></pre></td></tr></table></figure>
-
-<p>​      也可以只删除环境中的某个包：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name packge_name</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>更改当前环境的Python版本：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda install python=3.11</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>另外，使用 conda 配置好环境之后，如果想要运行，通常需要重新打开 conda 的命令行来定位项目，这样操作很繁琐，这里提供一种解决方案。</p>
-<p>我们首先从 conda 命令行的启动快捷方式入手，查看 Anaconda Prompt (anaconda3) 的属性可以发现，其实这个快捷方式就是用 cmd 执行了一行命令，我这里的命令将如下：</p>
-   <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">%windir%\System32\cmd.exe &quot;/K&quot; C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3</span><br></pre></td></tr></table></figure>
-
-<p>知道了这个原理之后，我们就可以自己写一个 bat 文件来直接启动 conda 命令行，然后再自动启动我们所需的虚拟环境的命令，就可以做到一键启动了。下面是我给我的 Stable Diffusion WebUI 写的一键启动命令示例：</p>
-   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">call C:\Users\Frspble\anaconda3\Scripts\activate.bat C:\Users\Frspble\anaconda3    <span class="comment"># 启动conda</span></span><br><span class="line">call conda activate SD-WebUI    <span class="comment"># 启动 SD-WebUI 虚拟环境</span></span><br><span class="line">python launch.py    <span class="comment"># 运行 WebUI</span></span><br></pre></td></tr></table></figure>
-
-<p>当然这只是最简单的启动命令，如果有需要还可以再加入一些其它的内容。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>Python</tag>
-        <tag>环境搭建</tag>
-        <tag>Anconda</tag>
       </tags>
   </entry>
   <entry>
@@ -1032,25 +967,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Copilot Chat 体验报告</title>
-    <url>/posts/1e067619.html</url>
-    <content><![CDATA[<h1 id="Copilot-Chat-体验报告"><a href="#Copilot-Chat-体验报告" class="headerlink" title="Copilot Chat 体验报告"></a>Copilot Chat 体验报告</h1><p>前几天通过了 Copilot Chat 的内测申请，今天正好有一个要改的开源项目，便拿来试了试。<br>先说结论，这个东西非常好用，能提升不少效率。原本改这样一个开源项目可能需要半天到一天的时间，但是在 Copilot Chat 的帮助下只用了不到 2 小时就完成了所有的修改，并且整个过程我几乎没有写过一行完整的代码，大部分的代码都是用它生成的。</p>
-<p>其实很早之前 Github 就发布了 Copilot，基于GPT3，可以帮助开发者自动补全代码，当时就很惊艳。而现在 Copilot 新增了 Chat 分支（据说是基于 GPT4），能力又提升了一个台阶。 下面就详细说说它是如何提升效率的：<br>Copilot Chat 可以用来分析代码，上手一个开源项目时，分析代码通常要消耗不少的时间和精力。但有了Copilot Chat，只需要选中代码，输入 <code>\explain</code> 就可以直接让他解释这段代码，有不懂的地方还可以继续对他追问，这就省去了直接读源码的过程，提升了不少效率。<br>另外它还可以直接写代码，告诉他需求，他就会直接在IDE中写好代码，如果有错误还可以让他继续修改。整个过程几乎不需要自己写代码就能完成。之前没有AI的时候，通常会在IDE和浏览器直接反复切换，大部分的时间都花在查找文档和搜索报错上，而现在，有问题都可以直接甩给AI，节省了大量的时间。</p>
-<p>不过目前它仍然存在一些问题，有的时候还是会犯一些常识性的错误，目前内测版的插件不太稳定，有的时候会无法获取选中的代码。但这毕竟还是内测阶段，有些小bug很正常。希望后续可以增加联网的功能，这样在写代码时就完全不用在浏览器和IDE直接反复横跳了。</p>
-<p>微软上个月在 Copilot X 发布会上的现场演示，只用了十几分钟就搭好一个在线网站；最近 Claude 和 MetaAI 让大语言模型可以一次性输入大量 token，使得AI可以在极短的时间内阅读大量的文本，AI 的学习能力已经远超人类。这短短半年已经给了我太多震撼，仿佛正在经历一部科幻电影，以往科幻的情节正在逐步变为现实。AI 的发展速度已经远超我们的想象。未来会如何发展，我们无法预测，但我们能做的，就是保持学习的心态，不断接受新鲜事物，做好迎接未来的准备。</p>
-]]></content>
-      <categories>
-        <category>闲聊</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>NLP</tag>
-        <tag>LLM</tag>
-        <tag>Copilot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>星星之火，能否燎原？讯飞星火认知大模型测试</title>
     <url>/posts/4cb97879.html</url>
     <content><![CDATA[<h1 id="讯飞星火认知大模型测试"><a href="#讯飞星火认知大模型测试" class="headerlink" title="讯飞星火认知大模型测试"></a>讯飞星火认知大模型测试</h1><p>前几天科大讯飞开始了星火认知大模型的内测申请，我第一时间提交了申请，今天就收到了申请通过的消息。目前看来讯飞应该是国内最快开放的大语言模型了（百度的到现在还没给通过，阿里的还在小规模测试）。下面就来看看这个模型到底怎么样吧。</p>
@@ -1104,6 +1020,90 @@
         <tag>LLM</tag>
         <tag>ChatGLM</tag>
         <tag>星火认知大模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Copilot Chat 体验报告</title>
+    <url>/posts/1e067619.html</url>
+    <content><![CDATA[<h1 id="Copilot-Chat-体验报告"><a href="#Copilot-Chat-体验报告" class="headerlink" title="Copilot Chat 体验报告"></a>Copilot Chat 体验报告</h1><p>前几天通过了 Copilot Chat 的内测申请，今天正好有一个要改的开源项目，便拿来试了试。<br>先说结论，这个东西非常好用，能提升不少效率。原本改这样一个开源项目可能需要半天到一天的时间，但是在 Copilot Chat 的帮助下只用了不到 2 小时就完成了所有的修改，并且整个过程我几乎没有写过一行完整的代码，大部分的代码都是用它生成的。</p>
+<p>其实很早之前 Github 就发布了 Copilot，基于GPT3，可以帮助开发者自动补全代码，当时就很惊艳。而现在 Copilot 新增了 Chat 分支（据说是基于 GPT4），能力又提升了一个台阶。 下面就详细说说它是如何提升效率的：<br>Copilot Chat 可以用来分析代码，上手一个开源项目时，分析代码通常要消耗不少的时间和精力。但有了Copilot Chat，只需要选中代码，输入 <code>\explain</code> 就可以直接让他解释这段代码，有不懂的地方还可以继续对他追问，这就省去了直接读源码的过程，提升了不少效率。<br>另外它还可以直接写代码，告诉他需求，他就会直接在IDE中写好代码，如果有错误还可以让他继续修改。整个过程几乎不需要自己写代码就能完成。之前没有AI的时候，通常会在IDE和浏览器直接反复切换，大部分的时间都花在查找文档和搜索报错上，而现在，有问题都可以直接甩给AI，节省了大量的时间。</p>
+<p>不过目前它仍然存在一些问题，有的时候还是会犯一些常识性的错误，目前内测版的插件不太稳定，有的时候会无法获取选中的代码。但这毕竟还是内测阶段，有些小bug很正常。希望后续可以增加联网的功能，这样在写代码时就完全不用在浏览器和IDE直接反复横跳了。</p>
+<p>微软上个月在 Copilot X 发布会上的现场演示，只用了十几分钟就搭好一个在线网站；最近 Claude 和 MetaAI 让大语言模型可以一次性输入大量 token，使得AI可以在极短的时间内阅读大量的文本，AI 的学习能力已经远超人类。这短短半年已经给了我太多震撼，仿佛正在经历一部科幻电影，以往科幻的情节正在逐步变为现实。AI 的发展速度已经远超我们的想象。未来会如何发展，我们无法预测，但我们能做的，就是保持学习的心态，不断接受新鲜事物，做好迎接未来的准备。</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+        <tag>Copilot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>手把手教你搭建开发环境之 C/C++</title>
+    <url>/posts/85ab07ea.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
+<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
+<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
+<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
+<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
+<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
+<p>下面是详细的安装步骤：</p>
+<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
+<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
+<p>下载完成后点击“打开文件”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
+<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
+<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
+<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
+<p>下面是配置步骤：</p>
+<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
+<p>点击下图中的链接下载，等待下载完成后运行。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
+<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
+<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
+<p>当然也可自行修改，需要保证路径中只包含英文。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
+<p>修改路径后点击 “Extract”，等待解压完成。</p>
+<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
+<p>回到桌面，右键“此电脑”，点击属性</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
+<p>然后点击 “高级系统设置”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
+<p>选择 “环境变量”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
+<p>双击 “Path”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
+<p>点击 “新建”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
+<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
+<p>确认无误后连续点击三个“确定”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
+<p>至此，你已经完成了 MinGW 的配置。</p>
+<p><strong>接下来安装 VS code</strong></p>
+<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>点击 Download 按钮</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
+<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
+<p>由于安装过程较为简单，此处不再赘述。</p>
+<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
+<p>同样的方法搜索 “C”，安装C语言插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
+<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>环境搭建</tag>
+        <tag>C++</tag>
+        <tag>C语言</tag>
       </tags>
   </entry>
 </search>
