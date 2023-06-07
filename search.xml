@@ -1,6 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>一键分离音乐的人声和伴奏</title>
+    <url>/posts/7ed7a174.html</url>
+    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 10GB 的硬盘空间</p>
+<p>有6GB以上显存的独立显卡（N卡）</p>
+<p>（没有显卡也可以跑，但速度会慢许多）</p>
+</blockquote>
+<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
+<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
+<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
+<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
+<p>使用方法：</p>
+<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
+<p>安装完成后双击运行，会看到如下界面：</p>
+<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
+
+<blockquote>
+<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
+</blockquote>
+<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>UVR</tag>
+        <tag>AI</tag>
+        <tag>音频处理</tag>
+        <tag>开源项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>超详细的笔记本验机指南</title>
+    <url>/posts/82e3f801.html</url>
+    <content><![CDATA[<h1 id="超详细笔记本验机指南"><a href="#超详细笔记本验机指南" class="headerlink" title="超详细笔记本验机指南"></a>超详细笔记本验机指南</h1><p>近期，伴随着高考的结束和 618 活动的开始，许多准大学生开始选购自己的笔记本电脑。本人作为一名数码爱好者，关注数码圈8年有余，如今恰逢高考结束，我认为可以为各位朋友选购电脑提供一些帮助。然而，在我查找资料时，发现笔记本电脑的购买推荐在网上随处可见，而且我个人能力有限，不能实际测试每一款电脑，因此我认为并没有做笔记选购指南的必要。而且这些推荐只能解决购买前的问题，但实际上购买之后验机的问题也同样重要。因此本篇文章我将会以自己新买的电脑为例，详细地为大家介绍笔记本到货之后验机的具体操作和注意事项。（该文章不包含任何商业推广）</p>
+<h2 id="购买"><a href="#购买" class="headerlink" title="购买"></a>购买</h2><p>相信如今大部分消费者会选择在线上购买电脑，因为在线上可供选择的品类更多，而且价格相对更低。因此首先要选择购买的平台。个人认为<strong>数码产品最好在京东的官方自营店购买</strong>，如果购买的电脑出现问题，京东的退换货是十分方便的。</p>
+<h2 id="收货"><a href="#收货" class="headerlink" title="收货"></a>收货</h2><p>购买下单之后，就是等待送货上门了。<strong>以下操作建议在快递员送货时当面进行，以便出现问题时及时处理。</strong>在收到快递之后，<strong>首先要检查外包装是否完整</strong>，如果存在严重的破损或变形，那么请直接申请退换货。确认包装完好之后就可以开箱了，拆掉最外层的快递包装后，一般内部还会有笔记本的外包装，此时要再次检查包装是否完好，以及<strong>确认箱子上原封的封口是否完整</strong>（如下图所示）。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640.jpeg" alt="图片"></p>
+<p>这个封口是在出厂装箱时贴好的，并且一般是易碎贴纸，一旦被撕开后就无法恢复。若发现封口有被动过的痕迹，那就说明这台机器很可能已经被拆箱，可直接以此为理由进行退换货。</p>
+<p><strong>而如果你没有机会直接在快递员面前开箱，建议在开箱时持续录制开箱视频，以便后续出现问题时作为证据。</strong></p>
+<p>以上都没问题之后就可撕开封口，取出电脑。这时要检查电脑的外观是否完好，电脑表面和屏幕是否存在指纹，以及电脑的接口和螺丝是否有严重的使用痕迹或磨损。由于大部分新电脑在出厂时都会开启运输模式，该模式下不连接电源无法开机（部分品牌没有运输模式，如惠普、苹果、机械革命等，具体以官方信息为准），所以在确认电脑外观完好之后，剩余的操作需要将电脑带回家进行。</p>
+<h2 id="验机"><a href="#验机" class="headerlink" title="验机"></a>验机</h2><p>接下来的操作就是为电脑连接电源，首次开机了。（目前的新电脑预装的系统都是 Windows 11，故以下内容以 win 11 作为示例）</p>
+<h3 id="跳过联网"><a href="#跳过联网" class="headerlink" title="跳过联网"></a>跳过联网</h3><p>新电脑首次开机会直接进入开机引导界面，根据提示一步步操作即可，<strong>需要注意：在请求连接网络时一定不要急着联网</strong>，<strong>因为新电脑在联网后就会自动激活，无法进行7天无理由退货</strong>。但是由于 win11 的限制，联网界面无法直接跳过，可使用以下方法强行跳过。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423751.jpeg" alt="图片"></p>
+<p>Windows 11 联网界面</p>
+<p>首先你可以尝试直接按下键盘上的 <strong>Alt+F4（或 Alt+Fn+F4 ）</strong>来跳过联网，不过好像这个方法不适用于最新的 win11 系统，如果你按下后没有反应，可以继续尝试以下方法。</p>
+<ol>
+<li><p>在键盘上按下 <strong>Shift+F10（或 Shift+Fn+F10）</strong>，调出cmd</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423752.jpeg" alt="图片"></p>
+</li>
+<li><p>在 cmd 中输入<code>taskmgr</code>并按下 <strong>Enter</strong>，调出任务管理器</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423753.jpeg" alt="图片"></p>
+</li>
+<li><p>点击任务管理器的 “<strong>详情信息</strong>”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423764.jpeg" alt="图片"></p>
+</li>
+<li><p>点击任务管理上方选项卡里的 “<strong>详细信息</strong>”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423765.jpeg" alt="图片"></p>
+</li>
+<li><p>在下方列表中找到 “<strong>OOBENetworkConnectionFlow.exe</strong>”，选中并点击右下角的“<strong>结束任务</strong>”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423766.jpeg" alt="图片"></p>
+</li>
+<li><p>至此，你就完成了联网界面的跳过。</p>
+</li>
+</ol>
+<p>跳过联网后，你可以继续按照提示进行下一步的操作，直到进入系统。<strong>而且要注意，进入系统之后依然不能联网</strong>，只要电脑联网就会自动激活，无法7天无理由退货，建议先检测并确认电脑没有问题之后再联网。</p>
+<h3 id="硬件检测"><a href="#硬件检测" class="headerlink" title="硬件检测"></a>硬件检测</h3><p>检测电脑当然要用到一些工具，这里推荐使用<strong>图吧工具箱</strong>，它内置了许多实用的验机工具，仅使用这一个工具箱就可完成全部的验机过程。</p>
+<p><strong>工具箱下载地址：<a href="http://www.tbtool.cn/">www.tbtool.cn</a></strong></p>
+<p>因为电脑不能联网，所以建议准备一个U盘或手机，以便将图吧工具箱下载好后传入新电脑。具体操作这里不再赘述。</p>
+<p>工具箱传入电脑后，直接双击运行，根据提示安装工具箱。安装完毕会在桌面上出现快捷方式，直接双击启动即可。</p>
+<p>软件启动后，点击左上角的<strong>硬件信息</strong>，等待几秒钟之后可查看到笔记本详细的硬件信息，检查是否与你购买的版本相同。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423767.png" alt="图片"></p>
+<p>确认硬件没有问题之后，点击<strong>硬盘工具</strong>，再双击打开 <strong>DiskInfo</strong>，查看硬盘的通电时间。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423768.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423779.png" alt="图片"></p>
+<p>硬盘通电时间与出厂时的测试时间有关，一般小于100小时为正常现象，具体标准可询问品牌的客服。</p>
+<p>硬盘检查完毕后，点击<strong>综合检测</strong>，双击打开 <strong>HWiNFO</strong></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237710.png" alt="图片"></p>
+<p>使用该工具主要检测电池损耗，双击左侧的 <strong>Smart Battery</strong>，然后点击 <strong>Battery #0</strong>，在屏幕右侧可以查看到电池的具体信息。主要查看电池损耗，一般小于 5% 为正常现象。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237711.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237712.png" alt="图片"></p>
+<p>以上没有问题之后，点击<strong>屏幕工具</strong>，打开 <strong>DisplayX</strong>，该软件主要检测屏幕有无坏点以及显示是否正常，按照提示一步步操作即可。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237813.png" alt="图片"></p>
+<p>剩余的检测就是针对电脑的功能了，例如可以点击<strong>外设工具</strong>里的 <strong>Keyboard Test</strong> 来检测键盘功能是否正常。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237814.png" alt="图片"></p>
+<p>该工具箱内还有许多检测工具，由于篇幅所限，且该文章面向的是广大消费者，故此处仅介绍了常用的工具，其他硬核工具（如烤机、跑分测试等）如果感兴趣可自行查询相关资料。</p>
+<p>电脑剩余可测试的项目有扬声器、麦克风、摄像头、各种接口等等，测试方法相对简单，可以自行手动测试，此处不再赘述。</p>
+<p><strong>以上如果任何验机步骤出现问题，你都可以直接申请退货，因为你的电脑还没有激活，所以商家一般无法拒绝你的退货申请。</strong></p>
+<p>确认没有问题之后就可以联网激活，接下来就去尽情享受你心爱的电脑吧！</p>
+<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><strong>另外建议安装软件时一定要找到软件的官网下载，第三方的下载站通常会携带垃圾软件</strong></p>
+<p>此处也推荐几款电脑常用软件（均为个人目前使用的软件，良心推荐，也欢迎各位一起分享你们常用的良心软件）</p>
+<p>解压缩软件：Bandizip（现在新版加入了广告，但个人感觉可以接受）</p>
+<p>视频播放器：PotPlayer</p>
+<p>电脑防护&amp;弹窗拦截：火绒</p>
+<p>浏览器：Edeg（系统默认，建议不换）</p>
+<p>办公：Microsoft Office（联想和戴尔的用户别忘了激活电脑免费赠送的 Office，目前赠送 Office 的好像只有这两个品牌，具体消息以官方为准）</p>
+<p>以上为笔记本验机指南的全部内容，所有内容均由我一人完成，难免出现疏忽错误，如有错误，欢迎指正。如需转载，请注明出处。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>数码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown 快速入门</title>
     <url>/posts/bc534f5.html</url>
     <content><![CDATA[<h1 id="Markdown-快速入门"><a href="#Markdown-快速入门" class="headerlink" title="Markdown 快速入门"></a>Markdown 快速入门</h1><h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><h3 id="1-使用-x3D-和-标记"><a href="#1-使用-x3D-和-标记" class="headerlink" title="1. 使用 &#x3D; 和 - 标记"></a>1. 使用 &#x3D; 和 - 标记</h3><p>“&#x3D;” 标记一级标题</p>
@@ -271,117 +384,67 @@
       </tags>
   </entry>
   <entry>
-    <title>超详细的笔记本验机指南</title>
-    <url>/posts/82e3f801.html</url>
-    <content><![CDATA[<h1 id="超详细笔记本验机指南"><a href="#超详细笔记本验机指南" class="headerlink" title="超详细笔记本验机指南"></a>超详细笔记本验机指南</h1><p>近期，伴随着高考的结束和 618 活动的开始，许多准大学生开始选购自己的笔记本电脑。本人作为一名数码爱好者，关注数码圈8年有余，如今恰逢高考结束，我认为可以为各位朋友选购电脑提供一些帮助。然而，在我查找资料时，发现笔记本电脑的购买推荐在网上随处可见，而且我个人能力有限，不能实际测试每一款电脑，因此我认为并没有做笔记选购指南的必要。而且这些推荐只能解决购买前的问题，但实际上购买之后验机的问题也同样重要。因此本篇文章我将会以自己新买的电脑为例，详细地为大家介绍笔记本到货之后验机的具体操作和注意事项。（该文章不包含任何商业推广）</p>
-<h2 id="购买"><a href="#购买" class="headerlink" title="购买"></a>购买</h2><p>相信如今大部分消费者会选择在线上购买电脑，因为在线上可供选择的品类更多，而且价格相对更低。因此首先要选择购买的平台。个人认为<strong>数码产品最好在京东的官方自营店购买</strong>，如果购买的电脑出现问题，京东的退换货是十分方便的。</p>
-<h2 id="收货"><a href="#收货" class="headerlink" title="收货"></a>收货</h2><p>购买下单之后，就是等待送货上门了。<strong>以下操作建议在快递员送货时当面进行，以便出现问题时及时处理。</strong>在收到快递之后，<strong>首先要检查外包装是否完整</strong>，如果存在严重的破损或变形，那么请直接申请退换货。确认包装完好之后就可以开箱了，拆掉最外层的快递包装后，一般内部还会有笔记本的外包装，此时要再次检查包装是否完好，以及<strong>确认箱子上原封的封口是否完整</strong>（如下图所示）。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640.jpeg" alt="图片"></p>
-<p>这个封口是在出厂装箱时贴好的，并且一般是易碎贴纸，一旦被撕开后就无法恢复。若发现封口有被动过的痕迹，那就说明这台机器很可能已经被拆箱，可直接以此为理由进行退换货。</p>
-<p><strong>而如果你没有机会直接在快递员面前开箱，建议在开箱时持续录制开箱视频，以便后续出现问题时作为证据。</strong></p>
-<p>以上都没问题之后就可撕开封口，取出电脑。这时要检查电脑的外观是否完好，电脑表面和屏幕是否存在指纹，以及电脑的接口和螺丝是否有严重的使用痕迹或磨损。由于大部分新电脑在出厂时都会开启运输模式，该模式下不连接电源无法开机（部分品牌没有运输模式，如惠普、苹果、机械革命等，具体以官方信息为准），所以在确认电脑外观完好之后，剩余的操作需要将电脑带回家进行。</p>
-<h2 id="验机"><a href="#验机" class="headerlink" title="验机"></a>验机</h2><p>接下来的操作就是为电脑连接电源，首次开机了。（目前的新电脑预装的系统都是 Windows 11，故以下内容以 win 11 作为示例）</p>
-<h3 id="跳过联网"><a href="#跳过联网" class="headerlink" title="跳过联网"></a>跳过联网</h3><p>新电脑首次开机会直接进入开机引导界面，根据提示一步步操作即可，<strong>需要注意：在请求连接网络时一定不要急着联网</strong>，<strong>因为新电脑在联网后就会自动激活，无法进行7天无理由退货</strong>。但是由于 win11 的限制，联网界面无法直接跳过，可使用以下方法强行跳过。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423751.jpeg" alt="图片"></p>
-<p>Windows 11 联网界面</p>
-<p>首先你可以尝试直接按下键盘上的 <strong>Alt+F4（或 Alt+Fn+F4 ）</strong>来跳过联网，不过好像这个方法不适用于最新的 win11 系统，如果你按下后没有反应，可以继续尝试以下方法。</p>
-<ol>
-<li><p>在键盘上按下 <strong>Shift+F10（或 Shift+Fn+F10）</strong>，调出cmd</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423752.jpeg" alt="图片"></p>
-</li>
-<li><p>在 cmd 中输入<code>taskmgr</code>并按下 <strong>Enter</strong>，调出任务管理器</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423753.jpeg" alt="图片"></p>
-</li>
-<li><p>点击任务管理器的 “<strong>详情信息</strong>”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423764.jpeg" alt="图片"></p>
-</li>
-<li><p>点击任务管理上方选项卡里的 “<strong>详细信息</strong>”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423765.jpeg" alt="图片"></p>
-</li>
-<li><p>在下方列表中找到 “<strong>OOBENetworkConnectionFlow.exe</strong>”，选中并点击右下角的“<strong>结束任务</strong>”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423766.jpeg" alt="图片"></p>
-</li>
-<li><p>至此，你就完成了联网界面的跳过。</p>
-</li>
-</ol>
-<p>跳过联网后，你可以继续按照提示进行下一步的操作，直到进入系统。<strong>而且要注意，进入系统之后依然不能联网</strong>，只要电脑联网就会自动激活，无法7天无理由退货，建议先检测并确认电脑没有问题之后再联网。</p>
-<h3 id="硬件检测"><a href="#硬件检测" class="headerlink" title="硬件检测"></a>硬件检测</h3><p>检测电脑当然要用到一些工具，这里推荐使用<strong>图吧工具箱</strong>，它内置了许多实用的验机工具，仅使用这一个工具箱就可完成全部的验机过程。</p>
-<p><strong>工具箱下载地址：<a href="http://www.tbtool.cn/">www.tbtool.cn</a></strong></p>
-<p>因为电脑不能联网，所以建议准备一个U盘或手机，以便将图吧工具箱下载好后传入新电脑。具体操作这里不再赘述。</p>
-<p>工具箱传入电脑后，直接双击运行，根据提示安装工具箱。安装完毕会在桌面上出现快捷方式，直接双击启动即可。</p>
-<p>软件启动后，点击左上角的<strong>硬件信息</strong>，等待几秒钟之后可查看到笔记本详细的硬件信息，检查是否与你购买的版本相同。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423767.png" alt="图片"></p>
-<p>确认硬件没有问题之后，点击<strong>硬盘工具</strong>，再双击打开 <strong>DiskInfo</strong>，查看硬盘的通电时间。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423768.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-16825637423779.png" alt="图片"></p>
-<p>硬盘通电时间与出厂时的测试时间有关，一般小于100小时为正常现象，具体标准可询问品牌的客服。</p>
-<p>硬盘检查完毕后，点击<strong>综合检测</strong>，双击打开 <strong>HWiNFO</strong></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237710.png" alt="图片"></p>
-<p>使用该工具主要检测电池损耗，双击左侧的 <strong>Smart Battery</strong>，然后点击 <strong>Battery #0</strong>，在屏幕右侧可以查看到电池的具体信息。主要查看电池损耗，一般小于 5% 为正常现象。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237711.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237712.png" alt="图片"></p>
-<p>以上没有问题之后，点击<strong>屏幕工具</strong>，打开 <strong>DisplayX</strong>，该软件主要检测屏幕有无坏点以及显示是否正常，按照提示一步步操作即可。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237813.png" alt="图片"></p>
-<p>剩余的检测就是针对电脑的功能了，例如可以点击<strong>外设工具</strong>里的 <strong>Keyboard Test</strong> 来检测键盘功能是否正常。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/640-168256374237814.png" alt="图片"></p>
-<p>该工具箱内还有许多检测工具，由于篇幅所限，且该文章面向的是广大消费者，故此处仅介绍了常用的工具，其他硬核工具（如烤机、跑分测试等）如果感兴趣可自行查询相关资料。</p>
-<p>电脑剩余可测试的项目有扬声器、麦克风、摄像头、各种接口等等，测试方法相对简单，可以自行手动测试，此处不再赘述。</p>
-<p><strong>以上如果任何验机步骤出现问题，你都可以直接申请退货，因为你的电脑还没有激活，所以商家一般无法拒绝你的退货申请。</strong></p>
-<p>确认没有问题之后就可以联网激活，接下来就去尽情享受你心爱的电脑吧！</p>
-<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p><strong>另外建议安装软件时一定要找到软件的官网下载，第三方的下载站通常会携带垃圾软件</strong></p>
-<p>此处也推荐几款电脑常用软件（均为个人目前使用的软件，良心推荐，也欢迎各位一起分享你们常用的良心软件）</p>
-<p>解压缩软件：Bandizip（现在新版加入了广告，但个人感觉可以接受）</p>
-<p>视频播放器：PotPlayer</p>
-<p>电脑防护&amp;弹窗拦截：火绒</p>
-<p>浏览器：Edeg（系统默认，建议不换）</p>
-<p>办公：Microsoft Office（联想和戴尔的用户别忘了激活电脑免费赠送的 Office，目前赠送 Office 的好像只有这两个品牌，具体消息以官方为准）</p>
-<p>以上为笔记本验机指南的全部内容，所有内容均由我一人完成，难免出现疏忽错误，如有错误，欢迎指正。如需转载，请注明出处。</p>
+    <title>手把手教你搭建开发环境之 C/C++</title>
+    <url>/posts/85ab07ea.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
+<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
+<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
+<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
+<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
+<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
+<p>下面是详细的安装步骤：</p>
+<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
+<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
+<p>下载完成后点击“打开文件”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
+<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
+<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
+<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
+<p>下面是配置步骤：</p>
+<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
+<p>点击下图中的链接下载，等待下载完成后运行。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
+<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
+<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
+<p>当然也可自行修改，需要保证路径中只包含英文。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
+<p>修改路径后点击 “Extract”，等待解压完成。</p>
+<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
+<p>回到桌面，右键“此电脑”，点击属性</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
+<p>然后点击 “高级系统设置”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
+<p>选择 “环境变量”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
+<p>双击 “Path”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
+<p>点击 “新建”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
+<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
+<p>确认无误后连续点击三个“确定”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
+<p>至此，你已经完成了 MinGW 的配置。</p>
+<p><strong>接下来安装 VS code</strong></p>
+<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>点击 Download 按钮</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
+<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
+<p>由于安装过程较为简单，此处不再赘述。</p>
+<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
+<p>同样的方法搜索 “C”，安装C语言插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
+<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
 ]]></content>
       <categories>
         <category>基础教程</category>
       </categories>
       <tags>
-        <tag>数码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手教你搭建开发环境之 Python</title>
-    <url>/posts/8176306d.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
-<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
-<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
-<p><strong>安装教程：</strong></p>
-<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
-<p>点击 Downloads</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
-<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
-<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
-<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
-<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
-<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
-<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
-<p>点击 Download</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
-<p>下载社区版</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
-<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
-<p>选择完成后继续按照提示操作完成安装。</p>
-<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
-<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
-<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
-<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
+        <tag>C++</tag>
+        <tag>C语言</tag>
         <tag>环境搭建</tag>
       </tags>
   </entry>
@@ -432,31 +495,44 @@
       </tags>
   </entry>
   <entry>
-    <title>New Bing 首发体验报告</title>
-    <url>/posts/ab5ddeae.html</url>
-    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
-<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
-<p>当然，现在的 New Bing 仍然存在一些问题：</p>
-<ol>
-<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
-</li>
-<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
-</li>
-<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
-</li>
-<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
-</li>
-</ol>
-<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/posts/8176306d.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
 ]]></content>
       <categories>
-        <category>闲聊</category>
+        <category>基础教程</category>
       </categories>
       <tags>
-        <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>NLP</tag>
-        <tag>LLM</tag>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -511,6 +587,34 @@
         <tag>大学</tag>
         <tag>数学</tag>
         <tag>线性代数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>New Bing 首发体验报告</title>
+    <url>/posts/ab5ddeae.html</url>
+    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
+<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
+<p>当然，现在的 New Bing 仍然存在一些问题：</p>
+<ol>
+<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
+</li>
+<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
+</li>
+<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
+</li>
+<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
+</li>
+</ol>
+<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
       </tags>
   </entry>
   <entry>
@@ -586,49 +690,10 @@
         <category>基础教程</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>AI</tag>
         <tag>环境搭建</tag>
-        <tag>AI</tag>
+        <tag>Python</tag>
         <tag>Anconda</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一键分离音乐的人声和伴奏</title>
-    <url>/posts/7ed7a174.html</url>
-    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
-<p>硬件要求：</p>
-<p>至少 10GB 的硬盘空间</p>
-<p>有6GB以上显存的独立显卡（N卡）</p>
-<p>（没有显卡也可以跑，但速度会慢许多）</p>
-</blockquote>
-<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
-<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
-<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
-<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
-<p>使用方法：</p>
-<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
-<p>安装完成后双击运行，会看到如下界面：</p>
-<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
-
-<blockquote>
-<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
-</blockquote>
-<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>UVR</tag>
-        <tag>音频处理</tag>
-        <tag>开源项目</tag>
       </tags>
   </entry>
   <entry>
@@ -715,40 +780,12 @@
         <category>技术探讨</category>
       </categories>
       <tags>
-        <tag>环境搭建</tag>
         <tag>AI</tag>
-        <tag>Anconda</tag>
         <tag>开源项目</tag>
+        <tag>环境搭建</tag>
+        <tag>Anconda</tag>
         <tag>Stable Diffusion</tag>
         <tag>CV</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>语境法记单词资源分享</title>
-    <url>/posts/824e06e6.html</url>
-    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
-<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
-<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
-<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
-<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
-<p>下面是一篇生成的文章示例：</p>
-<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
-<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
-<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
-<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
-<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
-<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
-<hr>
-<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
-]]></content>
-      <categories>
-        <category>资源分享</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>大学</tag>
-        <tag>英语</tag>
       </tags>
   </entry>
   <entry>
@@ -828,13 +865,41 @@
         <category>技术探讨</category>
       </categories>
       <tags>
-        <tag>环境搭建</tag>
         <tag>AI</tag>
+        <tag>开源项目</tag>
+        <tag>环境搭建</tag>
         <tag>NLP</tag>
         <tag>LLM</tag>
         <tag>Anconda</tag>
-        <tag>开源项目</tag>
         <tag>ChatGLM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语境法记单词资源分享</title>
+    <url>/posts/824e06e6.html</url>
+    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
+<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
+<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
+<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
+<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
+<p>下面是一篇生成的文章示例：</p>
+<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
+<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
+<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
+<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
+<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
+<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
+<hr>
+<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
+]]></content>
+      <categories>
+        <category>资源分享</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>大学</tag>
+        <tag>ChatGPT</tag>
+        <tag>英语</tag>
       </tags>
   </entry>
   <entry>
@@ -891,8 +956,8 @@
       </categories>
       <tags>
         <tag>AI</tag>
-        <tag>ChatGPT</tag>
         <tag>大学</tag>
+        <tag>ChatGPT</tag>
         <tag>英语</tag>
       </tags>
   </entry>
@@ -1042,68 +1107,166 @@
       </tags>
   </entry>
   <entry>
-    <title>手把手教你搭建开发环境之 C/C++</title>
-    <url>/posts/85ab07ea.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
-<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
-<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
-<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
-<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
-<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
-<p>下面是详细的安装步骤：</p>
-<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
-<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
-<p>下载完成后点击“打开文件”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
-<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
-<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
-<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
-<p>下面是配置步骤：</p>
-<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
-<p>点击下图中的链接下载，等待下载完成后运行。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
-<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
-<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
-<p>当然也可自行修改，需要保证路径中只包含英文。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
-<p>修改路径后点击 “Extract”，等待解压完成。</p>
-<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
-<p>回到桌面，右键“此电脑”，点击属性</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
-<p>然后点击 “高级系统设置”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
-<p>选择 “环境变量”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
-<p>双击 “Path”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
-<p>点击 “新建”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
-<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
-<p>确认无误后连续点击三个“确定”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
-<p>至此，你已经完成了 MinGW 的配置。</p>
-<p><strong>接下来安装 VS code</strong></p>
-<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>点击 Download 按钮</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
-<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
-<p>由于安装过程较为简单，此处不再赘述。</p>
-<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
-<p>同样的方法搜索 “C”，安装C语言插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
-<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
+    <title>当AI大语言模型遇上高考作文</title>
+    <url>/posts/886ad22f.html</url>
+    <content><![CDATA[<h1 id="当AI大语言模型遇上高考作文"><a href="#当AI大语言模型遇上高考作文" class="headerlink" title="当AI大语言模型遇上高考作文"></a>当AI大语言模型遇上高考作文</h1><p>今天，又到了一年一度的高考时刻。对于千千万万的学子们来说，这一天既是考验，更是一个奋发向前、实现梦想的机会。在这里首先祝各位高考学子：考试顺利，金榜题名。</p>
+<p>今年的高考作文题目已经公布，在此我想和大家一起测试一下目前大语言模型的能力。并借此机会一探目前国内大语言模型发展的程度。</p>
+<p>如您所知，大语言模型是一种基于人工智能的强大工具，它能够模仿人类的写作风格、思维逻辑和创造力。近一年，大语言模型取得了突破性进展，国外 OpenAI 的 ChatGPT 是其中的佼佼者。不过近期国内的大语言模型技术也取得了一些进展，不少公司发布了自己的大语言模型，本文也将借此机会测试这些国产模型。</p>
+<p>在这篇文章中，我将利用大语言模型的强大功能，以高考作文题目为线索，使用ChatGPT（GPT 3.5）、讯飞星火大模型、阿里通义千问大模型来生成高考作文。向大家展示大语言模型技术的能力。同时，我也希望通过这篇推文，引发更多关于人工智能和教育的思考，探讨人机交互的未来发展方向。</p>
+<p>接下来让我们一起开启这段奇妙而激动人心的旅程，无论是学生、家长、老师、还是关注教育与科技的各界人士，我相信您都会从中获得一些有价值的思考和启示。</p>
+<h2 id="全国甲卷"><a href="#全国甲卷" class="headerlink" title="全国甲卷"></a><strong>全国甲卷</strong></h2><blockquote>
+<p><strong>阅读下面的材料，根据要求写作。（60分）</strong></p>
+<p>人们因技术发展得以更好地掌控时间，但也有人因此成了时间的仆人。</p>
+<p>这句话引发了你怎样的联想与思考？请写一篇文章。</p>
+<p>要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；不少于800字。</p>
+</blockquote>
+<h3 id="OpenAI-ChatGPT"><a href="#OpenAI-ChatGPT" class="headerlink" title="OpenAI  ChatGPT"></a>OpenAI  ChatGPT</h3><blockquote>
+<p><strong>时间的主人与奴仆</strong></p>
+<p>时间，是我们生活中最宝贵的财富之一。随着科技的不断发展，人们通过各种技术手段得以更好地掌控时间，但与此同时，也有一些人因为沉迷于科技而成为了时间的奴仆。这句话引发了我对时间和技术的关系以及人类在这个时代中的立场和选择的思考。</p>
+<p>在现代社会中，技术的进步使得我们可以更高效地利用时间。从智能手机、电脑到各种智能设备，这些工具为我们提供了便利，加速了信息传递的速度，使得工作、学习和生活更加便捷。我们可以随时随地与他人进行交流，获取各种知识和信息。这样的便利让我们能够更好地支配时间，提高工作和学习的效率，使生活更加丰富多彩。</p>
+<p>然而，正如硬币的两面，技术的发展也带来了一些负面影响。有些人在追逐科技的便利和刺激的同时，却不自觉地成为了时间的奴仆。他们沉迷于社交媒体、电子游戏等虚拟世界，忽略了现实生活中的重要事务和人际关系。他们将大量的时间花费在无关紧要的事情上，往往导致时间的浪费和能力的下降。这些人常常感到焦虑、孤独和失去控制感，他们变成了技术的附庸，失去了对时间的主宰。</p>
+<p>我们应该认识到，时间是有限的资源，我们需要正确地使用它。技术的发展给我们提供了更多的选择和便利，但我们需要保持自律和适度。首先，我们应该建立明确的目标和优先级，合理规划时间。我们需要学会区分重要的事情和琐碎的娱乐，懂得取舍。其次，我们应该培养良好的时间管理习惯，避免拖延和浪费时间。我们可以使用时间管理工具，设立合理的时间限制，提高效率。最重要的是，我们应该重视真实的人际关系和身心健康。与家人、朋友交流互动，参加体育锻炼、社会活动，培养兴趣爱好，使时间在有意义的事情中得到充分利用。</p>
+<p>在现代社会，我们需要找到技术与时间的平衡点。技术作为工具，本应该为我们服务，而不是让我们成为它的奴隶。我们应该保持清醒的头脑，意识到技术只是生活中的一部分，而不是生活的全部。我们需要掌握自己的时间，而不是被时间所掌控。</p>
+<p>同时，我们也应该反思科技发展的影响。科技的进步不仅带来了方便和效率，还给人们带来了新的挑战和问题。我们应该关注科技对社会、文化、教育等方面的影响，以及可能出现的负面效应。只有这样，我们才能更好地应对技术带来的问题，并制定出相应的解决策略。</p>
+<p>因此，作为现代人，我们需要明确我们的立场和选择。我们要成为时间的主人，而不是被时间所奴役。我们要学会正确地利用科技，合理规划和管理时间，以实现个人目标和生活的平衡。同时，我们也应该保持对技术发展的审慎和批判精神，避免盲目追求科技带来的便利，而忽视了生活的本质和真正重要的事物。</p>
+<p>总之，技术的发展为我们提供了更好地掌控时间的机会，但我们必须保持清醒的头脑和自律的态度。我们应该成为时间的主人，而不是被时间所奴役。只有在正确使用技术的前提下，我们才能更好地实现个人价值、享受丰富的生活，并在现代社会中找到属于自己的位置和平衡。</p>
+</blockquote>
+<h3 id="讯飞星火大模型"><a href="#讯飞星火大模型" class="headerlink" title="讯飞星火大模型"></a>讯飞星火大模型</h3><blockquote>
+<p><strong>时间的仆人</strong><br>“时间就是金钱”，这句话在现代社会中被广泛地流传着，人们似乎都认为时间是宝贵的财富，而技术的发展则让我们更好地掌控了时间。然而，我们是否真的能够成为时间的主人呢？或者说，我们是否会因为技术的发展而变成时间的仆人呢？</p>
+<p>当我们拥有了智能手机、电脑等设备时，我们的时间似乎变得更为自由和充裕了。我们可以通过各种应用软件来安排自己的日程，提醒自己要做的事情，甚至可以远程办公，不必到公司去上班。这些看似方便的技术手段，让我们的时间变得更加有序和高效。但是，我们是否因此变得过于依赖这些工具呢？我们是否已经失去了自主性和主动性呢？</p>
+<p>事实上，有些人已经成了时间的仆人。他们整天沉迷于手机、电脑等设备中，无法自拔。他们的生活仿佛被这些设备所控制，没有了自由和选择的权利。他们不知道自己想要什么，也不知道自己应该做什么。他们的时间被浪费在了无意义的事情上，而真正重要的事情却被忽略了。</p>
+<p>那么，如何避免成为时间的仆人呢？首先，我们需要意识到时间的珍贵和有限。时间是我们生命中最宝贵的财富，我们应该珍惜每一分每一秒。其次，我们需要学会自主管理和规划时间。我们可以通过制定计划、设定目标等方式来提高自己的时间利用效率。最后，我们需要保持内心的平衡和清明。我们不应该让外界的干扰和诱惑影响我们的决策和行动，而应该保持内心的平静和坚定。</p>
+<p>在这个快节奏的社会中，我们需要更加注重时间的价值和意义。技术的发展给我们带来了便利和效率，但也让我们面临着更多的挑战和压力。只有通过正确的管理和规划，我们才能成为真正的时间的主人，而不是时间的仆人。让我们珍惜时间，把握机会，让每一天都过得有意义和充实。</p>
+<p>“时光荏苒，岁月如梭”，时间的流逝让我们感到无比珍贵和宝贵。让我们用心去感受时间的美好和意义，让我们用行动去证明自己的价值和能力。让我们成为真正的时间的主人，而不是时间的仆人。</p>
+</blockquote>
+<h3 id="阿里通义千问"><a href="#阿里通义千问" class="headerlink" title="阿里通义千问"></a>阿里通义千问</h3><blockquote>
+<p><strong>掌控时间还是成为时间的奴隶</strong></p>
+<p>人们因技术发展得以更好地掌控时间，但也有人因此成了时间的仆人。技术的便利性让我们更加高效地完成任务，但同时也让我们失去了自由支配的时间。这是一个必须深思的问题。</p>
+<p>在科技不发达的时代，人们的生活节奏相对较慢，日出而作，日落而息。他们有更多的时间用于休息、娱乐和社交，有更多的机会享受生活的美好。然而，随着时代的发展，科技的进步，人们的生活节奏越来越快，时间越来越宝贵。我们不得不依赖各种高效的工具来完成任务，而这些工具总是会占用我们的一部分时间。</p>
+<p>尤其是在现代社会，时间管理显得尤为重要。我们需要规划好自己的时间，分配好任务，才能在有限的时间内完成更多的工作，提高工作效率。于是，各种时间管理软件应运而生。我们可以通过这些软件来制定工作计划，提醒自己完成任务，甚至可以设置提醒声音来提醒自己时间的流逝。这些工具帮助我们更好地掌控时间，使我们更高效地完成任务。</p>
+<p>然而，正如开头所说，技术的便利性也让我们失去了自由支配的时间。我们不再有时间去做自己喜欢的事情，去旅游，去学习自己感兴趣的知识，甚至连休息的时间都被压缩得所剩无几。我们成了时间的奴隶，不得不被各种工具所支配。</p>
+<p>技术的发展让我们失去的不仅仅是时间。同时，我们也失去了对生活的感悟和体验。当我们把所有的时间都花在了工作和生活的琐事上，我们就会失去对生活本身的感悟。我们会变得麻木，失去对生活的热情和期待。这不仅仅是时间的浪费，更是生命的浪费。</p>
+<p>所以，我们必须认识到技术发展所带来的负面影响，合理规划自己的时间，不让技术成为我们的主人。我们需要留出一定的时间去做自己喜欢的事情，去旅游，去学习。这样，我们才能在有限的时间内做更多的事情，提高生活质量，而不是成为时间的奴隶。</p>
+<p>总之，掌控时间还是成为时间的奴隶，这是一个需要深思的问题。我们必须认识到技术发展所带来的负面影响，合理规划自己的时间，留出一定的时间去做自己喜欢的事情，才能在有限的时间内做更多的事情，提高生活质量，而不是成为时间的奴隶。</p>
+</blockquote>
+<h2 id="全国乙卷"><a href="#全国乙卷" class="headerlink" title="全国乙卷"></a><strong>全国乙卷</strong></h2><blockquote>
+<p><strong>阅读下面的材料，根据要求写作。（60分）</strong></p>
+<p>吹灭别人的灯，并不会让自己更加光明；阻挡别人的路，也不会让自己行得更远。</p>
+<p>“一花独放不是春，百花齐放春满园。”如果世界上只有一种花朵，就算这种花朵再美，那也是单调的。</p>
+<p>以上两则材料出自习近平总书记的讲话，以生动形象的语言说出了普遍的道理。请据此写一篇文章，体现你的认识与思考。</p>
+<p>要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；不少于800字。</p>
+</blockquote>
+<h3 id="OpenAI-ChatGPT-1"><a href="#OpenAI-ChatGPT-1" class="headerlink" title="OpenAI  ChatGPT"></a>OpenAI  ChatGPT</h3><blockquote>
+<p><strong>共创多彩世界的力量</strong></p>
+<p>世界上的每一个个体都是独一无二的，拥有各自的特点和潜力。然而，有时候我们会陷入竞争与嫉妒的心态，试图吹灭别人的灯，或者阻挡别人的路，以期获得个人的成功和光明。然而，习近平总书记在他的讲话中提醒我们，这样的做法并不能让自己变得更加光明，更加远大，而只会使我们的世界变得单调和贫乏。</p>
+<p>“一花独放不是春，百花齐放春满园。”这句警句告诉我们，多样性和融合是世界进步的源泉。想象一下，如果世界上只有一种花朵，再美丽也无法带来真正的春天。只有当各种花朵齐放，绽放出属于自己的色彩和芬芳，世界才会变得更加美丽而多彩。同样，人类社会也需要不同的个体和文化的交融，才能创造出繁荣和进步的春天。</p>
+<p>在现实生活中，我们经常会遇到竞争与争斗。有时，我们会试图通过打压别人来提升自己，或者通过阻挡别人的路来凸显自己的优势。然而，这种做法只会导致一种恶性循环，削弱整个社会的创造力和活力。当我们以合作和尊重为基础，给予他人支持和鼓励时，我们才能共同创造一个更加繁荣和美好的世界。</p>
+<p>每个人都应该意识到，自己的成功并不是建立在别人的失败之上。相反，当我们在协作和合作中发挥各自的优势时，我们能够共同进步，实现更大的成就。共享知识和经验、相互学习和启发，能够激发出我们更多的创造力和创新力。我们应该鼓励别人发光发热，扶持他们成长，因为他们的成功和进步会给我们的世界带来更多的活力和希望。</p>
+<p>当我们摒弃排斥和封闭的思维，拥抱多元文化和合作共赢的理念时，我们能够共同应对全球挑战，共同推动人类社会向更好的方向发展。</p>
+<p>在构建一个多彩世界的过程中，个体的价值和尊严同样至关重要。我们应该尊重每个人的独特性和自由发展的权利。通过给予每个人平等的机会和资源，我们能够激发出更多人的潜能和创造力，为社会的进步做出更大贡献。</p>
+<p>同时，我们也应该树立起开放和包容的心态。不同的观点和意见会带来更多的思想碰撞和创新的火花。我们应该倾听和尊重他人的声音，不断学习和进步。只有当我们能够欣赏和接纳不同的观点时，我们才能摆脱狭隘的视野，拥抱更广阔的世界。</p>
+<p>在个人和社会的层面，我们都应该努力成为一束光，为世界带来温暖和启迪。我们可以通过奉献和助人为乐来扩大自己的光芒，为他人点燃希望的火种。我们可以通过分享知识和经验，推动他人的成长和进步。当我们能够以善意和友爱的态度对待他人时，我们能够共同创造一个更加和谐和美好的社会。</p>
+<p>综上所述，习近平总书记的讲话提醒着我们吹灭别人的灯并不能让自己更加光明，阻挡别人的路也不能让自己行得更远。只有通过合作、尊重和包容，我们才能共同创造一个多彩世界。让我们摒弃嫉妒和竞争的心态，拥抱多样性和合作共赢的理念，成为共同创造的参与者和受益者，为建设一个更加繁荣、和谐和美好的世界贡献自己的力量。</p>
+</blockquote>
+<h3 id="讯飞星火大模型-1"><a href="#讯飞星火大模型-1" class="headerlink" title="讯飞星火大模型"></a>讯飞星火大模型</h3><blockquote>
+<p><strong>花开满园，人生如途</strong></p>
+<p>“一花独放不是春，百花齐放春满园。”这句话道出了一种普遍的道理——只有多样性才能带来丰富性，只有合作才能实现共赢。吹灭别人的灯，阻挡别人的路，只会让自己更加孤独、无助，而不会让自己更加光明、行得更远。 </p>
+<p>在人生的道路上，每个人都是一朵独特的花朵。我们各自拥有不同的性格、才华和经历，但这并不意味着我们可以孤芳自赏或者排斥他人。相反，只有在与他人的交流与合作中，我们才能更好地发挥自己的优势，克服自己的不足，实现自我价值的最大化。正如春天的花园一样，每朵花都有自己的颜色和香气，但只有在相互辉映、相互呼应的情况下，才能呈现出最美的景象。 </p>
+<p>然而，要实现这种多样性和合作并不是一件容易的事情。在现实生活中，我们常常会遇到各种各样的挑战和困难，比如竞争、嫉妒、偏见等等。这些因素会让我们产生排斥、敌视的心理，甚至会让我们走上一条孤独的道路。但是，我们必须认识到，这些负面情绪只会让我们更加痛苦和无助，而不会解决任何问题。相反，只有通过积极的沟通和合作，才能找到解决问题的方法，实现共同的目标。</p>
+<p>当然，要实现多样性和合作并不是一蹴而就的。它需要我们不断地学习和成长，需要我们具备一定的社交能力和情商。我们需要学会倾听他人的声音，理解他人的需求，尊重他人的权利。我们需要学会表达自己的想法和感受，同时也需要接受他人的不同意见和看法。只有在这样的基础上，我们才能建立起真正的信任和合作关系，实现共赢的局面。 </p>
+<p>最后，我想引用一句诗句来总结这篇文章：“花开满园，人生如途”。在这个世界上，每个人都是一朵独特的花朵，但只有在与他人的交流与合作中，我们才能展现出最美的姿态。让我们一起努力，让这个世界变得更加多彩、更加美好！</p>
+</blockquote>
+<h3 id="阿里通义千问-1"><a href="#阿里通义千问-1" class="headerlink" title="阿里通义千问"></a>阿里通义千问</h3><blockquote>
+<p><strong>认识与思考</strong> </p>
+<p>世界上有许多道理都是普遍适用的，比如“吹灭别人的灯，并不会让自己更加光明；阻挡别人的路，也不会让自己行得更远”，“一花独放不是春，百花齐放春满园”。这些道理虽然简单，却蕴含着深刻的哲理。 </p>
+<p>在现实生活中，我们常常会有这样的想法：为了让自己更加成功，就想方设法阻挡别人的发展，甚至不惜使用各种手段打压别人。然而，这样做真的能让自己更加成功吗？答案显然是否定的。因为这样做不仅会破坏良好的人际关系，还会使自己失去人心，最终导致自己走向失败。</p>
+<p>“一花独放不是春，百花齐放春满园”，这句话告诉我们，只有与别人和谐相处，互相帮助，才能创造出更加美好的世界。现代社会，强调的是团队合作，只有每个人都发挥自己的优势，共同协作，才能达到更加出色的成果。 </p>
+<p>“阻挡别人的路，也不会让自己行得更远”，这句话告诉我们，要想在人生路上走得更加顺利，就要学会与人相处，宽容待人。如果一味地想要阻挡别人，不仅会给自己带来不必要的阻碍，还会损害自己的人际关系。 </p>
+<p>总之，这些道理都告诉我们，只有与人为善，宽容待人，才能让自己在人生路上走得更加顺利，实现自己的人生价值。而那些只顾自己利益，不顾及他人感受的人，最终只会走向失败。 </p>
+<p>那么，我们应该如何在现实生活中践行这些道理呢？首先，要学会与人为善，宽容待人，善于发现别人身上的优点，并能够积极地帮助别人。其次，要学会与人合作，共同协作，发挥各自的优势，实现共赢。最后，要有长远的眼光，学会放眼未来，不因一时的得失而影响自己的未来发展。 总之，这些道理是普遍适用的，我们应该认真学习，并在生活中践行。只有这样，我们才能让自己的人生更加精彩，更加有意义。</p>
+</blockquote>
+<h2 id="新课标I卷"><a href="#新课标I卷" class="headerlink" title="新课标I卷"></a><strong>新课标I卷</strong></h2><blockquote>
+<p><strong>阅读下面的材料，根据要求写作。（60分）</strong></p>
+<p>好的故事，可以帮我们更好地表达和沟通，可以触动心灵、启迪智慧；好的故事，可以改变一个人的命运，可以展现一个民族的形象……故事是有力量的。</p>
+<p>以上材料引发了你怎样的联想和思考？请写一篇文章。</p>
+<p>要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；不少于800字。</p>
+</blockquote>
+<h3 id="OpenAI-ChatGPT-2"><a href="#OpenAI-ChatGPT-2" class="headerlink" title="OpenAI  ChatGPT"></a>OpenAI  ChatGPT</h3><blockquote>
+<p><strong>故事的力量：启迪智慧、改变命运</strong></p>
+<p>故事是人类文化的重要组成部分，它不仅仅是娱乐的载体，更是一种强大的工具，具有无穷的力量。从古至今，好的故事一直在帮助我们更好地表达和沟通，触动心灵，启迪智慧，并且能够改变一个人的命运，展现一个民族的形象。正是因为故事的力量，它才在人类文化中占据如此重要的地位。</p>
+<p>故事具有直观、生动的特点，能够以情境化的方式传递信息。通过故事，我们能够将复杂的思想和抽象的概念转化为具体的形象，引起读者的共鸣和情感上的共鸣。一个好的故事能够深入人心，让人们在情感上得到满足和启发。</p>
+<p>同时，故事也是一种启迪智慧的工具。通过故事中的情节、人物和冲突，我们可以从中汲取智慧和教训。故事中的主人公面临的挑战和困境，以及他们通过智慧和勇气克服困难的过程，能够激发我们思考和反思自己的生活。通过与故事中的人物共鸣，我们可以获得对人生的洞察和对现实世界的理解，提高我们的智慧和见识。</p>
+<p>故事的力量还体现在它能够改变一个人的命运。人们经常说，“命运是由自己创造的。”故事中的主人公往往通过努力和坚持改变自己的命运，展现出人类的智慧和勇气。当我们沉浸在这些故事中时，我们不禁思考自己的生活和处境，从而激发起我们积极改变自己的欲望和动力。通过故事，我们可以从中获得信心和勇气，相信自己可以改变命运，创造美好的未来。</p>
+<p>同时，故事也能够展现一个民族的形象。每个民族都有自己的传统和文化，而故事是传递和展现这些文化的重要方式之一。通过故事中的情节、人物和背景，我们可以了解一个民族的价值观、思维方式和生活方式。故事可以让我们更加全面地认识和理解其他文化，促进跨文化的交流和理解，促进民族之间的和谐与融合。</p>
+<p>从古代的神话传说到现代的文学作品，故事一直是记录和传承文化的重要媒介。通过故事，我们能够了解不同文化的独特之处，体味不同民族的智慧和情感。故事中的人物和情节承载着文化的象征和内涵，通过这些故事，我们可以窥探其他民族的生活和价值观念，拓宽自己的视野。</p>
+<p>故事的力量还体现在它能够激发人们的想象和创造力。优秀的故事常常给人以启示和灵感，激发我们思考世界的本质和人生的意义。故事中的奇幻冒险、动人情感以及意想不到的结局，都能够唤起我们内心深处的梦想和渴望，激励我们追求更高的目标和追寻更美好的生活。</p>
+<p>然而，我们也要认识到故事的力量是双刃剑。故事既可以启迪智慧、改变命运，也可以被滥用和误导。虚假的故事和不负责任的叙述可能导致误解和偏见的产生，甚至引发社会的不稳定和冲突。因此，在享受故事的乐趣和受益于故事的启迪时，我们也应该保持理性思考和批判意识，对故事中的价值观和信息进行辨别和评估。</p>
+<p>总之，好的故事是人类文化的宝贵财富，它具有丰富的表达和沟通力量，能够触动心灵、启迪智慧，改变一个人的命运，展现一个民族的形象。故事不仅仅是娱乐，更是一种教育和启发的工具。让我们珍惜好故事的力量，通过它们来传递美好和积极的价值观，促进人类文明的繁荣和进步。</p>
+</blockquote>
+<h3 id="讯飞星火大模型-2"><a href="#讯飞星火大模型-2" class="headerlink" title="讯飞星火大模型"></a>讯飞星火大模型</h3><blockquote>
+<p><strong>故事的力量</strong> </p>
+<p>故事，是一种古老而又神奇的存在。它可以穿越时空，传递信息，激发情感，启迪智慧。好的故事，更是有着无穷无尽的力量。 </p>
+<p>故事可以帮我们更好地表达和沟通。在日常生活中，我们常常需要用语言来表达自己的想法和感受。但是，有时候我们的语言能力有限，无法准确地表达自己的思想。这时候，故事就可以派上用场了。通过讲故事的方式，我们可以将复杂的思想转化为简单易懂的语言，让别人更容易理解我们的意思。同时，故事也可以让我们更好地与他人沟通。当我们听到别人讲述一个有趣的故事时，我们会感到愉悦和放松，这样就更容易建立起良好的人际关系。 </p>
+<p>好的故事，可以触动心灵、启迪智慧。有些故事不仅仅是为了娱乐，更是为了传递深刻的思想和价值观。比如《红楼梦》中的“荣府衰落”、《西游记》中的“取经之路”等等，这些故事都蕴含着深刻的人生哲理，可以让我们在阅读中受到启发和感悟。同时，好的故事也可以激发我们的想象力和创造力。当我们听到一个奇妙的故事时，我们会想象自己置身其中，体验其中的情节和人物。这种想象力和创造力不仅可以帮助我们更好地理解故事，还可以应用到我们的生活中，创造出更加美好的未来。 </p>
+<p>好的故事，可以改变一个人的命运，可以展现一个民族的形象。在历史上，有很多英雄人物都是通过讲故事而成为传奇的。比如《三国演义》中的关羽、张飞、赵云等等，他们的英勇事迹被广泛传颂，成为了后人学习的榜样。同时，好的故事也可以展现一个民族的形象。比如中国的四大名著《红楼梦》、《西游记》、《水浒传》、《三国演义》，它们不仅代表了中国文化的精髓，也展现了中国人民的智慧和勇气。 </p>
+<p>总之，故事是一种神奇而又强大的存在。它可以帮我们更好地表达和沟通，可以触动心灵、启迪智慧，可以改变一个人的命运，可以展现一个民族的形象。因此，我们应该珍惜好的故事，学会讲故事，用故事来传递正能量，让世界变得更加美好。</p>
+</blockquote>
+<h3 id="阿里通义千问-2"><a href="#阿里通义千问-2" class="headerlink" title="阿里通义千问"></a>阿里通义千问</h3><blockquote>
+<p><strong>好故事的力量</strong></p>
+<p>好的故事具有强大的力量，它可以传递人类共同的情感，激发人们向上的精神力量，引领人们走向更加美好的未来。中国历史上有许多经典的故事，这些故事传递了民族精神，激励了一代又一代人的成长。</p>
+<p>《愚公移山》讲述的是一个虽然身处绝境，但不屈不挠、坚持不懈的故事。故事中的愚公不畏艰难险阻，面对恶劣的自然条件，他没有放弃，而是以坚定的信念和勇气去实现自己的目标。这个故事告诉我们，只要我们坚持自己的信念，坚定不移地走下去，就一定能够实现自己的目标。</p>
+<p>《卧薪尝胆》讲述的是一个忍辱负重、坚韧不拔的故事。故事中的勾践被打败后，并没有选择放弃，而是选择了忍辱负重，卧薪尝胆，最终实现了自己的复仇计划。这个故事告诉我们，成功的道路上充满了坎坷和挫折，但只要我们能够忍耐和坚持，就一定能够取得最后的胜利。</p>
+<p>《夸父逐日》讲述的是一个不断追求、勇往直前的故事。故事中的夸父为了追求自己心中的理想，不畏艰难险阻，不断地追逐着太阳。这个故事告诉我们，只要我们有坚定的信念和追求，就一定能够不断前进，实现自己的梦想。</p>
+<p>以上这些故事，虽然产生的时代和背景不同，但它们所传递的精神内涵却是相通的。这些故事告诉我们，在面对困难和挫折时，我们要坚定信念、忍耐坚持，不断追求自己的目标。同时，这些故事也为我们塑造了一个民族的形象，让我们为自己的文化感到自豪和骄傲。</p>
+<p>如今，中国已经进入了新时代，新的历史条件也赋予了我们新的使命和任务。在这个时代，我们需要更多的好故事，需要更多能够传递正能量的故事。这些故事可以是我们身边的人和事，也可以是历史上的经典故事。只有让这些好故事成为我们的精神食粮，我们才能够更好地面对未来的挑战，在新时代创造出更加辉煌的成就。</p>
+<p>总之，好的故事具有强大的力量，它可以帮助我们更好地表达和沟通，可以触动心灵、启迪智慧；好的故事，可以改变一个人的命运，可以展现一个民族的形象。因此，我们需要更多的好故事，让它们成为我们前进路上的明灯和指路标，引领我们走向更加美好的未来。</p>
+</blockquote>
+<h2 id="新课标II卷"><a href="#新课标II卷" class="headerlink" title="新课标II卷"></a><strong>新课标II卷</strong></h2><blockquote>
+<p><strong>阅读下面的材料，根据要求写作。（60分）</strong></p>
+<p>本试卷语言文字运用II提到的“安静一下不被打扰”的想法，在当代青少年中也不鲜见。青少年在学习、生活中，有时希望有一个自己的空间，放松，沉淀，成长。</p>
+<p>请结合以上材料写一篇文章。</p>
+<p>要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；不少于800字。</p>
+</blockquote>
+<h3 id="OpenAI-ChatGPT-3"><a href="#OpenAI-ChatGPT-3" class="headerlink" title="OpenAI  ChatGPT"></a>OpenAI  ChatGPT</h3><blockquote>
+<p><strong>安静一下，青春沉淀</strong></p>
+<p>在当代社会中，青少年常常面临着繁忙的学习和生活压力。在这个快节奏、高竞争的时代，他们渴望拥有一片属于自己的安静空间，能够放松、沉淀和成长。这种渴望也反映了青少年对自身发展的需求和对内心世界的探索。</p>
+<p>在学习中，青少年需要有时间和空间去思考、吸收和消化所学的知识。学校和社会的期望常常让他们处于紧张的学习状态中，如同在舞台上奔波不息。然而，学习并不只是追求分数和成绩，更重要的是培养独立思考和创造力。当青少年能够拥有一段安静的时间，让思绪自由飘荡，他们能够梳理所学知识的脉络，挖掘出更深层次的理解和见解。在这个自我探索和思考的过程中，他们能够培养独立思考和批判思维的能力，为自己的未来发展打下坚实的基础。</p>
+<p>除了学习，青少年的生活也需要一片宁静的角落。社交媒体和信息爆炸的时代，给青少年带来了无尽的干扰和压力。他们经常感到身心疲惫，需要一个停歇的港湾，以平静心情、调整身心。这个安静的空间可以是一个小角落的书桌，可以是一个静谧的公园，也可以是一段安静的音乐。在这里，他们可以放下外界的纷扰和压力，与自己对话、与内心对话，找回自己的平衡和自信。在这个宁静的氛围中，他们能够更好地审视自己的成长和发展，从容面对生活的挑战。</p>
+<p>安静的一刻也是青少年成长的重要时刻。年少时期的青春正是个性和兴趣形成的关键时期。在安静的环境中，他们可以追寻自己的兴趣和爱好，发展个性和才华。有些人喜欢阅读，可以沉浸在书海中，拓宽自己的视野；有些人喜欢绘画或音乐创作，可以用艺术的方式表达自己的情感和想法；有些人喜欢独处大自然，可以在大自然的怀抱中感受宁静与美好。这些兴趣和爱好的培养不仅能够满足个人的内在需求，还能够培养自信心、拓展眼界，为未来的成长和发展提供坚实的支持。</p>
+<p>然而，我们也要明确这种安静的空间不等同于孤立和隔绝。青少年仍然需要与他人交流和互动，与朋友分享快乐与困惑，共同成长和进步。安静的一刻只是为了让他们有时间与自己对话，整理思绪，从而更好地与他人交流和互动。在这个平衡中，青少年能够更好地认识自己、理解他人，建立健康的人际关系。</p>
+<p>在现代社会中，给予青少年一个安静的空间，是对他们发展的尊重和关怀。这个空间不仅仅是一种物理上的存在，更是一种心灵的自由。它是一个青少年成长的摇篮，让他们能够在安静中思考、感悟、沉淀和成长。只有当他们拥有这样的空间，才能够更好地应对外界的挑战，展现自己的个性和潜力。</p>
+<p>在忙碌和喧嚣的世界中，让我们共同关注青少年的内心需求，给予他们一个安静的空间，让他们能够自由地思考、成长和发展。这个安静的一刻不仅仅是一种放松和沉淀，更是一个宝贵的成长时光。让我们共同努力，创造一个支持和尊重青少年发展的环境，让他们的青春在安静中绽放出最美丽的花朵。</p>
+</blockquote>
+<h3 id="讯飞星火大模型-3"><a href="#讯飞星火大模型-3" class="headerlink" title="讯飞星火大模型"></a>讯飞星火大模型</h3><blockquote>
+<p><strong>安静一下不被打扰</strong></p>
+<p>在当代社会，青少年的生活充满了各种嘈杂的声音。学习、社交、娱乐等各种因素交织在一起，让青少年们感到疲惫不堪。因此，“安静一下不被打扰”的想法在青少年中也越来越常见。青少年需要一个自己的空间，来放松、沉淀和成长。</p>
+<p>青少年正处于成长的关键时期，他们的身心发展需要一个稳定、安全的环境。然而，现代社会的快节奏和高压力，让青少年们无法得到足够的休息和放松。他们需要一个自己的空间，来摆脱外界的干扰和压力，让自己的身心得到充分的休息和恢复。</p>
+<p>在这个空间里，青少年可以独自思考、阅读、写作、绘画等，这些活动可以帮助他们更好地了解自己，发现自己的兴趣和潜力。同时，这个空间也可以让他们更好地与自己的内心对话，理清自己的思路和情感，从而更好地面对生活中的各种挑战。</p>
+<p>除了个人的空间，青少年也需要一个安静的学习环境。在学校里，课堂上的嘈杂声、同学之间的交流声、老师的讲解声等等，都会影响到学生的学习效果。因此，学校应该为学生提供一个安静的学习环境，让学生能够更好地专注于学习，提高学习效率。</p>
+<p>当然，安静并不意味着孤独和孤立。青少年需要与家人、朋友、老师等人保持良好的沟通和交流，分享自己的想法和感受。这些人可以给予青少年支持和鼓励，帮助他们更好地成长和发展。</p>
+<p>总之，“安静一下不被打扰”是青少年们的一种需求和愿望。他们需要一个自己的空间，来放松、沉淀和成长；他们也需要一个安静的学习环境，来提高学习效率。我们应该尊重青少年的需求和愿望，为他们创造更好的成长环境。同时，我们也应该教育青少年如何正确地处理自己的情绪和情感，让他们能够更好地面对生活中的各种挑战。只有这样，我们才能培养出更加健康、自信、成熟的青少年一代。</p>
+</blockquote>
+<h3 id="阿里通义千问-3"><a href="#阿里通义千问-3" class="headerlink" title="阿里通义千问"></a>阿里通义千问</h3><blockquote>
+<p><strong>安静一下，不被打扰</strong></p>
+<p>在现代社会，随着信息技术的迅速发展，我们已经进入了一个信息爆炸的时代。在这样的环境中，人们往往渴望有一个安静的空间，不被外界打扰，以便更好地沉淀自己，成长学习。</p>
+<p>青少年时期，是一个人成长的关键阶段。在这个阶段，他们需要一个安静的环境，来放松自己，沉淀内心，更好地成长。学习压力、考试成绩、人际关系等方面的压力，都可能让青少年感到焦虑和压抑。在这种情况下，他们需要一个安静的空间，来平复自己的心情，缓解压力。</p>
+<p>一个安静的空间，不仅可以为青少年提供一个休息的场所，也可以让他们在这个空间中更好地思考、反思自己的生活。有时候，青少年在学习、生活中遇到的问题，只有在安静的环境中才能更好地理清思路，找到解决问题的方法。</p>
+<p>然而，现代社会的生活节奏非常快，人们往往难以找到一个安静的空间。社交媒体、短视频、游戏等数字化产品，都在争夺人们的注意力。这些数字化产品固然能够提供一些信息和娱乐，但也会给人们带来信息过载和负面情绪。长期以往，这会对青少年的身心健康造成不良影响。</p>
+<p>因此，我们应该倡导一个安静的环境，为青少年提供一个可以沉淀自己、放松身心的空间。这需要我们每个人的努力，从减少社交媒体的使用，到尊重他人的安静权，再到政府部门加强对数字化产品的监管，都是有助于创造一个安静环境的方式。</p>
+<p>在现代社会，安静一下，不被打扰，是一件难能可贵的事情。我们应该珍惜这样的机会，让青少年能够在安静的环境中成长、成才。让我们一起努力，为他们创造一个安静的空间。</p>
+</blockquote>
+<p><strong>以上所有内容（包括除作文外的文稿）均由AI模型生成，不代表作者个人观点。</strong></p>
+<p>是的，如你所见，以上所有内容都由AI生成，文章开头的引言使用ChatGPT生成，仅做了部分修改。不难看出，目前大语言模型的能力的确很强大，正确的使用可以有效提升我们的学习和工作的效率。但是国产的大语言模型和ChatGPT仍有一定的差距，国产大语言模型任重道远。</p>
 ]]></content>
       <categories>
-        <category>基础教程</category>
+        <category>闲聊</category>
       </categories>
       <tags>
-        <tag>环境搭建</tag>
-        <tag>C++</tag>
-        <tag>C语言</tag>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+        <tag>星火认知大模型</tag>
       </tags>
   </entry>
 </search>
