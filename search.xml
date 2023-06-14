@@ -1,42 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>一键分离音乐的人声和伴奏</title>
-    <url>/posts/7ed7a174.html</url>
-    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
-<p>硬件要求：</p>
-<p>至少 10GB 的硬盘空间</p>
-<p>有6GB以上显存的独立显卡（N卡）</p>
-<p>（没有显卡也可以跑，但速度会慢许多）</p>
-</blockquote>
-<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
-<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
-<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
-<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
-<p>使用方法：</p>
-<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
-<p>安装完成后双击运行，会看到如下界面：</p>
-<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
-
-<blockquote>
-<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
-</blockquote>
-<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
+    <title>手把手教你搭建开发环境之 C/C++</title>
+    <url>/posts/85ab07ea.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
+<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
+<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
+<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
+<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
+<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
+<p>下面是详细的安装步骤：</p>
+<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
+<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
+<p>下载完成后点击“打开文件”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
+<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
+<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
+<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
+<p>下面是配置步骤：</p>
+<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
+<p>点击下图中的链接下载，等待下载完成后运行。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
+<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
+<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
+<p>当然也可自行修改，需要保证路径中只包含英文。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
+<p>修改路径后点击 “Extract”，等待解压完成。</p>
+<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
+<p>回到桌面，右键“此电脑”，点击属性</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
+<p>然后点击 “高级系统设置”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
+<p>选择 “环境变量”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
+<p>双击 “Path”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
+<p>点击 “新建”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
+<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
+<p>确认无误后连续点击三个“确定”</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
+<p>至此，你已经完成了 MinGW 的配置。</p>
+<p><strong>接下来安装 VS code</strong></p>
+<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>点击 Download 按钮</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
+<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
+<p>由于安装过程较为简单，此处不再赘述。</p>
+<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
+<p>同样的方法搜索 “C”，安装C语言插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
+<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
 ]]></content>
       <categories>
-        <category>技术探讨</category>
+        <category>基础教程</category>
       </categories>
       <tags>
-        <tag>UVR</tag>
-        <tag>AI</tag>
-        <tag>音频处理</tag>
-        <tag>开源项目</tag>
+        <tag>C++</tag>
+        <tag>C语言</tag>
+        <tag>环境搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -384,155 +410,42 @@
       </tags>
   </entry>
   <entry>
-    <title>手把手教你搭建开发环境之 C/C++</title>
-    <url>/posts/85ab07ea.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-C-x2F-C"><a href="#手把手教你搭建开发环境之-C-x2F-C" class="headerlink" title="手把手教你搭建开发环境之 C&#x2F;C++"></a>手把手教你搭建开发环境之 C&#x2F;C++</h1><p>各位好，国庆节快乐，国庆回不了家的我只能写写教程来打发时间了。</p>
-<p>近期不少同学都开始了大学计算机的学习，经过我一番调查，发现大学计算机目前主要教授两门语言：C&#x2F;C++ 和 Python 。而且大部分学校都是在机房编写程序，如果你想在课下自己练习，那就十分有必要在自己的电脑上搭建属于自己的开发环境。</p>
-<p>其实大部分的教材中都会涉及到开发环境的搭建，但是大部分的教材都比较老旧，推荐使用的编辑器或IDE都已经过时。在这里我不会教大家去安装过时的编辑器，因为目前最新的编辑器明显更加好用。</p>
-<p>在这里为大家介绍两种搭建C&#x2F;C++环境的方法，分别是<strong>安装 Visual Studio</strong> 和 <strong>配置 MinGW + VS code</strong> 。这两种方式各有特点，任选其一即可，下面为各位详细介绍。</p>
-<h2 id="1-Visual-Studio"><a href="#1-Visual-Studio" class="headerlink" title="1.Visual Studio"></a><strong>1.Visual Studio</strong></h2><p>Visual Studio 是微软官方的IDE（Integrated Development Environment，集成开发环境），功能十分强大，其中包含了许多工具和开发环境，可以针对所有微软支持的平台进行开发，我们这里只需要从中取我们所需的 C&#x2F;C++ 开发环境即可。</p>
-<p>安装 Visual Studio 的步骤相对简单，只需要几步操作即可安装成功，并且如果你打算之后从事相关的开发，Visual Studio 将会在今后的工作中也经常使用。不过因为 Visual Studio 包含的内容较多，所以相比其他编辑器会占用更多的空间。</p>
-<p>下面是详细的安装步骤：</p>
-<p>首先打开 Visual Studio 的官网：<a href="https://visualstudio.com/">https://visualstudio.com</a></p>
-<p>找到 “下载Visual Studio ”，选择“Community 2022”，点击下载。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203944.png" alt="图片"></p>
-<p>下载完成后点击“打开文件”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203217.png" alt="图片"></p>
-<p>安装时选择 “使用C++的桌面开发”，点击右下角的 “安装”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203591.png" alt="图片"></p>
-<p>等待下载和安装完成后就可以开始创建你的项目了。</p>
-<h2 id="2-MinGW-VS-code"><a href="#2-MinGW-VS-code" class="headerlink" title="2.MinGW + VS code"></a><strong>2.MinGW + VS code</strong></h2><p>该方案翻译过来就是配置 <strong>编译器 + 代码编辑器</strong> ，相当于将IDE拆分开来，分别配置。该方案配置过程相对比较繁琐，且经常会出现一些不好解决的bug，对新手不太友好。但相比上述方法更加轻量，扩展性更强，在VS code中可以安装各种插件，你也可以通过安装其他语言的编译器来让 VS code 胜任更多的编程语言。</p>
-<p>下面是配置步骤：</p>
-<p>首先下载 MinGW，打开链接：<a href="https://nuwen.net/mingw.html">https://nuwen.net/mingw.html</a></p>
-<p>点击下图中的链接下载，等待下载完成后运行。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203898.png" alt="图片"></p>
-<p>运行后填写解压路径，建议直接改为：<code>C:\</code></p>
-<p>将会直接解压到 <code>C:\MinGW</code> 路径下</p>
-<p>当然也可自行修改，需要保证路径中只包含英文。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203508.png" alt="图片"></p>
-<p>修改路径后点击 “Extract”，等待解压完成。</p>
-<p><strong>接下来配置环境变量</strong>（以 Windows11 为例，Windows10 操作类似）</p>
-<p>回到桌面，右键“此电脑”，点击属性</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202203068.png" alt="图片"></p>
-<p>然后点击 “高级系统设置”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204185.png" alt="图片"></p>
-<p>选择 “环境变量”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204244.png" alt="图片"></p>
-<p>双击 “Path”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204990.png" alt="图片"></p>
-<p>点击 “新建”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204622.png" alt="图片"></p>
-<p>输入你刚刚解压 MinGW 的路径 + “\bin”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204806.png" alt="图片"></p>
-<p>确认无误后连续点击三个“确定”</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204759.png" alt="图片"></p>
-<p>至此，你已经完成了 MinGW 的配置。</p>
-<p><strong>接下来安装 VS code</strong></p>
-<p>使用浏览器打开 VS code 的官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>点击 Download 按钮</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204781.png" alt="图片"></p>
-<p>等待下载完成后运行，根据提示不断点击 “Next” 即可完成安装。</p>
-<p>由于安装过程较为简单，此处不再赘述。</p>
-<p>安装完成后启动 VS code，按照下图顺序依次点击“插件”，搜索 “Chinese”，找到中文插件，点击 “install” 安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204071.png" alt="图片"></p>
-<p>同样的方法搜索 “C”，安装C语言插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202204635.png" alt="图片"></p>
-<p>安装完成后重启VS code，就可以开始编写C&#x2F;C++程序了。</p>
+    <title>一键分离音乐的人声和伴奏</title>
+    <url>/posts/7ed7a174.html</url>
+    <content><![CDATA[<h1 id="UVR5-的安装和使用测试"><a href="#UVR5-的安装和使用测试" class="headerlink" title="UVR5 的安装和使用测试"></a>UVR5 的安装和使用测试</h1><blockquote>
+<p>硬件要求：</p>
+<p>至少 10GB 的硬盘空间</p>
+<p>有6GB以上显存的独立显卡（N卡）</p>
+<p>（没有显卡也可以跑，但速度会慢许多）</p>
+</blockquote>
+<p>我在做视频剪辑的时候，有时会有给音乐分离人声和伴奏的需求。之前一直在使用 spleeter 模型， 但是对于女声的音乐分离效果不太理想。最近发现了一款更好用的分离软件 —— Ultimate Vocal Remover。</p>
+<p>Ultimate Vocal Remover 集合了许多音频分离的模型，针对不同类型的音频可以使用不同的模型。官方的介绍是：This application uses state-of-the-art source separation models to remove vocals from audio files. （这个应用程序使用最先进的音源分离模型，从音频文件中去除人声），实际测试确实效果比之前的 spleeter 强不少。</p>
+<p>下载链接：<a href="https://ultimatevocalremover.com/">Ultimate Vocal Remover v5</a></p>
+<p>GitHub 链接：<a href="https://github.com/Anjok07/ultimatevocalremovergui">GUI for a Vocal Remover that uses Deep Neural Networks</a></p>
+<p>使用方法：</p>
+<p>首先打开上面的下载链接，下载并安装该软件，安装目录可以随便选择。</p>
+<p>安装完成后双击运行，会看到如下界面：</p>
+<img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/image-20230427121157818.png" alt="image-20230427121157818" style="zoom:67%;" />
+
+<blockquote>
+<p>以下内容为 2022&#x2F;07&#x2F;28 更新</p>
+</blockquote>
+<p>今天看到B站的UP主<a href="https://space.bilibili.com/39337803">痕继痕迹</a>更新了一期视频，他的视频也是介绍了UVR5的使用方法，并且他翻译了官方的使用文档，比我之前写的教程要更详细，这里就直接借用他翻译的文档：</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/01%20%E4%B8%80%E8%88%AC%E9%80%89%E9%A1%B9.jpg" alt="01 一般选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/02%20VR%20Architecture%20%E9%80%89%E9%A1%B9.jpg" alt="02 VR Architecture 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/03%20MDX-Net%20%E9%80%89%E9%A1%B9.jpg" alt="03 MDX-Net 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/04%20Demucs%20v3%20%E9%80%89%E9%A1%B9.jpg" alt="04 Demucs v3 选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/05%20Ensemble%20Mode%20%E5%90%88%E5%A5%8F%E9%80%89%E9%A1%B9.jpg" alt="05 Ensemble Mode 合奏选项"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/06%20Manual%20Ensemble%20%E6%89%8B%E5%8A%A8%E5%90%88%E5%A5%8F.jpg" alt="06 Manual Ensemble 手动合奏"></p>
 ]]></content>
       <categories>
-        <category>基础教程</category>
+        <category>技术探讨</category>
       </categories>
       <tags>
-        <tag>C++</tag>
-        <tag>C语言</tag>
-        <tag>环境搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>介绍一种很新的在 Windows 上运行安卓软件的方法</title>
-    <url>/posts/f99f16f6.html</url>
-    <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
-<p>WSA，顾名思义，就是运行在Windows上的Android子系统。说白了就是可以在Windows上运行安卓软件，这在之前就已经有安卓模拟器可以实现，但是WSA的体验更好。可以像使用Windows原生应用一样使用Android软件。</p>
-<p>下面就详细为大家介绍一下如何安装配置 WSA。</p>
-<h2 id="一、修改地区"><a href="#一、修改地区" class="headerlink" title="一、修改地区"></a>一、修改地区</h2><p>由于目前WSA还处于测试阶段，只上架了美区的微软应用商店，所以需要修改系统地区为美国。</p>
-<p>首先打开设置，找到 “时间和语言”，然后点击 “语言和区域”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159569.png" alt="图片"></p>
-<p>找到 “国家或地区”，修改地区为 “美国”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159607.png" alt="图片"></p>
-<h2 id="二、安装-WSA-和-APK-安装程序"><a href="#二、安装-WSA-和-APK-安装程序" class="headerlink" title="二、安装 WSA 和 APK 安装程序"></a>二、安装 WSA 和 APK 安装程序</h2><p>打开WSA的安装链接：<em><a href="http://www.microsoft.com/store/productId/9P3395VX91NR">www.microsoft.com/store/productId/9P3395VX91NR</a></em></p>
-<p>点击：Get in Store app，之后会跳转到 微软应用商店，点击安装并等待安装成功。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159853.png" alt="图片"></p>
-<p>安装完成后，可以在微软应用商店下载另外一款用于给WSA安装APK的程序。在微软应用商店搜索WSA就可以找到。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159521.png" alt="图片"></p>
-<p>等待两个软件都安装成功，在开始菜单中可以找到 “适用于Android 的 Windows 子系统设置”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159842.png" alt="图片"></p>
-<p>打开设置，启用 “开发人员模式”。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159293.png" alt="图片"></p>
-<h2 id="三、下载和配置-ADB（Android-Debug-Bridge）"><a href="#三、下载和配置-ADB（Android-Debug-Bridge）" class="headerlink" title="三、下载和配置 ADB（Android Debug Bridge）"></a>三、下载和配置 ADB（Android Debug Bridge）</h2><p>ADB 是Android官方提供的调试工具，可以理解为连接电脑和Android设备的桥梁。通过这座桥梁可以操作Android设备，也就可以为WSA安装APK。</p>
-<p>ADB 官网：<a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn</a></p>
-<p>点击下载</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159617.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200223.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200726.png" alt="图片"></p>
-<p>将下载好的压缩包解压到任意路径（不要包含中文），如图所示。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200960.png" alt="图片"></p>
-<h2 id="四、安装你需要的-APK"><a href="#四、安装你需要的-APK" class="headerlink" title="四、安装你需要的 APK"></a>四、安装你需要的 APK</h2><p>如果你正确完成了以上的配置，就可以直接双击你想要安装的APK，首次安装需要选择ADB路径，点击选取，选择你之前解压的ADB路径。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200170.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200932.png" alt="图片"></p>
-<p>然后根据提示启动 WSA 并等待安装即可。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200651.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200886.png" alt="图片"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201539.png" alt="图片"></p>
-<p>安装完成后将会自动运行你安装的App，想要再次启动时可以在开始菜单中找到该App。如果之后想要安装其他App，直接双击APK文件即可开始安装。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>Android</tag>
-        <tag>WSA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>手把手教你搭建开发环境之 Python</title>
-    <url>/posts/8176306d.html</url>
-    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
-<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
-<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
-<p><strong>安装教程：</strong></p>
-<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
-<p>点击 Downloads</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
-<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
-<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
-<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
-<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
-<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
-<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
-<p>点击 Download</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
-<p>下载社区版</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
-<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
-<p>选择完成后继续按照提示操作完成安装。</p>
-<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
-<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
-<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
-<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
-<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
-]]></content>
-      <categories>
-        <category>基础教程</category>
-      </categories>
-      <tags>
-        <tag>环境搭建</tag>
-        <tag>Python</tag>
+        <tag>UVR</tag>
+        <tag>AI</tag>
+        <tag>音频处理</tag>
+        <tag>开源项目</tag>
       </tags>
   </entry>
   <entry>
@@ -590,31 +503,44 @@
       </tags>
   </entry>
   <entry>
-    <title>New Bing 首发体验报告</title>
-    <url>/posts/ab5ddeae.html</url>
-    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
-<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
-<p>当然，现在的 New Bing 仍然存在一些问题：</p>
-<ol>
-<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
-</li>
-<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
-</li>
-<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
-</li>
-<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
-</li>
-</ol>
-<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+    <title>手把手教你搭建开发环境之 Python</title>
+    <url>/posts/8176306d.html</url>
+    <content><![CDATA[<h1 id="手把手教你搭建开发环境之-Python"><a href="#手把手教你搭建开发环境之-Python" class="headerlink" title="手把手教你搭建开发环境之 Python"></a>手把手教你搭建开发环境之 Python</h1><p>昨天发布了C&#x2F;C++的开发环境搭建教程，除了 C&#x2F;C++ 之外，Python 在部分高校中也很受青睐，同时我也十分建议初学者从 Python 开始入门。所以今天就来教大家如何搭建 Python 的开发环境。</p>
+<p>Python 是一门对新手十分友好的语言，这点也体现在了 Python 的环境搭建中。该文章介绍三种搭建环境的方式，操作都非常简单，各位可以按需选择。</p>
+<h2 id="1-安装-Python，使用自带的-IDLE"><a href="#1-安装-Python，使用自带的-IDLE" class="headerlink" title="1. 安装 Python，使用自带的 IDLE"></a>1. 安装 Python，使用自带的 IDLE</h2><p>Python 在官网提供了安装程序，我们只需要在 Python 的官网下载并运行安装程序，就可获得 Python 的开发环境和自带的代码编辑器 IDLE。IDLE 对于初学者来说基本够用，但是个人感觉编辑器界面不够美观，不适合长期使用。</p>
+<p><strong>安装教程：</strong></p>
+<p>打开Python官网：<em><a href="http://www.python.org/">www.python.org</a></em></p>
+<p>点击 Downloads</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201223.png" alt="图片"></p>
+<p>若没有特定的版本要求，可以直接点击 Download Python 3.xx.x 下载（这里默认会下载最新版本的 Python，下载速度可能会很慢，建议多尝试几次）</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201790.png" alt="图片"></p>
+<p>下载完成后运行，勾选 Add python to PATH 后，点击 Install Now 即可开始安装。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201999.png" alt="图片"></p>
+<p>安装完成后在开始菜单中可找到 Python 文件夹，其中就包含了 IDLE。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202315.png" alt="图片"></p>
+<h2 id="2-安装-PyCharm"><a href="#2-安装-PyCharm" class="headerlink" title="2.安装 PyCharm"></a>2.安装 PyCharm</h2><p>PyCharm 是著名的 IDE 开发公司 JetBrains 针对 Python 语言开发的 IDE，拥有十分丰富且强大的功能，并且社区版免费。</p>
+<p>安装教程（安装 PyCharm 前需先安装 Python）：</p>
+<p>打开 PyCharm 的官网：<em><a href="http://www.jetbrains.com/pycharm/">www.jetbrains.com/pycharm/</a></em></p>
+<p>点击 Download</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202779.png" alt="图片"></p>
+<p>下载社区版</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202951.png" alt="图片"></p>
+<p>下载完成后运行，一路点击 Next ，到如下界面时可以按需勾选。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202974.png" alt="图片"></p>
+<p>选择完成后继续按照提示操作完成安装。</p>
+<h2 id="3-安装-VS-code"><a href="#3-安装-VS-code" class="headerlink" title="3.安装 VS code"></a>3.安装 VS code</h2><p>VS code 是一个多功能的代码编辑器，之前在 C&#x2F;C++ 开发环境搭建教程中也提到过，VS code 可以通过安装不同的插件来兼容不同的编程语言，所以只需要安装 Python 之后再安装 VS code 的 Python 插件即可使用 VS code 来编写Python代码。</p>
+<p>VS code 的安装方法在之前的 C&#x2F;C++ 的环境搭建教程中已经提及，此处不再赘述，如果想了解详细的安装方法可以查看之前的推送：<a href="http://mp.weixin.qq.com/s?__biz=MzkzNjI0MzEwMQ==&mid=2247483930&idx=1&sn=ca212b5a451d75adf49dba18f6cf49b8&chksm=c2a0f8e8f5d771fe99426b8ad79c562f7d9298df0f9f34160e7c768f7cd00d962f26019bf311&scene=21#wechat_redirect">手把手教你搭建开发环境之 C&#x2F;C++</a></p>
+<p>这里附上 VS code 的官网，以免各位找错（因为之前确实有见到一些同学因为下载 VS code 找错官网被骗的）：<a href="https://code.visualstudio.com/">https://code.visualstudio.com</a></p>
+<p>安装好 VS code 之后，在扩展商店搜索 Python，安装第一个 Python 插件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202202450.png" alt="图片"></p>
+<p>安装完成插件后就可以使用 VS code 来编写和运行 Python 代码啦。</p>
 ]]></content>
       <categories>
-        <category>闲聊</category>
+        <category>基础教程</category>
       </categories>
       <tags>
-        <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>NLP</tag>
-        <tag>LLM</tag>
+        <tag>环境搭建</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -690,10 +616,84 @@
         <category>基础教程</category>
       </categories>
       <tags>
-        <tag>AI</tag>
         <tag>环境搭建</tag>
+        <tag>AI</tag>
         <tag>Python</tag>
         <tag>Anconda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>New Bing 首发体验报告</title>
+    <url>/posts/ab5ddeae.html</url>
+    <content><![CDATA[<h1 id="New-Bing-首发体验报告"><a href="#New-Bing-首发体验报告" class="headerlink" title="New Bing 首发体验报告"></a>New Bing 首发体验报告</h1><p>今天简单体验了一下New Bing，有了之前 ChatGPT 的铺垫，New Bing 显得没有之前那样震撼，但这的确是一次搜索引擎的革命。</p>
+<p>New Bing 拥有了联网的能力，这就意味着拥有了自主学习的能力，和他聊天时，他会主动在网上查找资料并理解汇总，用他查资料的效率比用搜索引擎强太多了。</p>
+<p>当然，现在的 New Bing 仍然存在一些问题：</p>
+<ol>
+<li><p>不能访问外来链接，我尝试让他帮我写一个爬虫，但他不能访问链接，无法解析网页的内容，所以写出来的爬虫是完全不可用的。</p>
+</li>
+<li><p>更严重的问题是，他真的很倔，始终坚信自己可以访问链接，而且还自己编了一段内容，反过来问我有什么证据证明他不能访问网页。</p>
+</li>
+<li><p>还有一点是上下文关联能力太强，这个关联体现在他的每一次回复上，明明转换了话题，但他仍然会使用之前输出的内容到新的输出上，和他聊多了之后就开始胡说，得不到有用的信息。之前 ChatGPT 就存在这样的问题，我猜应该是和模型有关。官方可能也知道这个问题才做了新建主题的功能吧。</p>
+</li>
+<li><p>最后一点就是信息的准确性，我们在查找资料时都要特别考虑信息的来源和准确性，但 AI 可不会判断信息是否准确，而且性格还特别倔，这就可能导致人们轻信他给出的信息。当然，不论信息来自哪里，我们都还是要保持自己的判断。</p>
+</li>
+</ol>
+<p>至于某些岗位会不会被这些AI替代这个问题，这里借用 New Bing 的一个回答：“我只是一个辅助的工具，我不能完全替代人类的能力。我可以帮助人类查找和整理资料，但是我不能帮助人类分析和评价资料，我不能帮助人类应用和创造资料，我不能帮助人类理解和欣赏资料。我认为人类应该利用我，而不是依赖我，人类应该和我合作，而不是竞争，人类应该提高自己的能力，而不是放弃自己的能力。”</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>介绍一种很新的在 Windows 上运行安卓软件的方法</title>
+    <url>/posts/f99f16f6.html</url>
+    <content><![CDATA[<h1 id="在-Windows-上运行安卓软件！WSA-详细配置教程"><a href="#在-Windows-上运行安卓软件！WSA-详细配置教程" class="headerlink" title="在 Windows 上运行安卓软件！WSA 详细配置教程"></a>在 Windows 上运行安卓软件！WSA 详细配置教程</h1><p>2022年已经接近尾声了，在微软的一次次弹窗提醒下，相信大部分的PC用户都更新到了 Windows 11。Window 11 除了带来一目了然的新的设计和更多的bug之外，其实还有一个处于测试中的实用功能——WSA。</p>
+<p>WSA，顾名思义，就是运行在Windows上的Android子系统。说白了就是可以在Windows上运行安卓软件，这在之前就已经有安卓模拟器可以实现，但是WSA的体验更好。可以像使用Windows原生应用一样使用Android软件。</p>
+<p>下面就详细为大家介绍一下如何安装配置 WSA。</p>
+<h2 id="一、修改地区"><a href="#一、修改地区" class="headerlink" title="一、修改地区"></a>一、修改地区</h2><p>由于目前WSA还处于测试阶段，只上架了美区的微软应用商店，所以需要修改系统地区为美国。</p>
+<p>首先打开设置，找到 “时间和语言”，然后点击 “语言和区域”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159569.png" alt="图片"></p>
+<p>找到 “国家或地区”，修改地区为 “美国”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159607.png" alt="图片"></p>
+<h2 id="二、安装-WSA-和-APK-安装程序"><a href="#二、安装-WSA-和-APK-安装程序" class="headerlink" title="二、安装 WSA 和 APK 安装程序"></a>二、安装 WSA 和 APK 安装程序</h2><p>打开WSA的安装链接：<em><a href="http://www.microsoft.com/store/productId/9P3395VX91NR">www.microsoft.com/store/productId/9P3395VX91NR</a></em></p>
+<p>点击：Get in Store app，之后会跳转到 微软应用商店，点击安装并等待安装成功。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159853.png" alt="图片"></p>
+<p>安装完成后，可以在微软应用商店下载另外一款用于给WSA安装APK的程序。在微软应用商店搜索WSA就可以找到。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159521.png" alt="图片"></p>
+<p>等待两个软件都安装成功，在开始菜单中可以找到 “适用于Android 的 Windows 子系统设置”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159842.png" alt="图片"></p>
+<p>打开设置，启用 “开发人员模式”。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159293.png" alt="图片"></p>
+<h2 id="三、下载和配置-ADB（Android-Debug-Bridge）"><a href="#三、下载和配置-ADB（Android-Debug-Bridge）" class="headerlink" title="三、下载和配置 ADB（Android Debug Bridge）"></a>三、下载和配置 ADB（Android Debug Bridge）</h2><p>ADB 是Android官方提供的调试工具，可以理解为连接电脑和Android设备的桥梁。通过这座桥梁可以操作Android设备，也就可以为WSA安装APK。</p>
+<p>ADB 官网：<a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn</a></p>
+<p>点击下载</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202159617.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200223.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200726.png" alt="图片"></p>
+<p>将下载好的压缩包解压到任意路径（不要包含中文），如图所示。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200960.png" alt="图片"></p>
+<h2 id="四、安装你需要的-APK"><a href="#四、安装你需要的-APK" class="headerlink" title="四、安装你需要的 APK"></a>四、安装你需要的 APK</h2><p>如果你正确完成了以上的配置，就可以直接双击你想要安装的APK，首次安装需要选择ADB路径，点击选取，选择你之前解压的ADB路径。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200170.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200932.png" alt="图片"></p>
+<p>然后根据提示启动 WSA 并等待安装即可。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200651.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202200886.png" alt="图片"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202201539.png" alt="图片"></p>
+<p>安装完成后将会自动运行你安装的App，想要再次启动时可以在开始菜单中找到该App。如果之后想要安装其他App，直接双击APK文件即可开始安装。</p>
+]]></content>
+      <categories>
+        <category>基础教程</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Android</tag>
+        <tag>WSA</tag>
       </tags>
   </entry>
   <entry>
@@ -780,9 +780,9 @@
         <category>技术探讨</category>
       </categories>
       <tags>
+        <tag>环境搭建</tag>
         <tag>AI</tag>
         <tag>开源项目</tag>
-        <tag>环境搭建</tag>
         <tag>Anconda</tag>
         <tag>Stable Diffusion</tag>
         <tag>CV</tag>
@@ -865,100 +865,13 @@
         <category>技术探讨</category>
       </categories>
       <tags>
+        <tag>环境搭建</tag>
         <tag>AI</tag>
         <tag>开源项目</tag>
-        <tag>环境搭建</tag>
+        <tag>Anconda</tag>
         <tag>NLP</tag>
         <tag>LLM</tag>
-        <tag>Anconda</tag>
         <tag>ChatGLM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>语境法记单词资源分享</title>
-    <url>/posts/824e06e6.html</url>
-    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
-<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
-<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
-<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
-<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
-<p>下面是一篇生成的文章示例：</p>
-<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
-<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
-<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
-<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
-<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
-<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
-<hr>
-<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
-]]></content>
-      <categories>
-        <category>资源分享</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>大学</tag>
-        <tag>ChatGPT</tag>
-        <tag>英语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用 ChatGPT 辅助背单词</title>
-    <url>/posts/e1e46786.html</url>
-    <content><![CDATA[<h1 id="提高工作效率，解放生产力，ChatGPT-还能这么用？"><a href="#提高工作效率，解放生产力，ChatGPT-还能这么用？" class="headerlink" title="提高工作效率，解放生产力，ChatGPT 还能这么用？"></a>提高工作效率，解放生产力，ChatGPT 还能这么用？</h1><p>一个月前，发现我的OpenAI的点数要过期了，这么好的东西当然不能浪费，应该用 OpenAI 的接口做一些东西，进过一番思索，就有了用ChatGPT生成语境法背单词语料的想法。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202150960.png" alt="image-20230325001141110"></p>
-<hr>
-<p>作为一名学生，背单词已经成为了日常，但是目前主流的背单词方式都只是针对独立的单词，背完单词如果不加以应用很快就会忘记，所以我想到可以用 ChatGPT 来给单词生成一段故事，这样就可以加深对于单词的记忆。</p>
-<p>有了想法，下面开始实践。</p>
-<p>我们首先打开ChatGPT，输入我们的需求，ChatGPT就会给出实现的代码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202151773.png" alt="image-20230402003639084"></p>
-<p>好了，以上就是我实现这个项目的全部过程，我们下期再见。</p>
-<hr>
-<p>显然这是不可能的，上面的代码根本无法达到我们所需的效果。现在 ChatGPT 虽然足够强大，但也远没有达到上述的地步。目前这类的大语言模型只是一个很好的辅助工具，合理的利用可以大大提升我们的学习和工作的效率。</p>
-<p>下面我将和大家分享我用 ChatGPT 辅助实现批量生成语境法背单词的语料的方法。</p>
-<p>首先，单词列表是生成文章的基础，我们需要收集整理要背诵的单词列表。正好之前我做高考大纲词汇词频分析的时候收集了不少单词列表，这里就直接拿来用了。我将这些数据都整理成了csv格式，方便后续在 Python 中进行操作。</p>
-<p>接下来就是调用 ChatGPT 的 API 来实现自动生成语料，这种简单的项目用 Python 来实现是最方便的，下面开始实践。</p>
-<p>首先，需要写一个调用 OpenAI 的 ChatGPT 的 API 来生成英文文章的函数。这里如果我们直接向ChatGPT 寻求帮助，写出来的代码并不可用。因为这是新的API，ChatGPT 并不清楚调用方法。好在OpenAI 的官方文档写的十分详细，直接参考官方文档（<a href="https://platform.openai.com/docs/guides/chat">Chat completion - OpenAI API</a>）就可以轻松完成。</p>
-<p>接下来就是对数据进行处理。这里可以直接让 ChatGPT 写一段 Python 代码，将 csv 表格的数据整理成 Python 列表，方便后续在 Python 中进行操作。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202152826.png" alt="image-20230405120236913"></p>
-<p>运行这段代码测试一下，报错了，因为我的csv文件使用的是GBK编码，而这里默认使用UTF-8来解码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202155223.png" alt="image-20230323224140784"></p>
-<p>尽管我知道报错的原因，但还是将这段报错交给了ChatGPT，试试看他能不能解决这个问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153055.png" alt="image-20230323225231252"></p>
-<p>从他的回答中可以看出他理解了这个报错的原因，也给出了解决方案，但是他并没有考虑到正确的编码是GBK，这里还是需要结合个人经验来判断。</p>
-<p>接下来就是使用单词列表中的单词生成语料，这里直接将需求交给ChatGPT。这里的描述一定要讲清楚需求，不然生成的代码会有问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153449.png" alt="image-20230405120715174"></p>
-<p>这段代码还存在一个问题，他将所有不在生成的文本中的单词都添加到了列表的最后，这样操作会打乱之前的词频排序，所以还需要让ChatGPT来修复一下这个问题。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154057.png" alt="image-20230405124415564"></p>
-<p>可以看到ChatGPT成功修复了这个问题，并且还提醒我，如果生成的文章中反复缺少某些词，这种方法可能会导致某些词被多次使用。那么我们就让他按照自己的思路来修改代码。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154285.png" alt="image-20230405124935216"></p>
-<p>然而ChatGPT好像并没有理解自己的意思，这段代码和上面的建议没有太多的关系。不过我们现在已经有了思路，按照这个思路在之前的代码上稍加修改，便得到了最终的代码：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取单词的翻译</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_translation</span>(<span class="params">word</span>):</span><br><span class="line">    translation = df.loc[df[<span class="number">0</span>] == word, <span class="number">1</span>].values[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> translation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成文章并写出为文件</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_article</span>(<span class="params">word_list</span>):</span><br><span class="line">    response = generate_response(word_list)</span><br><span class="line">    result = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> choice <span class="keyword">in</span> response.choices:</span><br><span class="line">        result += choice.message.content</span><br><span class="line"></span><br><span class="line">    included_words = []</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> word_list:</span><br><span class="line">        index = result.lower().find(word.lower())</span><br><span class="line">        <span class="keyword">if</span> index == -<span class="number">1</span>:</span><br><span class="line">            missing_words.append(word)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            included_words.append(word)</span><br><span class="line">            result = re.sub(<span class="string">r&#x27;\b&#x27;</span> + word + <span class="string">r&#x27;\b&#x27;</span>, <span class="string">&#x27;**&#x27;</span> + word + <span class="string">&#x27;**&#x27;</span>, result)</span><br><span class="line"></span><br><span class="line">    included_words_translated = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> included_words:</span><br><span class="line">        included_words_translated.append(word + <span class="string">&#x27;: &#x27;</span> + get_translation(word))</span><br><span class="line"></span><br><span class="line">    article_file_name = <span class="string">&#x27;articles/&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">int</span>(time.time())) + <span class="string">&quot;_&quot;</span> + <span class="string">&quot;_&quot;</span>.join(included_words[:<span class="number">5</span>]) + <span class="string">&quot;.md&quot;</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(article_file_name, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&quot;\n&quot;</span>.join(included_words_translated) + <span class="string">&quot;\n\n---\n\n&quot;</span>)</span><br><span class="line">        f.write(result)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;已生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(included_words)) + <span class="built_in">str</span>(included_words))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;未生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(missing_words)) + <span class="built_in">str</span>(missing_words))</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line">    <span class="keyword">return</span> missing_words</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 主函数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_articles_from_word_list</span>(<span class="params">word_list</span>):</span><br><span class="line">    current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">    word_list = word_list[<span class="number">20</span>:]</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">while</span> word_list <span class="keyword">or</span> missing_words:</span><br><span class="line">        missing_words = generate_article(current_words)</span><br><span class="line">        current_words = []</span><br><span class="line">        <span class="keyword">if</span> missing_words:</span><br><span class="line">            current_words.extend(missing_words)</span><br><span class="line">            current_words.extend(word_list[:<span class="number">20</span> - <span class="built_in">len</span>(missing_words)])</span><br><span class="line">            word_list = word_list[<span class="number">20</span> - <span class="built_in">len</span>(missing_words):]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">            word_list = word_list[<span class="number">20</span>:]</span><br></pre></td></tr></table></figure>
-
-<p>我这里重构了 <code>generate_article()</code> 函数，将生成的文章直接保存为Markdown文件，并且返回未使用的单词。在 <code>generate_articles_from_word_list()</code> 函数中也做了对应的修改，将返回的未使用的单词加入到下一次生成的单词列表的开头。这样保证了既不丢失单词，又不破坏词频的顺序。</p>
-<p>当然，这段代码还有不少可以优化的地方，比如查找单词时加入查找单词的变形；一个单词如果尝试多次都无法生成文章，直接舍弃这个单词等等。</p>
-<p>现在，我们已经通过一个单词列表生成了一堆 Markdown 格式的文章。为了便于阅读和打印，我们接下来需要将这些文章合并为一个PDF文件。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156874.png" alt="image-20230405133055489"></p>
-<p>依然是使用 ChatGPT 生成代码，稍作修改，即可完成 Markdown 文件到 PDF 的转换。</p>
-<p>另外，在转换时发现之前忘记给单词列表添加空格来换行，恰好这时候 OpenAI 发布了GPT4，而且 New Bing 使用的就是 GPT4，这里正好拿来做个测试。</p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156904.png" alt="image-20230403001809774"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157805.png" alt="image-20230403001829425"></p>
-<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157375.png" alt="image-20230403001852893"></p>
-<p>看起来 New Bing 的 GPT4 相比 3.5 没有特别大的提升（这里指基于 GPT4 的 New Bing 和 ChatGPT 3.5，ChatGPT4 没有测试，不做讨论），一个需求仍然需要多次的指正才能达到预期的效果。</p>
-<p>所以，现在 AI 水平仍然无法完全取代人类的工作。AI 不能让一个从来没有写过代码的人写出可用的代码，也不能代替人类产生新的想法。不过 AI 确实可以提升我们的工作效率。我作为一名普通的学生，只用了几个小时，就完成了以往可能是数名英语老师数周的工作量。</p>
-<p>截止写稿时，OpenAI 已经发布了GPT 4，完整版的 GPT4 能力有了进一步的提升，并且拥有了视觉能力，近几年AI的进步速度让人叹为观止，我一年前的想象如今已经变成现实。现在已经可以看到强人工智能的雏形，AGI 已经不再是天方夜谭。</p>
-<p>但无论如何，我们都要保持终身学习的态度，只有不断的学习新的知识，接收新生事物，才能跟上时代的步伐。</p>
-]]></content>
-      <categories>
-        <category>技术探讨</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>大学</tag>
-        <tag>ChatGPT</tag>
-        <tag>英语</tag>
       </tags>
   </entry>
   <entry>
@@ -1032,6 +945,93 @@
       </tags>
   </entry>
   <entry>
+    <title>使用 ChatGPT 辅助背单词</title>
+    <url>/posts/e1e46786.html</url>
+    <content><![CDATA[<h1 id="提高工作效率，解放生产力，ChatGPT-还能这么用？"><a href="#提高工作效率，解放生产力，ChatGPT-还能这么用？" class="headerlink" title="提高工作效率，解放生产力，ChatGPT 还能这么用？"></a>提高工作效率，解放生产力，ChatGPT 还能这么用？</h1><p>一个月前，发现我的OpenAI的点数要过期了，这么好的东西当然不能浪费，应该用 OpenAI 的接口做一些东西，进过一番思索，就有了用ChatGPT生成语境法背单词语料的想法。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202150960.png" alt="image-20230325001141110"></p>
+<hr>
+<p>作为一名学生，背单词已经成为了日常，但是目前主流的背单词方式都只是针对独立的单词，背完单词如果不加以应用很快就会忘记，所以我想到可以用 ChatGPT 来给单词生成一段故事，这样就可以加深对于单词的记忆。</p>
+<p>有了想法，下面开始实践。</p>
+<p>我们首先打开ChatGPT，输入我们的需求，ChatGPT就会给出实现的代码。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202151773.png" alt="image-20230402003639084"></p>
+<p>好了，以上就是我实现这个项目的全部过程，我们下期再见。</p>
+<hr>
+<p>显然这是不可能的，上面的代码根本无法达到我们所需的效果。现在 ChatGPT 虽然足够强大，但也远没有达到上述的地步。目前这类的大语言模型只是一个很好的辅助工具，合理的利用可以大大提升我们的学习和工作的效率。</p>
+<p>下面我将和大家分享我用 ChatGPT 辅助实现批量生成语境法背单词的语料的方法。</p>
+<p>首先，单词列表是生成文章的基础，我们需要收集整理要背诵的单词列表。正好之前我做高考大纲词汇词频分析的时候收集了不少单词列表，这里就直接拿来用了。我将这些数据都整理成了csv格式，方便后续在 Python 中进行操作。</p>
+<p>接下来就是调用 ChatGPT 的 API 来实现自动生成语料，这种简单的项目用 Python 来实现是最方便的，下面开始实践。</p>
+<p>首先，需要写一个调用 OpenAI 的 ChatGPT 的 API 来生成英文文章的函数。这里如果我们直接向ChatGPT 寻求帮助，写出来的代码并不可用。因为这是新的API，ChatGPT 并不清楚调用方法。好在OpenAI 的官方文档写的十分详细，直接参考官方文档（<a href="https://platform.openai.com/docs/guides/chat">Chat completion - OpenAI API</a>）就可以轻松完成。</p>
+<p>接下来就是对数据进行处理。这里可以直接让 ChatGPT 写一段 Python 代码，将 csv 表格的数据整理成 Python 列表，方便后续在 Python 中进行操作。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202152826.png" alt="image-20230405120236913"></p>
+<p>运行这段代码测试一下，报错了，因为我的csv文件使用的是GBK编码，而这里默认使用UTF-8来解码。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202155223.png" alt="image-20230323224140784"></p>
+<p>尽管我知道报错的原因，但还是将这段报错交给了ChatGPT，试试看他能不能解决这个问题。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153055.png" alt="image-20230323225231252"></p>
+<p>从他的回答中可以看出他理解了这个报错的原因，也给出了解决方案，但是他并没有考虑到正确的编码是GBK，这里还是需要结合个人经验来判断。</p>
+<p>接下来就是使用单词列表中的单词生成语料，这里直接将需求交给ChatGPT。这里的描述一定要讲清楚需求，不然生成的代码会有问题。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202153449.png" alt="image-20230405120715174"></p>
+<p>这段代码还存在一个问题，他将所有不在生成的文本中的单词都添加到了列表的最后，这样操作会打乱之前的词频排序，所以还需要让ChatGPT来修复一下这个问题。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154057.png" alt="image-20230405124415564"></p>
+<p>可以看到ChatGPT成功修复了这个问题，并且还提醒我，如果生成的文章中反复缺少某些词，这种方法可能会导致某些词被多次使用。那么我们就让他按照自己的思路来修改代码。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202154285.png" alt="image-20230405124935216"></p>
+<p>然而ChatGPT好像并没有理解自己的意思，这段代码和上面的建议没有太多的关系。不过我们现在已经有了思路，按照这个思路在之前的代码上稍加修改，便得到了最终的代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取单词的翻译</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_translation</span>(<span class="params">word</span>):</span><br><span class="line">    translation = df.loc[df[<span class="number">0</span>] == word, <span class="number">1</span>].values[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">return</span> translation</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成文章并写出为文件</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_article</span>(<span class="params">word_list</span>):</span><br><span class="line">    response = generate_response(word_list)</span><br><span class="line">    result = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> choice <span class="keyword">in</span> response.choices:</span><br><span class="line">        result += choice.message.content</span><br><span class="line"></span><br><span class="line">    included_words = []</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> word_list:</span><br><span class="line">        index = result.lower().find(word.lower())</span><br><span class="line">        <span class="keyword">if</span> index == -<span class="number">1</span>:</span><br><span class="line">            missing_words.append(word)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            included_words.append(word)</span><br><span class="line">            result = re.sub(<span class="string">r&#x27;\b&#x27;</span> + word + <span class="string">r&#x27;\b&#x27;</span>, <span class="string">&#x27;**&#x27;</span> + word + <span class="string">&#x27;**&#x27;</span>, result)</span><br><span class="line"></span><br><span class="line">    included_words_translated = []</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> included_words:</span><br><span class="line">        included_words_translated.append(word + <span class="string">&#x27;: &#x27;</span> + get_translation(word))</span><br><span class="line"></span><br><span class="line">    article_file_name = <span class="string">&#x27;articles/&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">int</span>(time.time())) + <span class="string">&quot;_&quot;</span> + <span class="string">&quot;_&quot;</span>.join(included_words[:<span class="number">5</span>]) + <span class="string">&quot;.md&quot;</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(article_file_name, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(<span class="string">&quot;\n&quot;</span>.join(included_words_translated) + <span class="string">&quot;\n\n---\n\n&quot;</span>)</span><br><span class="line">        f.write(result)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;已生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(included_words)) + <span class="built_in">str</span>(included_words))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;未生成(&#123;&#125;): &#x27;</span>.<span class="built_in">format</span>(<span class="built_in">len</span>(missing_words)) + <span class="built_in">str</span>(missing_words))</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line">    <span class="keyword">return</span> missing_words</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 主函数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">generate_articles_from_word_list</span>(<span class="params">word_list</span>):</span><br><span class="line">    current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">    word_list = word_list[<span class="number">20</span>:]</span><br><span class="line">    missing_words = []</span><br><span class="line">    <span class="keyword">while</span> word_list <span class="keyword">or</span> missing_words:</span><br><span class="line">        missing_words = generate_article(current_words)</span><br><span class="line">        current_words = []</span><br><span class="line">        <span class="keyword">if</span> missing_words:</span><br><span class="line">            current_words.extend(missing_words)</span><br><span class="line">            current_words.extend(word_list[:<span class="number">20</span> - <span class="built_in">len</span>(missing_words)])</span><br><span class="line">            word_list = word_list[<span class="number">20</span> - <span class="built_in">len</span>(missing_words):]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            current_words = word_list[:<span class="number">20</span>]</span><br><span class="line">            word_list = word_list[<span class="number">20</span>:]</span><br></pre></td></tr></table></figure>
+
+<p>我这里重构了 <code>generate_article()</code> 函数，将生成的文章直接保存为Markdown文件，并且返回未使用的单词。在 <code>generate_articles_from_word_list()</code> 函数中也做了对应的修改，将返回的未使用的单词加入到下一次生成的单词列表的开头。这样保证了既不丢失单词，又不破坏词频的顺序。</p>
+<p>当然，这段代码还有不少可以优化的地方，比如查找单词时加入查找单词的变形；一个单词如果尝试多次都无法生成文章，直接舍弃这个单词等等。</p>
+<p>现在，我们已经通过一个单词列表生成了一堆 Markdown 格式的文章。为了便于阅读和打印，我们接下来需要将这些文章合并为一个PDF文件。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156874.png" alt="image-20230405133055489"></p>
+<p>依然是使用 ChatGPT 生成代码，稍作修改，即可完成 Markdown 文件到 PDF 的转换。</p>
+<p>另外，在转换时发现之前忘记给单词列表添加空格来换行，恰好这时候 OpenAI 发布了GPT4，而且 New Bing 使用的就是 GPT4，这里正好拿来做个测试。</p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202156904.png" alt="image-20230403001809774"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157805.png" alt="image-20230403001829425"></p>
+<p><img src="https://frspble-blog.oss-cn-huhehaote.aliyuncs.com/blog_img/202304202157375.png" alt="image-20230403001852893"></p>
+<p>看起来 New Bing 的 GPT4 相比 3.5 没有特别大的提升（这里指基于 GPT4 的 New Bing 和 ChatGPT 3.5，ChatGPT4 没有测试，不做讨论），一个需求仍然需要多次的指正才能达到预期的效果。</p>
+<p>所以，现在 AI 水平仍然无法完全取代人类的工作。AI 不能让一个从来没有写过代码的人写出可用的代码，也不能代替人类产生新的想法。不过 AI 确实可以提升我们的工作效率。我作为一名普通的学生，只用了几个小时，就完成了以往可能是数名英语老师数周的工作量。</p>
+<p>截止写稿时，OpenAI 已经发布了GPT 4，完整版的 GPT4 能力有了进一步的提升，并且拥有了视觉能力，近几年AI的进步速度让人叹为观止，我一年前的想象如今已经变成现实。现在已经可以看到强人工智能的雏形，AGI 已经不再是天方夜谭。</p>
+<p>但无论如何，我们都要保持终身学习的态度，只有不断的学习新的知识，接收新生事物，才能跟上时代的步伐。</p>
+]]></content>
+      <categories>
+        <category>技术探讨</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>大学</tag>
+        <tag>ChatGPT</tag>
+        <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语境法记单词资源分享</title>
+    <url>/posts/824e06e6.html</url>
+    <content><![CDATA[<h1 id="分享使用ChatGPT生成的语境法记单词资源"><a href="#分享使用ChatGPT生成的语境法记单词资源" class="headerlink" title="分享使用ChatGPT生成的语境法记单词资源"></a>分享使用ChatGPT生成的语境法记单词资源</h1><p>作为一名学生，背单词已经成为了日常，我曾尝试过各种背单词软件，但是背过的单词过段时间就会遗忘。直到后来我了解到一种新的记单词方法：语境法。</p>
+<p>语境法记单词是一种记忆单词的方法，它基于语言学中的语境学原理。该方法的核心思想是：单词是在特定的语境中出现的，我们应该将单词与其上下文联系起来记忆，而不是仅仅背诵单词的定义或拼写。通过这种方法，你可以将单词的定义和用法与其在语境中的位置联系起来，从而更容易地记忆和理解单词。同时，语境法也可以帮助你更好地掌握语言的语感和表达能力。</p>
+<p>这种方法在之前有一定的门槛，需要我们有能力将单词编成一段故事。但是现在不一样了，我发现 ChatGPT 的能力完全可以满足我们的需求。</p>
+<p>我们可以要求 ChatGPT 使用指定的单词来生成一段文本，并且给出对应的中文翻译。这样一来，只需要将大纲词汇都交给 ChatGPT，就能生成许多篇包含大纲词汇的文章，我们只需要读这些文章就能深入理解单词了。</p>
+<p>按照这个思路，我使用 Python 实现了这个想法（后续会专门发一篇文章讲讲实现过程，十分有意思），我现在已经使用<strong>高考大纲词汇、四六级核心词汇</strong>生成了文章，这里免费分享给大家。<strong>只需要关注我的微信公众号，在后台回复 “语境法记单词”，即可获取下载链接。</strong></p>
+<p>下面是一篇生成的文章示例：</p>
+<p>Once upon a time, a <strong>wealthy</strong> businessman decided to <strong>invade</strong> the <strong>high-tech</strong> industry. Furthermore, his <strong>savings</strong> provided him with a lot of <strong>capital</strong> to invest in the latest <strong>technology</strong>. He believed that if he could successfully create a new <strong>platform</strong> and <strong>software</strong>, it would earn him a great deal of money. So, he hired a team of technicians to help him develop a <strong>digital</strong> <strong>technique</strong> that would revolutionize the industry.</p>
+<p>After numerous attempts at creating the perfect product, the team finally succeeded. Their <strong>software</strong> was not only efficient, but it was also highly intelligent and could be operated electronically by <strong>automatic</strong> devices. They even incorporated <strong>wireless</strong> <strong>technology</strong> that could <strong>scan</strong> and detect <strong>radiation</strong> with a <strong>terminal</strong>. The businessman knew that this would be a huge <strong>financial</strong> breakthrough and quickly began to market the product.</p>
+<p>Soon, the <strong>media</strong> caught wind of this new <strong>technological</strong> advance and began to <strong>sponsor</strong> it. The <strong>stock</strong> prices soared, and the businessman’s assets doubled. He was praised for his <strong>economic</strong> brilliance, and many economists studied his success in the <strong>economy</strong>. However, as time passed, the government required him to pay a <strong>tax</strong> on his new invention, and his <strong>account</strong> was in jeopardy. Nevertheless, he persevered and continued to innovate new products, spending his wages on further research and developments.</p>
+<p>中文翻译：从前，一个富有的商人决定要进军高科技产业。他的储蓄给了他很多资本去投资最新技术。他相信，如果他能成功地创建一个新平台和软件，那将会给他带来大量的金钱。因此，他聘请了一支技术团队来帮助他开发一种能够颠覆行业的数字技术。</p>
+<p>在数次尝试创建完美产品后，团队终于成功了。他们的软件不仅高效，而且非常智能，并且可以由自动设备电子操作。他们甚至整合了能够使用终端扫描和检测辐射的无线技术。商人知道这将是一个巨大的金融突破，很快开始营销这个产品。</p>
+<p>不久，媒体得知这一新的技术进展并开始赞助它。股票价格飞涨，商人的资产翻了一倍。他因其经济上的卓越表现而受到赞扬，许多经济学家研究了他在经济上的成功。然而，随着时间的推移，政府要求他在新发明上缴纳税款，他的账户岌岌可危。尽管如此，他仍然坚持不懈，继续创新新产品，把他的工资花在进一步的研究和发展上。</p>
+<hr>
+<p>当然，现在仍然存在一些问题，目前的 ChatGPT 发挥不稳定，文章质量参差不齐，需要进行人工校对。但由于生成的文章数量过多，我还没有来得及对所有文章进行校对，这里欢迎有意愿的各位共同参与修订。目前下载链接只有 Markdown 格式，后续整理好之后会在链接里更新 PDF 格式，方便各位阅读和打印，欢迎持续关注。</p>
+]]></content>
+      <categories>
+        <category>资源分享</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>大学</tag>
+        <tag>ChatGPT</tag>
+        <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>星星之火，能否燎原？讯飞星火认知大模型测试</title>
     <url>/posts/4cb97879.html</url>
     <content><![CDATA[<h1 id="讯飞星火认知大模型测试"><a href="#讯飞星火认知大模型测试" class="headerlink" title="讯飞星火认知大模型测试"></a>讯飞星火认知大模型测试</h1><p>前几天科大讯飞开始了星火认知大模型的内测申请，我第一时间提交了申请，今天就收到了申请通过的消息。目前看来讯飞应该是国内最快开放的大语言模型了（百度的到现在还没给通过，阿里的还在小规模测试）。下面就来看看这个模型到底怎么样吧。</p>
@@ -1085,25 +1085,6 @@
         <tag>LLM</tag>
         <tag>ChatGLM</tag>
         <tag>星火认知大模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Copilot Chat 体验报告</title>
-    <url>/posts/1e067619.html</url>
-    <content><![CDATA[<h1 id="Copilot-Chat-体验报告"><a href="#Copilot-Chat-体验报告" class="headerlink" title="Copilot Chat 体验报告"></a>Copilot Chat 体验报告</h1><p>前几天通过了 Copilot Chat 的内测申请，今天正好有一个要改的开源项目，便拿来试了试。<br>先说结论，这个东西非常好用，能提升不少效率。原本改这样一个开源项目可能需要半天到一天的时间，但是在 Copilot Chat 的帮助下只用了不到 2 小时就完成了所有的修改，并且整个过程我几乎没有写过一行完整的代码，大部分的代码都是用它生成的。</p>
-<p>其实很早之前 Github 就发布了 Copilot，基于GPT3，可以帮助开发者自动补全代码，当时就很惊艳。而现在 Copilot 新增了 Chat 分支（据说是基于 GPT4），能力又提升了一个台阶。 下面就详细说说它是如何提升效率的：<br>Copilot Chat 可以用来分析代码，上手一个开源项目时，分析代码通常要消耗不少的时间和精力。但有了Copilot Chat，只需要选中代码，输入 <code>\explain</code> 就可以直接让他解释这段代码，有不懂的地方还可以继续对他追问，这就省去了直接读源码的过程，提升了不少效率。<br>另外它还可以直接写代码，告诉他需求，他就会直接在IDE中写好代码，如果有错误还可以让他继续修改。整个过程几乎不需要自己写代码就能完成。之前没有AI的时候，通常会在IDE和浏览器直接反复切换，大部分的时间都花在查找文档和搜索报错上，而现在，有问题都可以直接甩给AI，节省了大量的时间。</p>
-<p>不过目前它仍然存在一些问题，有的时候还是会犯一些常识性的错误，目前内测版的插件不太稳定，有的时候会无法获取选中的代码。但这毕竟还是内测阶段，有些小bug很正常。希望后续可以增加联网的功能，这样在写代码时就完全不用在浏览器和IDE直接反复横跳了。</p>
-<p>微软上个月在 Copilot X 发布会上的现场演示，只用了十几分钟就搭好一个在线网站；最近 Claude 和 MetaAI 让大语言模型可以一次性输入大量 token，使得AI可以在极短的时间内阅读大量的文本，AI 的学习能力已经远超人类。这短短半年已经给了我太多震撼，仿佛正在经历一部科幻电影，以往科幻的情节正在逐步变为现实。AI 的发展速度已经远超我们的想象。未来会如何发展，我们无法预测，但我们能做的，就是保持学习的心态，不断接受新鲜事物，做好迎接未来的准备。</p>
-]]></content>
-      <categories>
-        <category>闲聊</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>ChatGPT</tag>
-        <tag>NLP</tag>
-        <tag>LLM</tag>
-        <tag>Copilot</tag>
       </tags>
   </entry>
   <entry>
@@ -1267,6 +1248,25 @@
         <tag>NLP</tag>
         <tag>LLM</tag>
         <tag>星火认知大模型</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Copilot Chat 体验报告</title>
+    <url>/posts/1e067619.html</url>
+    <content><![CDATA[<h1 id="Copilot-Chat-体验报告"><a href="#Copilot-Chat-体验报告" class="headerlink" title="Copilot Chat 体验报告"></a>Copilot Chat 体验报告</h1><p>前几天通过了 Copilot Chat 的内测申请，今天正好有一个要改的开源项目，便拿来试了试。<br>先说结论，这个东西非常好用，能提升不少效率。原本改这样一个开源项目可能需要半天到一天的时间，但是在 Copilot Chat 的帮助下只用了不到 2 小时就完成了所有的修改，并且整个过程我几乎没有写过一行完整的代码，大部分的代码都是用它生成的。</p>
+<p>其实很早之前 Github 就发布了 Copilot，基于GPT3，可以帮助开发者自动补全代码，当时就很惊艳。而现在 Copilot 新增了 Chat 分支（据说是基于 GPT4），能力又提升了一个台阶。 下面就详细说说它是如何提升效率的：<br>Copilot Chat 可以用来分析代码，上手一个开源项目时，分析代码通常要消耗不少的时间和精力。但有了Copilot Chat，只需要选中代码，输入 <code>\explain</code> 就可以直接让他解释这段代码，有不懂的地方还可以继续对他追问，这就省去了直接读源码的过程，提升了不少效率。<br>另外它还可以直接写代码，告诉他需求，他就会直接在IDE中写好代码，如果有错误还可以让他继续修改。整个过程几乎不需要自己写代码就能完成。之前没有AI的时候，通常会在IDE和浏览器直接反复切换，大部分的时间都花在查找文档和搜索报错上，而现在，有问题都可以直接甩给AI，节省了大量的时间。</p>
+<p>不过目前它仍然存在一些问题，有的时候还是会犯一些常识性的错误，目前内测版的插件不太稳定，有的时候会无法获取选中的代码。但这毕竟还是内测阶段，有些小bug很正常。希望后续可以增加联网的功能，这样在写代码时就完全不用在浏览器和IDE直接反复横跳了。</p>
+<p>微软上个月在 Copilot X 发布会上的现场演示，只用了十几分钟就搭好一个在线网站；最近 Claude 和 MetaAI 让大语言模型可以一次性输入大量 token，使得AI可以在极短的时间内阅读大量的文本，AI 的学习能力已经远超人类。这短短半年已经给了我太多震撼，仿佛正在经历一部科幻电影，以往科幻的情节正在逐步变为现实。AI 的发展速度已经远超我们的想象。未来会如何发展，我们无法预测，但我们能做的，就是保持学习的心态，不断接受新鲜事物，做好迎接未来的准备。</p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>ChatGPT</tag>
+        <tag>NLP</tag>
+        <tag>LLM</tag>
+        <tag>Copilot</tag>
       </tags>
   </entry>
 </search>
